@@ -10,87 +10,74 @@
 <meta name="Description" content="腾讯游戏平台（WeGame，即原TGP），腾讯全球游戏开放平台。平台致力于发现全球好游戏，提供游戏资讯、购买、下载、助手、直播和社区等一站式游戏服务，满足优质汉化、社交互动、稳定国服等更贴心的本地化需求，同时连接全球开发者与游戏玩家，构筑玩家与开发者的沟通桥梁。" />
 <meta name="Keywords" content="腾讯游戏平台 游戏商城 游戏助手 发现更大的游戏世界 TGP WeGame WeGame平台 WeGame商店 翼计划 游戏购买 游戏加速 游戏特权 LOL助手 LOL官方盒子 CF助手 DNF助手 免费网络加速" />
 <title>话题设计-WeGame腾讯游戏平台</title>
-<script>
-(function (win,doc){
-    if (!win.addEventListener) return;
-    var html=document.documentElement;
-    function setFont()
-    {
-        var cliWidth=html.clientWidth;
-        html.style.fontSize=100*(cliWidth/1090)+'px';
-    }
-    win.addEventListener('resize',setFont,false);
-    setFont();
-})(window,document);
-</script>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2018-06-04 -->
 <style type="text/css" id="style">
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{ margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline }
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block }
-ol,ul{  list-style: none }
-body{ -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100% !important; -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none;  word-break: break-all; word-wrap: break-word;}
-h1,h2,h3,h4,h5,h6{ font-weight: normal }
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{  font-weight: inherit }
-strong,i,em{ font-weight: normal;font-style: normal; }
-input,select,form { vertical-align:middle; outline:none; }
-img{border:none;vertical-align: top;}
-a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] {outline: 0;  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
-a {-webkit-touch-callout: none; text-decoration: none; color: #666666;outline: 0; }
-body,html{background: #000;}
-.hidden{width: 0;height: 0;line-height:0;font-size: 0;visibility: hidden;text-indent: -9999px;display: block;}
-.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
-.spr{ background: url(images/spr.png) no-repeat; background-size: 1.37rem 1.57rem;}
-.wrap{width:100%; height: auto; margin:0 auto;overflow: hidden; position: relative; background:#2b2b2b;}
-.wrap_inner{ width: 10.90rem; position: relative; left: 0;top: 0; margin: 0.76rem 0 0 0;}
-.content{ width: 100%; margin: 0 auto; overflow: hidden; background: #ebeaea; padding: 0 0 0.50rem 0;}
-.banner_box{ width: 10.90rem; height:3.18rem; margin: 0 auto; background: #2b2b2b;}
-.banner_box img{ display: block; width: 10.9rem; height: 3.18rem;}
-.c_top{ width: 10.90rem; height: 0.80rem; background: #0b0b0b; margin: 0 auto 0; position: relative;}
-.c_top_para{ width: 100%; height:0.80rem; line-height: 0.80rem; text-indent: 0.40rem; color: #ffc800; font-size: 0.28rem;}
-.c_top_care{ display: block; width: 0.92rem; height: 0.28rem; line-height: 0.28rem; text-align: center; border-radius: 0.24rem; color: #0b0b0b; font-size: 0.14rem; position: absolute;right: 0.40rem; top: 50%; margin: -0.14rem 0 0 0; background: #ffc800;}
-.c_in{ width: 10.10rem; background: #ffffff;  margin: 0.20rem auto 0; border-radius: 0.03rem; overflow: hidden;}
-.theme_box{ width: 100%; height: 1.76rem; border-bottom: #e4e4e4 solid 1px;}
-.theme_para{ width: 6.28rem; height: 0.87rem; border: #e4e4e4 solid 1px; padding: 0.20rem 0.18rem 0.10rem 0.20rem; color: #353535; font-size: 0.14rem; float: left; margin: 0.32rem 0 0 0.40rem;overflow: hidden;}
-.theme_rec_box{ width: 2.40rem; height: 1.20rem; float: left; margin: 0.34rem 0 0 0.30rem;}
-.theme_rec_para{ width: 100%; color: #000000; font-size: 0.18rem; line-height: 0.22rem;}
-.theme_rec_list{ width: 100%; height: 0.90rem; display: flex; justify-content: space-between;}
-.theme_rec_list li{ width: 0.63rem;}
-.theme_img{ display: block; width: 0.63rem; height: 0.63rem; border-radius: 50%; margin: 0.08rem auto;}
-.theme_name{ width: 100%; text-align: center; color: #979797; font-size: 0.14rem; line-height: 0.18rem;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.progress_bar{ width: 9.30rem; height: 0.76rem; margin: 0.56rem auto 0; background: #1ad5e1; position: relative;}
-.propress_yellow,.propress_blue{ display: block; width: 50%; height: 0.76rem; float: left; line-height: 0.76rem; text-align: center; color: #ffffff; font-size: 0.36rem; font-weight: bold; font-family: arial; overflow: hidden; white-space: nowrap;}
+/* reset */
+body,dl,dd,ul,ol,h1,li,h2,h3,h4,h5,h6,p,form{margin:0;padding:0;}
+body{ font:14px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif; padding-top:42px; background:#ebeaea;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em,b{font-style:normal;}
+a{text-decoration:none; outline: none;}
+a:hover{text-decoration:none;}
+img{border:0;}
+button,input,select,textarea{font-size:100%;outline:none; resize: none; overflow: hidden;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th,ul,ol{padding:0;list-style-type:none;}
+.clearfix:after{content:"\0020"; height:0; display:block; clear:both;}
+.hidden{display:block;width:0;height:0;overflow:hidden;}
+.spr{ background: url(images/spr.png) no-repeat; background-size: 137px 157px;}
+.wrap{width:1090px; height: auto; margin:0 auto;overflow: hidden; position: relative; background:#2b2b2b;}
+.wrap_inner{ width: 1090px; position: relative; left: 0;top: 0; margin: 76px 0 0 0;}
+.content{ width: 100%; margin: 0 auto; overflow: hidden; background: #ebeaea; padding: 0 0 5px 0;}
+.banner_box{ width: 1090px; height:318px; margin: 0 auto; background: #2b2b2b;}
+.banner_box img{ display: block; width: 1090px; height: 318px;}
+.c_top{ width: 1090px; height: 80px; background: #0b0b0b; margin: 0 auto 0; position: relative;}
+.c_top_para{ width: 100%; height:80px; line-height: 80px; text-indent: 40px; color: #ffc800; font-size: 28px;}
+.c_top_care{ display: block; width: 92px; height: 28px; line-height: 28px; text-align: center; border-radius: 24px; color: #0b0b0b; font-size: 14px; position: absolute;right: 40px; top: 50%; margin: -14px 0 0 0; background: #ffc800;}
+.c_in{ width: 1010px; background: #ffffff;  margin: 20px auto 0; border-radius: 3px; overflow: hidden;}
+.theme_box{ width: 100%; height: 176px; border-bottom: #e4e4e4 solid 1px;}
+.theme_para{ width: 628px; height: 87px; border: #e4e4e4 solid 1px; padding: 20px 18px 10px 20px; color: #353535; font-size: 14px; float: left; margin: 32px 0 0 40px;overflow: hidden;}
+.theme_rec_box{ width: 240px; height: 120px; float: left; margin: 34px 0 0 30px;}
+.theme_rec_para{ width: 100%; color: #000000; font-size: 18px; line-height: 22px;}
+.theme_rec_list{ width: 100%; height: 115px;}
+.theme_rec_list li{ width: 63px; float: left; margin: 0 0 0 15px}
+.theme_img{ display: block; width: 63px; height: 63px; border-radius: 50%; margin: 8px auto;}
+.theme_name{ width: 100%; text-align: center; color: #979797; font-size: 14px; line-height: 18px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.progress_bar{ width: 930px; height: 76px; margin: 56px auto 0; background: #1ad5e1; position: relative;}
+.propress_yellow,.propress_blue{ display: block; width: 50%; height: 76px; float: left; line-height: 76px; text-align: center; color: #ffffff; font-size: 36px; font-weight: bold; font-family: arial; overflow: hidden; white-space: nowrap;}
 .propress_yellow{ background: #ffc800;}
-.propress_pk{ display: block; width: 1.03rem; height: 1.23rem;background-position:0 -0.34rem; position: absolute; left: 50%; top: -0.37rem; margin: 0 0 0 -0.51rem;}
-.pl_box{ width: 9.30rem; margin: 0.30rem auto 0;}
-.zf_box{ width: 4.49rem; float: left; border-top: #f0f0f0 solid 1px; border-right: #f0f0f0 solid 1px; padding: 0 0 0.30rem 0;}
-.zf_box2{border-right:none;border-left: #f0f0f0 solid 1px; margin: 0 0 0 0.25rem;}
-.pub_pl_box{ width: 4.09rem; padding: 0.30rem 0.20rem 0.20rem 0.20rem;}
-.pub_theme{ display: block; color: #ffc800; font-size: 0.18rem; line-height: 0.22rem; font-weight: bold;}
-.pub_theme_para{ width: 100%; color: #353535; font-size: 0.14rem; line-height: 0.18rem; margin: 0.08rem auto 0;}
-.pub_zan_btn{ display: block; width: 0.78rem; height: 0.78rem; text-align: center; border-radius: 50%; background: #ffc800; color: #ffffff; font-size: 0.16rem; overflow: hidden; margin: 0.23rem auto 0;}
-.zan_icon{ display: block; width: 0.28rem; height: 0.28rem; margin: 0.14rem auto 0;background-position:-1.09rem 0;}
-.pub_txt{ display: block; width: 3.94rem; height: 0.70rem; border: #e4e4e4 solid 1px; resize: none; color: #a6a6a6; font-size: 0.14rem; padding: 0.07rem; margin: 0.32rem auto 0;}
-.pub_btn_box{ width: 100%; height: 0.26rem; margin: 0.10rem auto 0;}
-.pub_submit{ display: block; width: 0.66rem; height: 0.24rem; border-radius: 0.04rem; border: #faab00 solid 1px; background: #ffe480; color: #595546; font-size: 0.14rem; line-height: 0.24rem; text-align: center; float: right;}
-.pub_emji{ display: block; width: 0.16rem; height: 0.16rem; float: right;background-position:-0.29rem 0; margin: 0.05rem 0.10rem 0 0;}
-.player_pl{ width: 4.49rem; margin: 0.18rem auto 0; background: #f0f0f0; overflow: hidden; padding: 0 0 0.50rem 0;}
-.player_tit{ display: block; width: 4.11rem; height: 0.36rem; line-height: 0.36rem; color: #ffffff; font-size: 0.14rem; text-indent: 0.16rem; background: #ffc800; margin: 0.20rem auto 0;}
-.player_pl_list{ width: 4.11rem; margin: 0 auto;}
-.player_pl_list li{ width: 4.11rem; background: #fff; margin: 0.18rem auto 0; overflow: hidden;}
-.player_info{ width: 3.80rem; margin: 0.20rem auto 0;}
-.player_hd{ display: block; width: 0.33rem; height: 0.33rem; float: left; border-radius:50%;}
-.player_name{ width: 3.24rem;height: 0.33rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 0.33rem; color: #b69417; font-size: 0.14rem; float: left; margin: 0 0 0 0.10rem;}
-.player_pl_con{ width: 3.68rem; color: #353535; font-size: 0.12rem; margin: 0.10rem auto 0; line-height: 0.24rem;}
-.player_more{ width: 3.71rem; height: 0.28rem; margin: 0.10rem auto 0;}
-.player_share_icon{ display: block; width: 0.15rem; height: 0.13rem; float: left;background-position:0 0; margin: 0.07rem 0.09rem 0 0.14rem;}
-.player_share_num{ display: block; width: 0.50rem; height: 0.27rem; line-height: 0.27rem; float: left; color: #919191; font-size: 0.18rem; overflow: hidden; white-space: nowrap;}
-.player_pl_icon{ display: block; width: 0.16rem; height: 0.15rem; float: left;background-position:-0.58rem 0; margin: 0.07rem 0.09rem 0 0;}
-.player_zan_icon{ display: block; width:0.18rem ; height: 0.15rem; float: left;background-position:-0.82rem 0; margin: 0.04rem 0.05rem 0 0;}
-.player_pl_time{ display: block; width: 1.32rem; height: 0.27rem; line-height: 0.27rem; color: #afafaf; font-size: 0.12rem; float: right; text-align: center; white-space: nowrap;overflow: hidden;}
+.propress_pk{ display: block; width: 103px; height: 123px;background-position:0 -34px; position: absolute; left: 50%; top: -37px; margin: 0 0 0 -51px;}
+.pl_box{ width: 930px; margin: 30px auto 0;}
+.zf_box{ width: 449px; float: left; border-top: #f0f0f0 solid 1px; border-right: #f0f0f0 solid 1px; padding: 0 0 30px 0;}
+.zf_box2{border-right:none;border-left: #f0f0f0 solid 1px; margin: 0 0 0 25px;}
+.pub_pl_box{ width: 409px; padding: 30px 20px 20px 20px;}
+.pub_theme{ display: block; color: #ffc800; font-size: 18px; line-height: 22px; font-weight: bold;}
+.pub_theme_para{ width: 100%; color: #353535; font-size: 14px; line-height: 18px; margin: 8px auto 0;}
+.pub_zan_btn{ display: block; width: 78px; height: 78px; text-align: center; border-radius: 50%; background: #ffc800; color: #ffffff; font-size: 16px; overflow: hidden; margin: 23px auto 0;}
+.zan_icon{ display: block; width: 28px; height: 28px; margin: 14px auto 0;background-position:-109px 0;}
+.pub_txt{ display: block; width: 394px; height: 70px; border: #e4e4e4 solid 1px; resize: none; color: #a6a6a6; font-size: 14px; padding: 7px; margin: 32px auto 0;}
+.pub_btn_box{ width: 100%; height: 26px; margin: 10px auto 0;}
+.pub_submit{ display: block; width: 66px; height: 24px; border-radius: 4px; border: #faab00 solid 1px; background: #ffe480; color: #595546; font-size: 14px; line-height: 24px; text-align: center; float: right;}
+.pub_emji{ display: block; width: 16px; height: 16px; float: right;background-position:-29px 0; margin: 5px 10px 0 0;}
+.player_pl{ width: 449px; margin: 18px auto 0; background: #f0f0f0; overflow: hidden; padding: 0 0 50px 0;}
+.player_tit{ display: block; width: 411px; height: 36px; line-height: 36px; color: #ffffff; font-size: 14px; text-indent: 16px; background: #ffc800; margin: 20px auto 0;}
+.player_pl_list{ width: 411px; margin: 0 auto;}
+.player_pl_list li{ width: 411px; background: #fff; margin: 18px auto 0; overflow: hidden;}
+.player_info{ width: 380px; margin: 20px auto 0;}
+.player_hd{ display: block; width: 33px; height: 33px; float: left; border-radius:50%;}
+.player_name{ width: 324px;height: 33px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 33px; color: #b69417; font-size: 14px; float: left; margin: 0 0 0 10px;}
+.player_pl_con{ width: 368px; color: #353535; font-size: 12px; margin: 10px auto 0; line-height: 24px;}
+.player_more{ width: 371px; height: 28px; margin: 10px auto 0;}
+.player_share_icon{ display: block; width: 15px; height: 13px; float: left;background-position:0 0; margin: 7px 9px 0 14px;}
+.player_share_num{ display: block; width: 50px; height: 27px; line-height: 27px; float: left; color: #919191; font-size: 18px; overflow: hidden; white-space: nowrap;}
+.player_pl_icon{ display: block; width: 16px; height: 15px; float: left;background-position:-58px 0; margin: 7px 9px 0 0;}
+.player_zan_icon{ display: block; width:18px ; height: 15px; float: left;background-position:-82px 0; margin: 4px 5px 0 0;}
+.player_pl_time{ display: block; width: 132px; height: 27px; line-height: 27px; color: #afafaf; font-size: 12px; float: right; text-align: center; white-space: nowrap;overflow: hidden;}
 .zf_box2 .pub_theme,.zf_box2 .player_name{ color: #1ad5e1;}
 .zf_box2 .pub_zan_btn,.zf_box2 .player_tit{ background:#1ad5e1 ;}
-
-
-#afooter{ width: 100%; text-align: center;font-size: 0.18rem; line-height: 0.32rem; padding: 0.18rem 0; background: #000; color: #fff;}
+/*footer*/
+#afooter{ width: 100%; text-align: center;font-size: 18px; line-height: 32px; padding: 18px 0; background: #000; color: #fff;}
+#afooter a{color:#fff;}
 
 </style>
 </head>
@@ -101,7 +88,7 @@ body,html{background: #000;}
 			<div class="banner_box"></div>
 			<div class="c_top">
 				<p class="c_top_para">你觉得吃豆人是当时最好玩的游戏吗？</p>
-				<a href="javascript:;" class="c_top_care" title="关注话题">关注话题</a>
+				<a href="javascript:;" onclick="PTTSendClick('btn','care','关注话题')" class="c_top_care" title="关注话题">关注话题</a>
 			</div>
 			<div class="c_in">
 				<div class="theme_box clearfix">
@@ -134,11 +121,11 @@ body,html{background: #000;}
 						<div class="pub_pl_box">
 							<strong class="pub_theme">正方观点</strong>
 							<p class="pub_theme_para">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
-							<a href="javascript:;" class="pub_zan_btn" title="点赞"><span class="spr zan_icon"></span>点赞</a>
+							<a href="javascript:;" onclick="PTTSendClick('btn','zan1','点赞')" class="pub_zan_btn" title="点赞"><span class="spr zan_icon"></span>点赞</a>
 							<textarea class="pub_txt" placeholder="支持正方，因为。。。"></textarea>
 							<div class="pub_btn_box">
-								<a href="javascript:;" class="pub_submit" title="评论">评论</a>
-								<a href="javascript:;" class="spr pub_emji" title="笑脸"></a>
+								<a href="javascript:;" onclick="PTTSendClick('btn','pl1','评论')" class="pub_submit" title="评论">评论</a>
+								<a href="javascript:;" onclick="PTTSendClick('btn','emji1','笑脸')" class="spr pub_emji" title="笑脸"></a>
 							</div>
 						</div>
 						<div class="player_pl">
@@ -151,11 +138,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share1','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl01','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zn01','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -167,11 +154,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share02','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl02','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan02','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -183,11 +170,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share03','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl03','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan03','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -199,11 +186,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share04','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl04','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan04','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -215,11 +202,11 @@ body,html{background: #000;}
 						<div class="pub_pl_box">
 							<strong class="pub_theme">正方观点</strong>
 							<p class="pub_theme_para">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
-							<a href="javascript:;" class="pub_zan_btn" title="点赞"><span class="spr zan_icon"></span>点赞</a>
+							<a href="javascript:;" onclick="PTTSendClick('btn','zan2','点赞')" class="pub_zan_btn" title="点赞"><span class="spr zan_icon"></span>点赞</a>
 							<textarea class="pub_txt" placeholder="支持正方，因为。。。"></textarea>
 							<div class="pub_btn_box">
-								<a href="javascript:;" class="pub_submit" title="评论">评论</a>
-								<a href="javascript:;" class="spr pub_emji" title="笑脸"></a>
+								<a href="javascript:;" onclick="PTTSendClick('btn','pl2','评论')" class="pub_submit" title="评论">评论</a>
+								<a href="javascript:;" onclick="PTTSendClick('btn','emji2','笑脸')" class="spr pub_emji" title="笑脸"></a>
 							</div>
 						</div>
 						<div class="player_pl">
@@ -232,11 +219,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share05','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl05','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan05','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -248,11 +235,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share06','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl06','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan06','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -264,11 +251,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share07','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl07','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan07','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>
@@ -280,11 +267,11 @@ body,html{background: #000;}
 									</div>
 									<p class="player_pl_con">吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。吃豆人是我小时候最爱的游戏之一，我小时候零花钱都投入在这个里面了。</p>
 									<div class="player_more">
-										<a href="javascript:;"  title="分享" class="spr player_share_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','share08','分享')"  title="分享" class="spr player_share_icon"></a>
 										<span class="player_share_num">31</span>
-										<a href="javascript:;" title="评论" class="spr player_pl_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','pl08','评论')" title="评论" class="spr player_pl_icon"></a>
 										<span class="player_share_num">18</span>
-										<a href="javascript:;" title="点赞" class="spr player_zan_icon"></a>
+										<a href="javascript:;" onclick="PTTSendClick('btn','zan08','点赞')" title="点赞" class="spr player_zan_icon"></a>
 										<span class="player_share_num">53</span>
 										<span class="player_pl_time">2017-06-01 18:01</span>
 									</div>

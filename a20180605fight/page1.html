@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="Description" content=" " />
+<meta name="Keywords" content="" />
+<title></title>
+<script>
+(function (win,doc){
+    if (!win.addEventListener) return;
+    var html=document.documentElement;
+    function setFont()
+    {
+        var cliWidth=html.clientWidth;
+        html.style.fontSize=100*(cliWidth/640)+'px';
+    }
+    win.addEventListener('resize',setFont,false);
+    setFont();
+})(window,document);
+</script>
+<style type="text/css" id="style">
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{ margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block }
+ol,ul{  list-style: none }
+body{ -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100% !important; -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none;  word-break: break-all; word-wrap: break-word;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal }
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{  font-weight: inherit }
+strong,i,em{ font-weight: normal;font-style: normal; }
+input,select,form { vertical-align:middle; outline:none; }
+img{border:none;vertical-align: top;}
+a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] {outline: 0;  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a {-webkit-touch-callout: none; text-decoration: none; color: #666666;outline: 0; }
+body,html{background: #dedee2;}
+.hidden{width: 0;height: 0;line-height:0;font-size: 0;visibility: hidden;text-indent: -9999px;display: block;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.wrap{width:100%; height: auto; margin:0 auto;overflow: hidden; position: relative;}
+.wrap_inner{ width: 6.40rem; position: relative; z-index: 10;}
+.spr{ background:url(images/spr.png) no-repeat; background-size:5.71rem 5.15rem;}
+/*header*/
+header{ width: 6.40rem; height:8.40rem; overflow: hidden;}
+.hd_logo{ display: block; width: 1.88rem; height: 0.70rem; margin: 1.12rem 0 0 0; text-indent: -9999px;}
+.hd_para{ width: 100%; text-align: center; color: #f5f5f5; font-size: 0.26rem; line-height: 0.32rem; margin: 4.50rem auto 0; position: relative;}
+.hd_para:before{ content: ""; width: 0.90rem; height: 0; border-top:#a29dc1 solid 1px; position: absolute; left: 0.90rem; top: 50%;}
+.hd_para:after{ content: ""; width: 0.90rem; height: 0; border-top:#a29dc1 solid 1px; position: absolute; right: 0.90rem; top: 50%;}
+.hd_begin{ display: block; width: 3.48rem; height: 1.14rem;background-position:0 -4.01rem; text-indent: -9999px; margin: 0.34rem auto 0;}
+.hd_down{background-position:0 -2.80rem;}
+.content{ width: 6.40rem; padding: 0 0 0.30rem 0;}
+.c_tit{ display: block; height: 0.64rem; text-align: center; line-height: 0.64rem; font-size: 0.34rem; font-weight: bold; color: #fff;  width: 6.40rem; background: url(images/tit2_bg.png) no-repeat; background-size: 6.40rem 0.64rem; margin: 0 auto;}
+.join_btn{ display: block; width: 2.34rem; height: 0.87rem; text-indent: -9999px; margin: 0.10rem auto 0;background-position:0 -1.86rem;}
+.c_para{ width: 100%; text-align: center; color: #a8caeb; font-size: 0.20rem; line-height: 0.26rem; margin: 0.16rem auto;}
+.c_zm_box{ width: 5.80rem; height: 1.88rem; border: #23a5c1 solid 1px; border-radius: 0.18rem; margin: 0 auto; position: relative;overflow: hidden;}
+.c_zm_list{ width: 3.54rem; height: 1.56rem; margin: 0.12rem 0 0 0.62rem; display: flex; justify-content: space-between;}
+.c_zm_list li{ width: 1.67rem; height:0.44rem; padding: 1.12rem 0 0 0; color: #1a568f; font-size: 0.20rem; font-weight: bold; line-height: 0.26rem; text-align:center;}
+.c_zm_list li.g1_gift{ background: url(images/g1_img.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_zm_list li.g2_gift{ background: url(images/g2_img.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_zm_tips{ display: block; width: 0.78rem; height: 1.74rem; background: url(images/p1_tips.png) no-repeat; background-size: 0.78rem 1.89rem; position: absolute; right: 0.46rem; top: -0.05rem; text-align: center; color: #a74210; font-size: 0.22rem; font-weight: bold; line-height: 0.24rem; padding: 0.15rem 0 0 0;}
+.zm_btn_box{ width: 4.88rem; height: 0.88rem; margin: 0.08rem auto 0; display: flex; justify-content: space-between;}
+.zm_rec_btn{ display: block; width: 2.20rem; height: 0.88rem;background-position:-2.50rem -0.88rem; text-indent: -9999px;}
+.zm_lj_btn{background-position:0 -0.86rem;}
+.c_tit2{ width: 6.40rem; background: url(images/tit2_bg.png) no-repeat; background-size: 6.40rem 0.64rem; margin: 0.58rem auto 0;}
+.c_tit2 span{background: linear-gradient(to right, #f7d5bf, #fcefe7);-webkit-background-clip: text;color: transparent;}
+.cl_btn{ display: block; width: 2.99rem; height: 0.88rem;background-position:-2.52rem -1.86rem; text-indent: -9999px; margin: 0.10rem auto 0;}
+.more_gift{ width: 5.60rem; height: 3.0rem; margin: 0.30rem auto 0; border-radius: 0.08rem; background: #1b374d;}
+.c_para2{ color: #a8caeb;}
+.np_list{ width: 6.02rem; margin: 0.22rem auto 0; display: flex; justify-content: space-between;}
+.np_list li{ width: 1.0rem; height: 4.40rem; overflow: hidden;}
+.np_list li.np1{ background: url(images/np_img1.png) no-repeat; background-size: 1.0rem 4.40rem;}
+.np_list li.np2{ background: url(images/np_img2.png) no-repeat; background-size: 1.0rem 4.40rem; margin: 0.40rem 0 0 0;}
+.np_list li.np3{ background: url(images/np_img3.png) no-repeat; background-size: 1.0rem 4.40rem; margin: 0.08rem 0 0 0;}
+.np_list li.np4{ background: url(images/np_img4.png) no-repeat; background-size: 1.0rem 4.40rem; margin: 0.36rem 0 0 0;}
+.np_list li.np5{ background: url(images/np_img5.png) no-repeat; background-size: 1.0rem 4.40rem; margin: 0.75rem 0 0 0;}
+.np_list li.np6{ background: url(images/np_img6.png) no-repeat; background-size: 1.0rem 4.40rem; margin: 0.12rem 0 0 0;}
+.np_name{ display: block; width: 0.87rem; height: 0.33rem; line-height: 0.33rem; text-align: center; border-radius: 0.16rem; color: #ffffff; font-size: 0.18rem; background: #a83324; margin: 3.85rem auto 0;}
+.c_light_para{ width: 100%; text-align: center; color: #dce9f5; font-size: 0.22rem; line-height: 0.28rem; margin: 0.45rem auto 0;}
+.c_light_para span{ font-size: 0.28rem; color: #f6c290; font-weight: bold;}
+.c_light_list{ width: 5.42rem; margin: 0.16rem auto 0; display: flex; justify-content: space-between; position: relative;}
+.c_light_list li{ width: 1.67rem; height: 0.46rem; padding: 1.10rem 0 0 0; color: #1a568f; font-size: 0.20rem; font-weight: bold; line-height: 0.26rem; text-align: center;}
+.c_light_list li.lit1{ background: url(images/lit_img1.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_light_list li.lit2{ background: url(images/lit_img2.png) no-repeat; background-size: 1.67rem 1.56rem; padding: 0.96rem 0 0 0; height: 0.60rem;}
+.c_light_list li.lit3{ background: url(images/lit_img3.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_light_list li.lit5{ background: url(images/lit_img5.png) no-repeat; background-size: 1.49rem 1.40rem;}
+.c_light_list li.lit6{ background: url(images/lit_img6.png) no-repeat; background-size: 1.49rem 1.40rem;}
+.c_light_list li.lit7{ background: url(images/lit_img7.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_light_list li.lit8{ background: url(images/lit_img8.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.c_light_list li.lit9{ background: url(images/lit_img9.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.zm_rec_btn2{ margin: 0.20rem auto 0;}
+.c_light_para2{ width: 3.68rem; margin: 0.60rem 0 0 0.90rem;}
+.c_light_box{ width: 3.20rem; margin: 0.12rem 0 0 0.78rem; position: relative;}
+.c_light_list2{ width: 3.20rem;}
+.c_light_list2 li{ padding: 0.94rem 0 0 0; width: 1.49rem; height: 0.56rem;}
+.c_lit4{ display: block; width: 1.89rem; height: 2.89rem; background: url(images/lit_img4.png) no-repeat; background-size: 1.89rem 2.89rem; position: absolute; right: -2.18rem; top: -0.82rem;}
+.c_tit3{ width: 5.13rem; height: 0.64rem; background: url(images/tit3_bg.png) no-repeat; background-size: 5.13rem 0.64rem; margin: 0.54rem auto 0;}
+.more_list{ width: 5.40rem; margin: 0 auto; display: flex; justify-content: space-between;}
+.more_list li{ width: 1.67rem; height: 1.56rem;}
+.more_list li.ggh{ background: url(images/ggh_img.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.more_list li.yxq{ background: url(images/yxqb_img.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.more_list li.lbct{ background: url(images/lbct_img.png) no-repeat; background-size: 1.67rem 1.56rem;}
+.more_btn_box{ width: 5.66rem; margin: 0.10rem auto 0; display: flex; justify-content: space-between;}
+.ggh_btn{ display: block; width: 1.78rem; height: 0.73rem;background-position:-1.98rem 0; text-indent: -9999px;}
+.yxq_btn{background-position:0 0;}
+.lbct_btn{background-position:-3.93rem 0;}
+.c_tit4{ width: 4.03rem; background: url(images/tit4_bg.png) no-repeat; background-size: 4.03rem 0.64rem; margin: 0.50rem auto 0.20rem;}
+
+.bg_box{ position: absolute; left: 0; top: 0; z-index: 5;}
+.bg1{ width: 6.40rem; height:10.0rem; background: url(images/k_bg1.jpg) no-repeat; background-size: 6.40rem 10.0rem;}
+.bg2{ width: 6.40rem; height: 22.41rem; background: url(images/k_bg2.jpg) no-repeat; background-size: 6.40rem 22.41rem;}
+#afooter{ width: 100%; text-align: center;font-size: 0.18rem; line-height: 0.32rem; padding: 0.18rem 0; background: #000; color: #fff;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="wrap_inner">
+		<header>
+			<h1 class="hidden">拳皇命运双重红包</h1>
+			<a href="//kofd.qq.com/main.shtml" onclick="PTTSendClick('btn','logo','拳皇命运')" class="hd_logo" title="拳皇命运">拳皇命运</a>
+			<p class="hd_para">战队召唤，我需要你！</p>
+			<a href="javascript:;" onclick="PTTSendClick('btn','start','启动游戏')" class="spr hd_begin" title="启动游戏">启动游戏</a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','down','下载游戏')" style="display: none;" class="spr hd_begin hd_down" title="下载游戏">下载游戏</a>
+		</header>
+		<section class="content">
+			<strong class="c_tit">加入我的战队吧，这是我送你的礼物</strong>
+			<p class="c_para">XXX这是XXX为你奉上的战队好礼，希望你笑纳</p>
+			<ul class="c_light_list">
+				<li class="lit7">银币×18888</li>
+				<li class="lit8">绑钻×50</li>
+				<li class="lit9">血之契约×5</li>
+			</ul>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lq01','立即领取')" class="spr join_btn" title="立即领取">立即领取</a>
+			<strong class="c_tit c_tit2">成为领队，招募属于你自己的战队</strong>
+			<p class="c_para">点击下方按钮前往自己的战队招募页面，成功招募还可领取下列好礼哦</p>
+			<div class="c_zm_box">
+				<ul class="c_zm_list">
+					<li class="g1_gift">银币×3000</li>
+					<li class="g2_gift">经验药水×10</li>
+				</ul>
+				<span class="spr c_zm_tips">每<br>日<br>可<br>领<br>取<br><i>3</i><br>次</span>
+			</div>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lq02','立即领取')" class="spr cl_btn" title="立即领取">立即领取</a>
+			<strong class="c_tit c_tit2">更有超多升级礼包，新队友可前往领取</strong>
+			<div class="more_gift"></div>
+			<strong class="c_tit c_tit3">更多精彩，随手了解</strong>
+			<p class="c_para">查攻略领取礼包，更多精彩点击下面按钮，一秒到达哦<br>（也可能不止1秒呵）</p>
+			<ul class="more_list">
+				<li class="ggh"></li>
+				<li class="yxq"></li>
+				<li class="lbct"></li>
+			</ul>
+			<div class="more_btn_box">
+				<a href="javascript:;" onclick="PTTSendClick('btn','ggh','关注公众号')" class="spr ggh_btn" title="关注公众号">关注公众号</a>
+				<a href="javascript:;" onclick="PTTSendClick('btn','yxq','前往游戏圈')" class="spr ggh_btn yxq_btn" title="前往游戏圈">前往游戏圈</a>
+				<a href="javascript:;" onclick="PTTSendClick('btn','lbct','前往礼包中心')" class="spr ggh_btn lbct_btn" title="前往礼包中心">前往礼包中心</a>
+			</div>
+			<strong class="c_tit c_tit4">活动规则</strong>
+		</section>
+	</div>
+	<div class="bg_box">
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+	</div>
+</div>
+<script src="https://game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="https://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+    siteType:"a20180605fight", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"page1", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+    pageName:"首页", //必填项:页面中文名
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+    stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain(); //千万不能忘记！
+</script>
+</body>
+</html>

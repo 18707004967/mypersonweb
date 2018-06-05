@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="gbk">
 <meta name="robots" content="all">
 <meta name="author" content="Tencent-CP">
 <meta name="Copyright" content="Tencent">
@@ -295,8 +295,8 @@ var score = {
 	blue:666
 }
 var allScore = score.yellow + score.blue;
-$(".propress_red").width((score.yellow/allScore*100)+'%')
-$(".propress_red").html(score.yellow)
+$(".propress_yellow").width((score.yellow/allScore*100)+'%')
+$(".propress_yellow").html(score.yellow)
 $(".propress_pk").css('left',(score.yellow/allScore*100)+'%')
 $(".propress_blue").width((score.blue/allScore*100)+'%')
 $(".propress_blue").html(score.blue)

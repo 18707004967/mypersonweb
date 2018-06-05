@@ -297,7 +297,7 @@ var score = {
 var allScore = score.yellow + score.blue;
 $(".propress_red").width((score.yellow/allScore*100)+'%')
 $(".propress_red").html(score.yellow)
-$(".propress_pk").css('left',(score.red/allScore*100)+'%')
+$(".propress_pk").css('left',(score.yellow/allScore*100)+'%')
 $(".propress_blue").width((score.blue/allScore*100)+'%')
 $(".propress_blue").html(score.blue)
 

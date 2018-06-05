@@ -8,10 +8,18 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content="Tencent-TGideas"/>
 <meta name="Copyright" content="Tencent"/>
-<meta name="Description" content="暗黑之书" />
-<meta name="Keywords" content="暗黑之书" />
+<meta name="Description" content="暗黑品类史诗级ARPG手游，《代号-R》高度还原了暗黑经典玩法，美术品质匠心打造，丰富的关卡和完善的剧情，全方位保证玩家的游戏代入感，为玩家带来游戏乐趣同时奉上绝美的视听盛宴。" />
+<meta name="Keywords" content="POE,流放之路,暗黑,暗黑破坏神,大菠萝,暗黑2,暗黑3,破坏神,NGA,暴雪,Blizzard,魔兽,风暴英雄" />
 <title>暗黑之书-官方网站-腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：PAUL | 创建：2018-06-02 -->
 <link rel="stylesheet" type="text/css" href="ossweb-img/css/swiper.min.css">
+<script>
+// 关联代码
+// if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) 
+// {}else{
+//     window.location.href="https://raz.qq.com/cp/a20180602order/ " + window.location.search;
+// }
+</script>
 <script>
 (function (win,doc){
     if (!win.addEventListener) return;
@@ -125,6 +133,7 @@ a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0;}
 /*c3*/
 .c3{height: 9.58rem;}
 .c3-lottery{width: 6.7rem;height: 5.1rem;margin: 0.4rem auto 0;position: relative;}
+.c3-lottery .lottery{width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 5;}
 .c3-lottery img{display: block;width: 100%;height: 100%;}
 .c3-lottery p{width: 100%;color: #949494;font-size: 0.2rem;text-align: center;position: absolute;top: 3.13rem;left: 0;}
 .c3-lottery p b{color: #e87437;}
@@ -154,7 +163,7 @@ a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0;}
 .s-bg{width: 7.5rem;position: relative;}
 .s-bg img{display: block;width: 100%;height: 100%;}
 /*弹窗*/
-.pop{background-repeat: no-repeat;background-size: 100% 100%;position: relative;font-family: '\5FAE\8F6F\96C5\9ED1';display: block;}
+.pop{background-repeat: no-repeat;background-size: 100% 100%;position: relative;font-family: '\5FAE\8F6F\96C5\9ED1';display: none;}
 .pop-clo{background-position: -4.67rem -0.53rem;width: 0.4rem;height: 0.4rem;text-indent: -99.99rem;position: absolute;top: -0.59rem;right: 0.04rem;z-index: 5;}
 .pop-t1{height: 0.59rem;color: #666;font-size: 0.4rem;text-align: center;padding-top: 0.44rem;}
 .pop-t2{line-height: 0.48rem;text-align: center;padding: 0.32rem 0 0.26rem;}
@@ -215,6 +224,8 @@ a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0;}
 .pop5,.pop6{background-image: url(ossweb-img/pop-bg2.png);width: 7.0rem;height: 4.63rem;}
 .pop7,.pop8{background-image: url(ossweb-img/pop-bg3.png);width: 7.2rem;height: 9.07rem;}
 .pop8{height: 8.0rem;}
+/*foot*/
+.foot{ font-size:0.20rem; color:#FFF; text-align:center; background:#1b1b1b; padding:0.18rem 0 0.18rem 0; line-height:0.30rem;}
 </style>
 </head>
 <body>
@@ -354,7 +365,8 @@ a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0;}
         <div class="c3 c">
             <h2 class="hidden">全民抽奖 壕礼相送</h2>
             <p class="c1-p1">活动期间，预约游戏、绑定手机、成功邀请好友都可获得抽奖机会！</p>
-            <div class="c3-lottery" id="lotterycontent">
+            <div class="c3-lottery">
+            	<div class="lottery" id="lotterycontent"></div>
                 <img src="ossweb-img/lott.jpg" height="510" width="670" alt="抽奖" />
                 <p>我的剩余抽奖次数：<b>10次</b></p>
             </div>
@@ -575,21 +587,22 @@ a {-webkit-touch-callout: none; text-decoration: none; color: #333;outline: 0;}
         <img src="ossweb-img/ewm3.png" class="pop-ewm" height="124" width="124" alt="二维码" />
     </div>
 </div>
-<script src="https://ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
-<script src="https://ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
-<script src="https://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
-<script src="https://game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script src="http://game.gtimg.cn/images/js/delottery/lottery.js"></script>
 <script src="ossweb-img/js/swiper-3.4.2.jquery.min.js"></script>
-<script src="https://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="http://game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
 //弹窗
 function showDia(id){
     showDialog.show({id:id,bgcolor:"#000000",opacity:70});
 }
-//抽奖
 var lott=function(uid){
     var iFontSize = document.documentElement.clientWidth/750;
     var pos = 0+"_"+0+","+(170*iFontSize)+"_"+0+","+(340*iFontSize)+"_"+0+","+(510*iFontSize)+"_"+0+","+(510*iFontSize)+"_"+(175*iFontSize)+","+(510*iFontSize)+"_"+(350*iFontSize)+","+(340*iFontSize)+"_"+(350*iFontSize)+","+(170*iFontSize)+"_"+(350*iFontSize)+","+0+"_"+(350*iFontSize)+","+0+"_"+(175*iFontSize);
+
     //点击开始抽奖 通知js flash->js
     //开始抽奖lottery->js
     function callJsToStart() {
@@ -608,18 +621,19 @@ var lott=function(uid){
     var lottery = new Lottery({
         'lighturl': '//ossweb-img.qq.com/images/js/delottery/sel.png',//外部光圈png 不填写就用默认的效果
         'starturl': '//ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
-        'total':10,
         'width':670*iFontSize,
         'height':510*iFontSize,
+        'total': 10,//抽奖产品的总数
         'sbtnx':198*iFontSize,
         'sbtny':191*iFontSize,
         'sbtnw':270*iFontSize,
         'sbtnh':111*iFontSize,
         'boxw':160*iFontSize,
         'boxh':160*iFontSize,
-        'position':pos,
-        'contentId' : uid,
-        'ontouchendRollEvent': callJsToStart,//对应上面接口
+        'position': pos,
+        //奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+        'contentId': uid,//嵌入lottery 的div层的 id 
+        'onClickRollEvent': callJsToStart,//对应上面接口
         'onCompleteRollEvent': callJsToComplete //对应上面接口
     });
 }

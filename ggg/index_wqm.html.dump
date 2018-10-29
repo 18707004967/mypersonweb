@@ -770,6 +770,7 @@ table{ border-collapse: collapse; }
 <!-- 很抱歉   End -->
 <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
 <script src="//game.gtimg.cn/images/wdqy/cp/a20180716orderm/tz_jq.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
 <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
 <script>
 //滚动添加吸底
@@ -834,13 +835,63 @@ function hideDia() {
 	});
 }
 </script>
-<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script>
+// 创建cookie
+function setCookie(c_name, value, expiredays) {
+	var exdate = new Date();
+	exdate.setDate(exdate.getDate() + expiredays);
+	document.cookie = c_name + "=" + escape(value) +
+		((expiredays == null) ? "" : "; expires=" + exdate.toGMTString());
+}
+// 读取cookie
+function getCookie(c_name) {
+	if (document.cookie.length > 0) {
+		c_start = document.cookie.indexOf(c_name + "=");
+		if (c_start != -1) {
+			c_start = c_start + c_name.length + 1;
+			c_end = document.cookie.indexOf(";", c_start)
+
+			if (c_end == -1) {
+				c_end = document.cookie.length;
+			}
+			return unescape(document.cookie.substring(c_start, c_end));
+		}
+	}
+	return "";
+}
+var openid; // 用户openid
+var nickname; // 用户昵称
+var headimgurl; //用户头像
+// 检查cookie
+function checkCookie() {
+	userinfo = getCookie('userinfo');
+
+	if (userinfo != null && userinfo != "" && userinfo != "null,null,null") { // 有相应cookie，读取用户信息
+		var strArr = userinfo.split(',');
+		openid = strArr[0];
+		nickname = strArr[1];
+		headimgurl = strArr[2];
+
+	} else { // 没有相应cookie，重新授权并写入cookie
+		openid = getUrlParam("openid");
+		nickname = getUrlParam("nickname");
+		headimgurl = getUrlParam("headimgurl");
+
+		/*
+		此处为“跳转授权，获取用户信息代码”。上篇分享过，这里省略... ...
+		*/
+
+		var strInfo = openid + "," + nickname + "," + headimgurl;
+		setCookie('userinfo', strInfo, 365); // 创建cookie，cookie的名称、值以及过期天数。
+	}
+}
+checkCookie();
+</script>
 <script src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
 <script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
 <!-- mark -->
 <script src="//wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script>
 <script>
-checkCookie()
 if (milo.request('vconsole')) vConsole = new VConsole(); // mark
 
 var inCode = milo.request('inCode');
@@ -850,7 +901,7 @@ var hasReserve = false; // 是否预约
 var activity = 0; // 活跃值
 var energy = 0; // 能量
 var sData = {
-	iDevice: '0' // PC
+	iDevice: '1' // H5
 };
 
 milo.ready(function() {
@@ -1032,7 +1083,7 @@ $('#sendBtn').click(function() {
 // 提交预约信息
 $('#submitBtn').click(function() {
 	if (hasLogin) {
-		var platId = $('#platCheckBox').children('a.on').data('platid');
+		var platId = $('#platCheckBox').children('a.cur').data('platid');
 		var mobile = $('#mobileInput').val();
 		var vftCode = $('#vftCodeInput').val();
 		var inCode = $('#inCodeInput').val();
@@ -1074,6 +1125,10 @@ $('#submitBtn').click(function() {
 			},
 			fFlowSubmitEnd: function(res) {
 				console.log('预约:', res); // mark
+				if (res.jData.ret !== '0') {
+					alert(res.jData.msg);
+					return;
+				}
 
 				amsCfg_507975 = {
 					iAMSActivityId: '164339',
@@ -1384,59 +1439,6 @@ function isWeiXin() {
 function isIOS() {
 	return /iPad|iPhone|iPod/.test(navigator.userAgent);
 }
-
-
-
-  // 创建cookie
-      function setCookie(c_name, value, expiredays){
-        var exdate = new Date();
-        exdate.setDate(exdate.getDate() + expiredays);
-        document.cookie = c_name+ "=" + escape(value) + 
-        ((expiredays==null) ? "" : "; expires="+exdate.toGMTString());
-      }
-      // 读取cookie
-      function getCookie(c_name){ 
-        if(document.cookie.length > 0){ 
-          c_start = document.cookie.indexOf(c_name + "=");
-          if(c_start != -1){ 
-            c_start = c_start + c_name.length + 1 ;
-            c_end = document.cookie.indexOf(";", c_start)
-      
-            if(c_end == -1){
-              c_end = document.cookie.length;
-            }
-            return unescape(document.cookie.substring(c_start, c_end));
-          } 
-        }
-        return "";
-        }
-         var openid; // 用户openid
-      var nickname; // 用户昵称
-      var headimgurl; //用户头像
- 
-      // 检查cookie
-      function checkCookie(){
-        userinfo = getCookie('userinfo');
-        
-        if(userinfo != null && userinfo != "" && userinfo != "null,null,null"){ // 有相应cookie，读取用户信息
-          var strArr = userinfo.split(',');
-          openid = strArr[0]; 
-          nickname = strArr[1]; 
-          headimgurl = strArr[2];
- 
-        }else{ // 没有相应cookie，重新授权并写入cookie
-          openid = getUrlParam("openid"); 
-          nickname = getUrlParam("nickname"); 
-          headimgurl = getUrlParam("headimgurl");
-          
-          /* 
-            此处为“跳转授权，获取用户信息代码”。上篇分享过，这里省略... ...
-          */
- 
-          var strInfo = openid + "," + nickname + "," + headimgurl;
-          setCookie('userinfo', strInfo, 365); // 创建cookie，cookie的名称、值以及过期天数。
-        }
-    }
 </script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>

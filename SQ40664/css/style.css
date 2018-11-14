@@ -135,6 +135,30 @@
           overflow: hidden;
           border-radius: 0.7rem;
           margin: 0.35rem 0 0 0.525rem; }
+          .strategy_wrapper .strategy_in_box .strategy_i_qlist li .strategy_i_imgbox .strategy_mon {
+            width: 100%;
+            height: 2.575rem;
+            background: linear-gradient(to top right, #cd2366, #f9976a);
+            line-height: 2.575rem;
+            font-size: 1.875rem;
+            color: #fff9ef;
+            font-weight: bold;
+            font-family: 'Impact';
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden; }
+            .strategy_wrapper .strategy_in_box .strategy_i_qlist li .strategy_i_imgbox .strategy_mon span {
+              font-size: 0.45rem; }
+          .strategy_wrapper .strategy_in_box .strategy_i_qlist li .strategy_i_imgbox .strategy_fw {
+            width: 100%;
+            height: 0.925rem;
+            line-height: 0.925rem;
+            font-size: 0.5rem;
+            text-align: center;
+            color: #010103;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
           .strategy_wrapper .strategy_in_box .strategy_i_qlist li .strategy_i_imgbox img {
             display: block;
             width: 100%;

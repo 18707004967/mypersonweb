@@ -160,6 +160,33 @@ $img:'../images';
                         overflow: hidden;
                         border-radius: rem(28);
                         margin: rem(14) 0 0 rem(21);
+                        .strategy_mon{
+                            width: 100%;
+                            height: rem(103);
+                            background: linear-gradient(to top right,#cd2366,#f9976a);
+                            line-height: rem(103);
+                            font-size: rem(75);
+                            color: #fff9ef;
+                            font-weight: bold;
+                            font-family: 'Impact';
+                            text-align: center;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            span{
+                                font-size: rem(18);
+                            }
+                        }
+                        .strategy_fw{
+                            width: 100%;
+                            height: rem(37);
+                            line-height: rem(37);
+                            font-size:rem(20);
+                            text-align: center;
+                            color: #010103;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
                         img{
                             display: block;
                             width: 100%;

@@ -106,6 +106,50 @@ td,th,ul,ol{padding:0;list-style-type:none;}
 .bg3{ background:url(../ossweb-img/bg3.jpg) no-repeat center top;}
 .bg4{ background:url(../ossweb-img/bg4.jpg) no-repeat center top;}
 
+.marquee {
+    animation: marque-animation 17s linear infinite;
+    -webkit-animation: marque-animation 17s linear infinite;
+    white-space: nowrap;
+}
+.marquee .marquee-content {
+    display: flex;
+}
+.marquee:hover {
+    animation-play-state: paused;
+}
+.marquee-container {
+    flex: 0 0 800px;
+    overflow: hidden;
+    position: relative;
+}
+.marquee-container .marquee-mask {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 150px;
+    /* background: -webkit-linear-gradient(left, transparent, #131239); /* Safari 5.1 - 6.0 */
+    /* background: -o-linear-gradient(right, transparent, #131239); /* Opera 11.1 - 12.0 */
+    /* background: -moz-linear-gradient(right, transparent, #131239); /* Firefox 3.6 - 15 */
+    /* background: linear-gradient(to right, transparent, #131239); */
+}
+.marquee-item {
+    flex: 0 0 auto;
+    /*color: #b9b8d9;*/
+}
+.marquee-item span {
+    /*color: #4afbff;*/
+}
+
+@keyframes marque-animation{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-271%);
+    }
+}
+
 /*dialog*/
 .elec_dia_wrap{ width: 100%; height: 100%; background: rgba(0,0,0,0.7); position: fixed; left: 0; top: 0; z-index: 9999; }
 .elec_dialog{ width: 1028px; height: 502px; background: url(../ossweb-img/elec_d1_bg.jpg) no-repeat; position: absolute; left: 50%; top: 50%; margin: -251px 0 0 -514px; }

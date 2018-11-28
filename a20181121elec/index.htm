@@ -393,11 +393,22 @@
 	    		<span class="elec_c3_prev"></span>
 	    		<span class="elec_c3_next"></span>
 	    	</div>
-	    	<div class="elec_c3_nv"></div>	
-	    	<div class="elec_pm_box">
-	    		<strong class="elec_pm_stu"><span class="elec_pm_lb"></span>学生反馈</strong>
-	    		<p class="elec_pm_in"></p>
-	    	</div>
+	    	<div class="elec_c3_nv"></div>
+	    	<div class="feedback">
+			    <div class="robot"></div>
+			    <div class="feedback-content elec_pm_box">
+			        <strong class="elec_pm_stu"><span class="elec_pm_lb"></span>学生反馈</strong>
+			        <div class="marquee-container elec_pm_in">
+			            <div class="marquee">
+			                <span class="marquee-item"><span>余xiao霜：</span>学习成长之路永无止境，建灯塔的人还是很有必要的，感谢腾讯游戏学院。</span>
+			                <span class="marquee-item"><span>da：</span>学习成长之路永无止境，建灯塔的人还是很有必要的，感谢腾讯游戏学院。</span>
+			                <span class="marquee-item"><span>huge：</span>学习成长之路永无止境，建灯塔的人还是很有必要的，感谢腾讯游戏学院。</span>
+			                <span class="marquee-item"><span>余xiao霜：</span>学习成长之路永无止境，建灯塔的人还是很有必要的，感谢腾讯游戏学院。</span>
+			            </div>
+			            <div class="marquee-mask"></div>
+			        </div>
+			    </div>
+			</div>
 	    	<h2 class="elec_t1 elec_t2">金牌讲师</h2>
 	    	<div class="elec_c2_box">
 	    		<div class="elec_c2_in">
@@ -1037,96 +1048,6 @@ pdJt(s2,$('.elec_c3_prev',true),$('.elec_c3_next',true))
 pdJt(s4,$('.elec_c5_prev',true),$('.elec_c5_next',true))
 // pdJt(s4,$('.elec_c5_prev'),$('.elec_c5_next'));
 
-
-
-//跑马灯
-var runStart = true;
-function Runworld(data){
-    this.option = {};
-    this.setTime = null;
-    this.setTime2 = null;
-    this.num = 0;
-    this.trans = 0;
-    this.option.data  = {
-        speed:0.5
-    }
-    for(var key in data){
-    	this.option.data[key] = data[key];
-    }
-    console.log(this.option.data)
-    this.init();
-};
-Runworld.prototype.init = function(){
-    this.append();
-    this.run();
-};
-//跑马灯运动
-Runworld.prototype.run = function(){
-    var self = this;
-    var sj = this.option.data;
-    if (this.setTime!==null) { clearInterval(this.setTime)};
-    this.setTime = setInterval(function(){
-    	if (runStart==true) {
-	        self.trans += sj.speed;
-	        var wid = $(sj.wrapid,true).getElementsByTagName('span')[0].offsetWidth;
-	        css($(sj.wrapid,true).getElementsByTagName('span')[0],'marginLeft',-self.trans+'px')
-	        if(self.trans >= wid){
-	           self.trans = 0;
-	           $(sj.wrapid,true).getElementsByTagName('span')[0].remove(); 
-	        }
-    		
-    	}
-    },60/1000)
-}
-//添加内容
-Runworld.prototype.append = function(){
-    if (this.setTime2!==null) { clearInterval(this.setTime2)};
-    var data = this.option.data;
-    var self = this;
-    if(data.data.length>=4){
-        for (var i = 0; i < 4; i++) {
-            $(this.option.data.wrapid,true).innerHTML+='<span><strong>'+data.data[i].name+'：</strong>'+ data.data[i].des +'</span>';
-            this.num ++ ;
-            this.num %= data.data.length;
-        }
-    }
-    this.setTime2 = setInterval(function(){
-        if($(data.wrapid,true).getElementsByTagName('span').length<=4){
-            $(self.option.data.wrapid,true).innerHTML+='<span><strong>'+data.data[self.num].name+'：</strong>'+ data.data[self.num].des +'</span>';
-            self.num++;
-            self.num %= data.data.length;
-        }
-    },30) 
-}
-window.Runworld = Runworld;
-
-//跑马灯
-var pmData = [
-    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
-    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
-    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
-    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
-    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
-    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
-    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
-    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
-    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
-    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
-];
-var runworld = new Runworld({
-    wrapid:'.elec_pm_in',
-    data:pmData,
-    speed:0.3,
-})
-
-$('.elec_pm_in',true).onmouseenter = function(){
-	console.log(runStart)
-	runStart = false;
-}
-$('.elec_pm_in',true).onmouseleave = function(){
-	console.log(runStart)
-	runStart = true;
-}
 function TGDialogS(id){
 	css($('#'+id,true),'display','block')
 }

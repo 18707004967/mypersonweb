@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="2017年9月，腾讯游戏学院为有志于成为游戏策划而又缺少经验的高校大学生，开展了新一轮的游戏策划公开课。历时3个月， 共开设16门专项课程，将覆盖游戏文化与游戏文学、游戏心理学、MMO关卡设计基础、系统策划基础教程等课题。 腾讯游戏学院，给每一个热爱游戏的少年，实现梦想和自我的机会！" />
+<meta name="Keywords" content="腾讯游戏，腾讯互动娱乐，腾讯游戏学院，梦想校园行，游戏策划公开课，游戏策划，游策公开课，校园活动，校园行，走进校园，高校学生学习，游戏学院，天涯明月刀，QQ自由幻想，自由幻想，QQ幻想世界，斗战神，全民飞机大战，天天炫斗，轩辕传奇，一人之下，火影忍者，游戏策划，游戏心理学，游戏策划基础，玩法设计基础，游戏数值设计，游戏关卡和战斗设计，系统策划基础，minigame,游戏专业，游戏实训，游戏美术，专业游戏开发，游戏设计，游戏原画" />
+<title>游戏美术设计方法与实践选修课-腾讯游戏学院-成就游戏梦想！</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2018-11-21 -->
+</head>
+<body>
+<link rel="canonical" href="//gameinstitute.qq.com/tig/css/global/global.css">
+<link rel="stylesheet" href="css/style.css">
+        <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .map-container {
+            width: 1180px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 50px 0;
+            min-height: 680px;
+        }
+        .map {
+            width: 705px;
+            height: 511px;
+            margin: 70px auto 50px auto;
+            background: #f7f7f7 url(//gad.qpic.cn/tig/img/global/404.png) no-repeat center;
+            background-size: 100% 100%;
+        }
+    </style>
+    <script src="//js.aq.qq.com/js/aq_common.js"></script>
+</head>
+<body>
+   <div id="_app"
+             >
+        <header class="m-header header-cur-">
+    <div class="header-wrap">
+        <a class="header-logo" href="/"><img width="292" height="44" src="//gad.qpic.cn/tig/img/global/logo.png" alt=""></a>
+        <div class="header-nav">
+            <ul class="navbar">
+                <li class="navbar-item navbar-item-home">
+                    <h3 class="navbar-title"><a class="link" href="/">首页<sub class="lang-en">HOME</sub></a></h3>
+                </li>
+                <li class="navbar-item navbar-item-beginners">
+                    <h3 class="navbar-title"><a class="link" href="//gameinstitute.qq.com/beginner">筑梦成长<sub class="lang-en">BEGINNERS</sub></a></h3>
+                </li>
+                <li class="navbar-item navbar-item-campus">
+                    <h3 class="navbar-title">校园启梦<sub class="lang-en">CAMPUS</sub></h3>
+                    <ul class="navbar-menu">
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/college/lecture">高校讲堂</a></li>
+                        <!-- <li class="menu-item"><a class="link" href="javascript:;" >校企合作课程</a></li> -->
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/college/competition">高校大赛</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/minigame">优秀MiniGame</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item navbar-item-advanced">
+                    <h3 class="navbar-title">伴梦前行<sub class="lang-en">ADVANCED</sub></h3>
+                    <ul class="navbar-menu">
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/course">精选课程</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/hot-column">热门专栏</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item navbar-item-industry">
+                    <h3 class="navbar-title">生态共赢<sub class="lang-en">INDUSTRY</sub></h3>
+                    <ul class="navbar-menu">
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/tgdc/2018">TGDC</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/innovativegames">腾讯游戏创意大赛</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/gameshow">游戏品鉴会</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/hatch/project/hatch-project-list">扶持案例</a></li>
+                        <li class="menu-item"><a class="link" href="//gameinstitute.qq.com/community">开发者社区</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item navbar-item-aboutus">
+                    <h3 class="navbar-title"><a class="link" href="//gameinstitute.qq.com/aboutus">关于我们<sub class="lang-en">ABOUT&nbsp;US</sub></a></h3>
+                </li>
+            </ul>
+        </div>
+        <div class="header-tools">
+            <div class="search">
+                <div class="search-enter"><i class="gico-search"><!--搜索--></i></div>
+                <div class="search-area">
+                    <form action="/search/course" method="get" target="_blank">
+                        <input class="search-key" name="keywords" type="text" placeholder="输入关键词...">
+                        <button class="search-btn" type="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+            <div class="login">
+                                <div class="login-before" v-show="!IS_LOGIN">你好，请<a class="link" href="javascript:;" @click="login()">[登录]</a></div>
+                <div class="login-after" v-show="IS_LOGIN" v-cloak>
+                    <a class="username" target="_blank" href="/user" v-text="USER_INFO.user_name"></a>
+                    <a class="link" href="#" @click="logOut">[注销]</a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>
+</div>
+
+
+        <login ref="login" @getuserinfo="getUserInfo"></login>
+    </div>
+
+<div class="elec_wrap">	
+	<div class="elec_wrap_inner">
+		<div class="elec_head">
+			<h1 class="hidden">游戏美术设计方法与实践选修课</h1>
+			<p class="elec_hd_para"><span class="elec_hd_icon"></span>腾讯游戏学院携手腾讯互动娱乐光子工作室群美术中心与广州美术学院开设的“游戏美术设计方法与实践”选修课，共有9门课程，合计32课时，课程于2018年9月正式开课，由腾讯游戏光子工作室群专业能力突出且经验丰富的美术专家担纲授课讲师。课程涵盖游戏美术概论、特效、3D角色制作技巧、原画、渲染技术等内容，将系统化提升高校青年人才在游戏美术设计方面的理解力、创造力、专业技能和职业素养。课程结束后将通过个人作品设计、课堂作业等方式对学生进行考核。</p>
+		</div>
+	    <div class="elec_content">
+	    	<h2 class="elec_t1">课程收获</h2>
+	    	<ul class="elec_c1_list">
+	    		<li>
+	    			<strong class="elec_list_tit">游戏美术技能</strong>
+	    			<p class="elec_list_des">帮助你对游戏美术专业有初步认识，对美术工作职责和工作技能有一定的掌握！</p>
+	    		</li>
+	    		<li class="elec_b2">
+	    			<strong class="elec_list_tit">游戏美术设计实践</strong>
+	    			<p class="elec_list_des">通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！</p>
+	    		</li>
+	    		<li class="elec_b3">
+	    			<strong class="elec_list_tit">腾讯实习OFFER</strong>
+	    			<p class="elec_list_des">有机会获得腾讯游戏的实习offer，期待你的加入！</p>
+	    		</li>
+	    	</ul>
+
+	    	<h2 class="elec_t1 elec_t3">课程内容</h2>
+	    	<div class="elec_c3_box">
+	    		<div class="elec_c3_in">
+	    			<ul class="elec_c3_list swiper-wrapper">
+	    				<li class="elec_c3_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name elec_v_name2"><span>用笔创造快乐用笔创造快乐</span></strong>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask elec_v_mask2">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask elec_v_mask2">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:;" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_v_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    								<div class="elec_v_mask">
+	    									<span class="elec_v_icon"></span>
+	    									<p class="elec_v_des"><strong>讲师姓名</strong>：肖霄<br><strong>课程简介</strong>：通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的</p>
+	    								</div>
+	    							</a>
+	    							<strong class="elec_v_name"><span>用笔创造快乐</span></strong>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<span class="elec_c3_prev"></span>
+	    		<span class="elec_c3_next"></span>
+	    	</div>
+	    	<div class="elec_c3_nv"></div>	
+	    	<div class="elec_pm_box">
+	    		<strong class="elec_pm_stu"><span class="elec_pm_lb"></span>学生反馈</strong>
+	    		<p class="elec_pm_in"></p>
+	    	</div>
+	    	<h2 class="elec_t1 elec_t2">金牌讲师</h2>
+	    	<div class="elec_c2_box">
+	    		<div class="elec_c2_in">
+	    			<ul class="elec_c2_list swiper-wrapper">
+	    				<li class="swiper-slide elec_sub_li">
+	    					<ul>
+	    						<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li class="elec_four">
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+	    					</ul>
+	    				</li>
+	    				<li class="swiper-slide elec_sub_li">
+	    					<ul>
+	    						<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li class="elec_four">
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+	    					</ul>
+	    				</li>
+	    				<li class="swiper-slide elec_sub_li">
+	    					<ul>
+	    						<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li class="elec_four">
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+	    					</ul>
+	    				</li>
+	    				<li class="swiper-slide elec_sub_li">
+	    					<ul>
+	    						<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li>
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+			    				<li class="elec_four">
+			    					<div class="elec_hd2_box">
+			    						<img src="ossweb-img/elec_per_img1.png" class="elec_per_img" width="227" height="311" alt="">
+			    						<strong class="elec_per_name">肖<br>霄</strong>
+			    						<p class="elec_per_des">腾讯互动娱乐<br>光子工作室群美术中心<br>美术宣传组副总监</p>
+			    						<div class="elec_hov_box">
+			    							<span class="elec_hov_top">简介<i></i></span>
+			    							<p class="elec_hov_para">美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副总监美术宣传组副监总监</p>
+			    						</div>
+			    					</div>
+			    				</li>
+	    					</ul>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<span class="elec_c2_prev"></span>
+	    		<span class="elec_c2_next"></span>
+	    	</div>
+	    	<div class="elec_c2_nv"></div>
+	    	<h2 class="elec_t1 elec_t4">直击现场</h2>
+	    	<div class="elec_c4_box">
+	    		<div class="elec_c4_in swiper-wrapper">
+	    			<img src="ossweb-img/elec_c4_img1.jpg" class="elec_c4_img swiper-slide" alt="">
+	    			<img src="ossweb-img/elec_c4_img1.jpg" class="elec_c4_img swiper-slide" alt="">
+	    			<img src="ossweb-img/elec_c4_img1.jpg" class="elec_c4_img swiper-slide" alt="">
+	    			<img src="ossweb-img/elec_c4_img1.jpg" class="elec_c4_img swiper-slide" alt="">
+	    			<img src="ossweb-img/elec_c4_img1.jpg" class="elec_c4_img swiper-slide" alt="">
+	    		</div>
+	    		<div class="elec_c4_nv"></div>
+	    	</div>
+	    	<h2 class="elec_t1 elec_t5">优秀设计作品</h2>
+	    	<div class="elec_c3_box elec_c5_box">
+	    		<div class="elec_c5_in">
+	    			<ul class="elec_c3_list swiper-wrapper">
+	    				<li class="elec_c3_subli elec_c5_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli elec_c5_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli elec_c5_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="elec_c3_subli elec_c5_subli swiper-slide">
+	    					<ul>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li>
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_three">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    						<li class="elec_bottom_last">
+	    							<a href="javascript:openelecDia('elec_dialog');" class="elec_c3_imgbox" title="视频">
+	    								<img src="ossweb-img/elec_c5_img1.jpg" width="318" height="190" class="elec_v_img" alt="">
+	    							</a>
+	    							<strong class="elec_c5_name">Shadow Seeker</strong>
+	    							<p class="elec_c5_des">付彪    腾讯互动娱乐 自研游戏业务</p>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<span class="elec_c5_prev"></span>
+	    		<span class="elec_c5_next"></span>
+	    	</div>
+	    </div>
+	    <!-- content E -->
+	</div>
+	<!-- 加载背景 S -->
+	<div class="bg_box">
+		<div class="bg1" delayLoad="d1"><div class="bg_box_in"></div></div>
+	    <div class="bg2" delayLoad="d2"><div class="bg_box_in"></div></div>
+	    <div class="bg3" delayLoad="d3"><div class="bg_box_in"></div></div>
+	    <div class="bg4" delayLoad="d4"><div class="bg_box_in"></div></div>
+	</div>
+	<!-- 加载背景 E -->	
+</div>
+<div class="elec_dia_wrap" id="elec_dialog" style="display: none;">
+<div class="elec_dialog">
+	<a href="javascript:closeDialog();" class="elec_dialog_close" title="关闭">关闭</a>
+	<div class="elec_info_box">
+		<div class="elec_info_in">
+			<div class="elec_hd_wrap">
+				<img src="ossweb-img/elec_dialog_img1.jpg" alt="">
+				<span class="elec_dialog_hdmask"></span>
+			</div>
+			<p class="elec_dialog_namebox">
+				<strong class="elec_dialog_name">阿拉丁</strong>
+				<span class="elec_dialog_dz">阿拉丁阿拉阿拉丁</span>
+			</p>
+		</div>
+		<!-- <strong class="elec_dialog_top">TRAVEL FOR RAINBOW</strong> -->
+		<p class="elec_dialog_jj"><strong>个人简介：</strong>通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课后作业实践，学习实际工作中所需的游戏美术技术！通过游戏美术各维度的课维度的课维度的课维度的课维度的课度的课度的课度的课度的课度的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的的课度的</p>
+	</div>
+	<div class="elec_right_box">
+		<div class="elec_right_in swiper-wrapper">
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc01','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc02','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc03','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc04','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc05','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc06','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc07','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc08','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc09','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc10','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc11','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc12','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc13','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc14','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc15','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc16','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+			<a href="javascript:;" onclick="PTTSendClick('btn','lc17','开始旅程')" class="elec_right_link swiper-slide" title=""><img src="ossweb-img/elec_right_img2.jpg" alt=""></a>
+		</div>
+		<p class="elec_dialog_nv"><span class="elec_dialog_slide">1</span>/<span class="elec_dialog_allnum">25</span></p>
+		<span class="elec_dialog_left"></span>
+		<span class="elec_dialog_right"></span>
+	</div>
+</div>
+	
+</div>
+
+<footer class="m-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="friends">
+                <h3>友情链接</h3>
+                <div class="friends-link">
+                    <a href="//game.qq.com/" target="_blank" rel="nofollow" >腾讯游戏</a>
+                    <span class="split">|</span>
+                    <a href="//daxue.qq.com/" target="_blank" rel="nofollow" >腾讯大学</a>
+                    <span class="split">|</span>
+                    <a href="//ke.qq.com/" target="_blank" rel="nofollow" >腾讯课堂</a>
+                    <span class="split">|</span>
+                    <a href="//tgideas.qq.com/" target="_blank" rel="nofollow" >TGideas</a>
+                    <span class="split">|</span>
+                    <a href="//ieg.tencent.com/" target="_blank" rel="nofollow" >腾讯互动娱乐</a>
+                </div>
+            </div>
+            <div class="aboutus">
+                <div class="sitelink"><a href="/" rel="nofollow" >网站导航</a>
+                    <a href="/web2017/fresh-create-home.shtml" rel="nofollow" >新人筑梦</a>
+                    <a href="/web2017/dreaming-forward-home.shtml" rel="nofollow" >伴梦前行</a>
+                    <a href="//gameinstitute.qq.com/aboutus" rel="nofollow" >关于我们</a></div>
+                <p>COPYRIGHT &#x00A9; 1998 – 2018 TENCENT. ALL RIGHTS RESERVED. </p>
+            </div>
+        </div>
+        <div class="followus">
+            <h3>关注我们</h3>
+            <div class="thumb"><img width="120" height="120" src="//gad.qpic.cn/tig/img/global/qrcode.png" alt=""></div>
+            <p>腾讯游戏学院公众号</p>
+        </div>
+    </div>
+</footer>
+<script src="ossweb-img/swiper.js"></script>
+<script>var _mtac={};(function(){var b=document.createElement("script");b.src="//pingjs.qq.com/h5/stats.js?v2.0.2";b.setAttribute("name","MTAH5");b.setAttribute("sid","500607596");var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();</script>
+<script>
+// class类获取
+function $(id,bool){
+	if (bool==true) {
+		return document.querySelector(id) || document.body.querySelector(id);
+	}else{
+		return document.querySelectorAll(id) || document.body.querySelectorAll(id);
+	}
+	
+}
+function css(obj,classlist,sty){
+	if (obj.length>0) {
+		for (var i = 0; i < obj.length; i++) {
+			obj[i].style[classlist] = sty;
+		}
+	}else{
+		obj.style[classlist] = sty;
+	}
+	
+}
+
+function hasClass( elements,cName ){ 
+  return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); 
+}; 
+function addClass( elements,cName ){ 
+  if( !hasClass( elements,cName ) ){ 
+    elements.className += " " + cName; 
+  }; 
+}; 
+function removeClass( elements,cName ){ 
+  if( hasClass( elements,cName ) ){ 
+    elements.className = elements.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" ), " " );
+  }; 
+};
+
+
+var s1 = new Swiper('.elec_c2_in',{
+	navigation: {
+      nextEl: '.elec_c2_next',
+      prevEl: '.elec_c2_prev',
+    },
+    pagination: {
+    	clickable :true,
+	    el: '.elec_c2_nv',
+	  },
+    on:{
+	    slideChangeTransitionStart:function(){
+	    	pdJt(s1,$('.elec_c2_prev',true),$('.elec_c2_next',true))
+	    }
+	}
+})
+var s2 = new Swiper('.elec_c3_in',{
+	navigation: {
+      nextEl: '.elec_c3_next',
+      prevEl: '.elec_c3_prev',
+    },
+    pagination: {
+    	clickable :true,
+	    el: '.elec_c3_nv',
+	  },
+    on:{
+	    slideChangeTransitionStart:function(){
+	    	pdJt(s2,$('.elec_c3_prev',true),$('.elec_c3_next',true))
+	    }
+	}
+})
+var s3 = new Swiper('.elec_c4_box',{
+	autoplay : 3000,
+	loop:true,
+	
+    pagination: {
+    	clickable :true,
+	    el: '.elec_c4_nv',
+	  },
+})
+var s4 = new Swiper('.elec_c5_in',{
+
+	navigation: {
+      nextEl: '.elec_c5_next',
+      prevEl: '.elec_c5_prev',
+    },
+    on:{
+	    slideChangeTransitionStart:function(){
+	    	pdJt(s4,$('.elec_c5_prev',true),$('.elec_c5_next',true))
+	    }
+	}
+})
+
+
+var s5 = null;
+function newSfive(){
+	// if (s5!=null) {s5.destroy(false)}
+	s5 = new Swiper('.elec_right_box',{
+		 on:{
+		    slideChangeTransitionStart:function(){
+		    	swifive()
+		    	console.log(s5.slides.length)
+		    	$('.elec_dialog_allnum',true).innerHTML = s5.slides.length;
+		      	$('.elec_dialog_slide',true).innerHTML = s5.activeIndex+1;
+		    }
+		},
+		navigation: {
+	      nextEl: '.elec_dialog_right',
+	      prevEl: '.elec_dialog_left',
+	    },
+	    observer:true,
+    	observeParents:true,
+	})
+	$('.elec_dialog_slide',true).innerHTML = s5.activeIndex+1;
+	$('.elec_dialog_allnum',true).innerHTML = s5.slides.length;
+	swifive()
+}
+
+function swifive(){
+	if (s5.activeIndex<=0) {
+		addClass($('.elec_dialog_left',true),'left2')
+	}else if(s5.activeIndex>=s5.slides.length-1){
+		addClass($('.elec_dialog_right',true),'right2')
+	}else{
+		
+		removeClass($('.elec_dialog_left',true),'left2')
+		removeClass($('.elec_dialog_right',true),'right2')
+	}
+}
+
+function pdJt(obj1,obj2,obj3){
+
+	if(obj1.activeIndex<=0){
+		css(obj2,'opacity',0.4)
+	}else if (obj1.activeIndex>=obj1.slides.length-1) {
+		css(obj3,'opacity',0.4)
+	}else{
+		css(obj2,'opacity',1)
+		css(obj3,'opacity',1)
+	}
+}
+
+pdJt(s1,$('.elec_c2_prev',true),$('.elec_c2_next',true))
+pdJt(s2,$('.elec_c3_prev',true),$('.elec_c3_next',true))
+pdJt(s4,$('.elec_c5_prev',true),$('.elec_c5_next',true))
+// pdJt(s4,$('.elec_c5_prev'),$('.elec_c5_next'));
+
+
+
+//跑马灯
+var runStart = true;
+function Runworld(data){
+    this.option = {};
+    this.setTime = null;
+    this.setTime2 = null;
+    this.num = 0;
+    this.trans = 0;
+    this.option.data  = {
+        speed:0.5
+    }
+    for(var key in data){
+    	this.option.data[key] = data[key];
+    }
+    console.log(this.option.data)
+    this.init();
+};
+Runworld.prototype.init = function(){
+    this.append();
+    this.run();
+};
+//跑马灯运动
+Runworld.prototype.run = function(){
+    var self = this;
+    var sj = this.option.data;
+    if (this.setTime!==null) { clearInterval(this.setTime)};
+    this.setTime = setInterval(function(){
+    	if (runStart==true) {
+	        self.trans += sj.speed;
+	        var wid = $(sj.wrapid,true).getElementsByTagName('span')[0].offsetWidth;
+	        css($(sj.wrapid,true).getElementsByTagName('span')[0],'marginLeft',-self.trans+'px')
+	        if(self.trans >= wid){
+	           self.trans = 0;
+	           $(sj.wrapid,true).getElementsByTagName('span')[0].remove(); 
+	        }
+    		
+    	}
+    },60/1000)
+}
+//添加内容
+Runworld.prototype.append = function(){
+    if (this.setTime2!==null) { clearInterval(this.setTime2)};
+    var data = this.option.data;
+    var self = this;
+    if(data.data.length>=4){
+        for (var i = 0; i < 4; i++) {
+            $(this.option.data.wrapid,true).innerHTML+='<span><strong>'+data.data[i].name+'：</strong>'+ data.data[i].des +'</span>';
+            this.num ++ ;
+            this.num %= data.data.length;
+        }
+    }
+    this.setTime2 = setInterval(function(){
+        if($(data.wrapid,true).getElementsByTagName('span').length<=4){
+            $(self.option.data.wrapid,true).innerHTML+='<span><strong>'+data.data[self.num].name+'：</strong>'+ data.data[self.num].des +'</span>';
+            self.num++;
+            self.num %= data.data.length;
+        }
+    },30) 
+}
+window.Runworld = Runworld;
+
+//跑马灯
+var pmData = [
+    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
+    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
+    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
+    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
+    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
+    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
+    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
+    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
+    {name:'商丹彤',des:'内容丰富，贴合实际，讲解生动'},
+    {name:'茹天曼',des:'老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专老师讲课很幽默，获得了不少专'},
+];
+var runworld = new Runworld({
+    wrapid:'.elec_pm_in',
+    data:pmData,
+    speed:0.3,
+})
+
+$('.elec_pm_in',true).onmouseenter = function(){
+	console.log(runStart)
+	runStart = false;
+}
+$('.elec_pm_in',true).onmouseleave = function(){
+	console.log(runStart)
+	runStart = true;
+}
+function TGDialogS(id){
+	css($('#'+id,true),'display','block')
+}
+function closeDialog(){
+	css($('.elec_dia_wrap',true),'display','none')
+}
+// TGDialogS('elec_dialog')
+function openelecDia(id){
+	TGDialogS(id)
+	newSfive()
+}
+
+
+
+</script>
+<!--通用统计代码-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+ siteType:"a20181121elec", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+ pageName:"首页", //必填项:页面中文名 
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置 
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置 
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script> 
+</body>
+</html>

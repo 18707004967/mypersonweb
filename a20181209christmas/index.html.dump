@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk">
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="robots" content="all"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Tencent-TGideas"/>
+<meta name="Copyright" content="Tencent"/>
+<meta name="Description" content="《火影忍者》手游作为正版火影忍者格斗手游，由万代南梦宫娱乐与腾讯游戏魔方工作室群共同开发，集英社、皮乐、东京电视台联合监修。在严谨还原《火影忍者》故事精髓的基础上，独创忍术格斗系统，配合CG级的华丽技能表现，尽兴体验酣畅淋漓的格斗连招；更可以自由收集热门忍者，追寻属于自己的英雄忍道！"/>
+<meta name="Keywords" content="火影, 火影忍者, 火影手游, 火影忍者手游, 格斗, 格斗手游, 手游, 火影忍者格斗手游, 火影格斗手游, 动作手游, 鸣人, 佐助, 卡卡西, 我爱罗, 四代, 佩恩, 宇智波, 小樱, 雏田, 大蛇丸, 横版过关, 横版, 横版闯关, 忍术, RPG" />
+<title>圣诞节快乐 - 火影忍者官方网站 - 腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2018-12-09 -->
+<script>
+(function (win,doc){
+    if (!win.addEventListener) return;
+    var html=document.documentElement;
+    function setFont() {
+        var cliWidth=html.clientWidth;
+        html.style.fontSize=100*(cliWidth/640)+'px';
+    }
+    win.addEventListener('resize',setFont,false);
+    setFont();
+})(window,document);
+</script>
+<style type="text/css">
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{ margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;outline: none; }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block }
+ol,ul{  list-style: none }
+body{ -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100% !important; -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none;  word-break: break-all; word-wrap: break-word; }
+h1,h2,h3,h4,h5,h6{ font-weight: normal }
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{  font-weight: inherit }
+html,body{ background: #f1d9b7; }
+strong,i,em{ font-weight: normal;font-style: normal; }
+input,select,form { vertical-align:middle; outline:none; }
+img{border:none;vertical-align: top;}
+a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] {outline: 0;  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a {-webkit-touch-callout: none; text-decoration: none; color: #666666;outline: 0; }
+table{ border-collapse: collapse;}
+.hidden{width: 0;height: 0;line-height:0;font-size: 0;visibility: hidden;text-indent: -9999px;display: block;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.wrap{width:6.40rem; min-height:100vh; position: relative; overflow: hidden;}
+.wrap_inner{ width: 6.40rem; min-height:100vh;  position: relative; z-index: 10;}
+header{ width: 100%; height: 11.34rem; position: relative; overflow: hidden; }
+.h_gift_box{ width: 6.40rem;height: 4.68rem; margin: 3.79rem auto 0; position: relative;}/*//game.gtimg.cn/images/hyrzol/cp/a20181209christmas*/
+.h_g1{ display: block; width: 0.99rem; height: 1.15rem; background: url(ossweb-img/g1.png) no-repeat; background-size: 0.99rem 1.15rem; position: absolute; left: 2.94rem; top: 0.08rem; text-indent: -9999px; -webkit-animation: drop 1s linear infinite; animation: drop 1s linear infinite; }
+@-webkit-keyframes drop{
+  0%{
+   -webkit-filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+           filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+  }
+  50%{
+   -webkit-filter: drop-shadow(0 0 0.01rem rgba(255,253,185,1));
+           filter: drop-shadow(0 0 0.01rem rgba(255,253,185,1));
+  }
+  100%{
+    -webkit-filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+            filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+  }
+}
+@keyframes drop{
+  0%{
+   -webkit-filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+           filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+  }
+  50%{
+   -webkit-filter: drop-shadow(0 0 0.01rem rgba(255,253,185,1));
+           filter: drop-shadow(0 0 0.01rem rgba(255,253,185,1));
+  }
+  100%{
+    -webkit-filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+            filter: drop-shadow(0 0 0.10rem rgba(255,253,185,1));
+  }
+}
+.h_g2{width: 1.01rem; height: 1.12rem; background: url(ossweb-img/g2.png) no-repeat; background-size: 1.01rem 1.12rem;left: 4.46rem; top: 0.55rem;}
+.h_g3{width: 0.96rem; height: 1.07rem; background: url(ossweb-img/g3.png) no-repeat; background-size: 0.96rem 1.07rem;left: 2.63rem; top: 1.13rem;}
+.h_g4{width: 0.95rem; height: 1.07rem; background: url(ossweb-img/g4.png) no-repeat; background-size: 0.95rem 1.07rem;left: 4.92rem; top: 2.12rem;}
+.h_g5{width: 0.96rem; height: 1.08rem; background: url(ossweb-img/g5.png) no-repeat; background-size: 0.96rem 1.08rem;left: 2.59rem; top: 2.34rem;}
+.h_g6{width: 1.02rem; height: 1.12rem; background: url(ossweb-img/g6.png) no-repeat; background-size: 1.02rem 1.12rem;left: 4.93rem; top: 3.57rem;}
+.h_g7{width: 0.96rem; height: 1.06rem; background: url(ossweb-img/g7.png) no-repeat; background-size: 0.96rem 1.06rem;left: 2.18rem; top: 3.63rem;}
+.h_g1.grey{ background: url(ossweb-img/g1_grey.png) no-repeat; background-size: 0.99rem 1.15rem;-webkit-animation: none;animation: none;}
+.h_g2.grey{background: url(ossweb-img/g2_grey.png) no-repeat; background-size: 1.01rem 1.12rem;}
+.h_g3.grey{background: url(ossweb-img/g3_grey.png) no-repeat; background-size: 0.96rem 1.07rem;}
+.h_g4.grey{background: url(ossweb-img/g4_grey.png) no-repeat; background-size: 0.95rem 1.07rem;}
+.h_g5.grey{ background: url(ossweb-img/g5_grey.png) no-repeat; background-size: 0.96rem 1.08rem;}
+.h_g6.grey{background: url(ossweb-img/g6_grey.png) no-repeat; background-size: 1.02rem 1.12rem;}
+.h_g7.grey{background: url(ossweb-img/g7_grey.png) no-repeat; background-size: 0.96rem 1.06rem;}
+.h_dm{ width: 6.40rem; height: 7.40rem; position: absolute; left: 0; top: 3.79rem; pointer-events: none;}
+.dm{ width: 2.86rem; height: 0.71rem; background: url(ossweb-img/h_dm_bg.png) no-repeat; background-size: 2.82rem 0.71rem; position: absolute;left: 2.20rem; top: 0.80rem; display: flex; -webkit-transform-origin:left; transform-origin:left; -webkit-transform: scale(0.7); transform: scale(0.7);  }
+.dm2{ left: 1.78rem; top: 4.60rem;}
+.dm3{left: 4.22rem; top: 1.50rem;}
+.dm4{left: 2.30rem; top: 2.0rem;}
+.dm5{left: 4.40rem; top: 3.0rem;}
+.dm6{left: 2.0rem; top: 3.20rem;}
+.dm7{left: 4.40rem; top: 4.60rem;}
+.dm_img_box{ width: 0.64rem ; height: 0.64rem; border-radius: 50%; overflow: hidden; margin: 0.04rem 0 0 0.04rem; }
+.dm_img_box img{ display: block; width: 100%; height: 100%; font-size: 0; }
+.dm_para{ width:2.0rem;  height: 0.53rem; line-height: 0.53rem; font-size: 0.28rem; color: #bf2808; margin:0.10rem 0 0 0.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; }
+.content{ width: 100%; padding: 0.50rem 0 0.50rem 0; }
+.c_t1{ width: 4.96rem; height: 0.74rem; background: url(ossweb-img/c_t1.png) no-repeat; background-size: 4.96rem 0.74rem; text-indent: -9999px; margin: 
+0 auto; }
+.c_g_wp{ width: 6.40rem; height: 3.98rem; background: url(ossweb-img/c_k.png) no-repeat; background-size: 6.40rem 4.26rem; margin: 0.06rem auto 0; padding: 0.28rem 0 0 0; }
+.c_g_list{ width: 5.64rem; height: 3.73rem; margin: 0 auto ; overflow: hidden; overflow-y: auto; position: relative; z-index: 30;}
+.c_g_list li{ width: 5.64rem; height: 1.23rem; border-bottom: #ecccc5 dashed 0.02rem ; display: flex;}
+.c_img_box{ width: 0.84rem; height: 0.82rem; border-radius: 50%; overflow: hidden; border: #a21f2a solid 0.02rem; background: #ffffff; margin: 0.19rem 0 0 0.40rem;}
+.c_img_box img{ display: block; width: 100%; height: 100%; font-size: 0; }
+.c_para_box{ width: 4.20rem; height: 0.82rem; margin: 0.22rem 0 0 0.14rem; display: flex; align-items: center; }
+.c_para{ width: 100%; font-size: 0.24rem; font-weight: bold; color: #bf2808; line-height: 0.30rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c_t2{ background: url(ossweb-img/c_t2.png) no-repeat; background-size: 4.96rem 0.74rem; margin: 0.22rem auto 0; display: flex; }
+.c_rule_list{ width: 5.20rem; margin: 0.30rem auto 0; height: 3.0rem; overflow: hidden; overflow-y:auto ;  }
+.c_rule_list li{ font-size: 0.24rem; font-weight: bold; color: #bf2808; line-height: 0.30rem; margin: 0 0 0.10rem 0; padding: 0 0 0 0.35rem; text-indent: -0.35rem;}
+.c_rule_list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; 
+}
+.c_rule_list::-webkit-scrollbar-button { 
+  width: 0; 
+  height: 0; 
+}
+.c_rule_list::-webkit-scrollbar-corner { 
+  display: block; 
+}
+.c_rule_list::-webkit-scrollbar-thumb { 
+  background-clip: padding-box;
+  background-color: #f00; 
+  border-radius: 4px; 
+}
+.copy_span{ display: block; width: 100%; height: 1.19rem; margin: 0 auto; background: url(ossweb-img/copy_img.png) no-repeat top center #000; background-size: 6.24rem 1.19rem; }
+.bg_box{ width: 6.40rem; position: absolute; left: 0;top: 0; z-index: 5; }
+.bg1{ width: 6.40rem; height: 5.0rem; background: url(ossweb-img/bg1.jpg) no-repeat; background-size: 6.40rem; height: 5.0rem; }
+.bg2{ width: 6.40rem; height: 5.0rem; background: url(ossweb-img/bg2.jpg) no-repeat; background-size: 6.40rem; height: 5.0rem; }
+.bg3{ width: 6.40rem; height: 12.73rem; background: url(ossweb-img/bg3.jpg) no-repeat; background-size: 6.40rem; height: 12.73rem; }
+.canvas{ position: absolute; left: 0; top: 0; z-index: 300; width: 100%; height: 100%; pointer-events: none; }
+/*footer*/
+#afooter{ width: 100%; padding: 0.20rem 0; text-align: center; font-size: 0.20rem; color: #666666; background: #000000;}
+.dia{ width: 5.05rem; height: 1.96rem; background: url(ossweb-img/dia_bg.jpg) no-repeat; background-size: 5.05rem 1.96rem; }
+.dia_close{ display: block; width: 0.32rem; height: 0.32rem; background: url(ossweb-img/dia_close.png) no-repeat; background-size: 0.32rem 0.32rem; text-indent: -9999px; position: absolute; right: 0.21rem; top: 0.18rem; }
+.dia_para{ width: 4.04rem; height: 1.70rem; margin: 0.16rem auto 0;display: flex; align-items: center; font-size: 0.22rem; color: #313e20; font-weight: bold; line-height: 0.30rem; justify-content: center; }
+@media (min-width:568px) and (orientation:landscape){
+html,body  { position:relative; overflow:hidden;width:100%; height:100%;padding:0;margin:0;}
+html::before {content: ""; position:fixed; top:0; left:0; height:100%; width:100%; background:#333; z-index:9999; }
+html::after {content: "为了更好的体验，请将手机/平板竖过来";position:absolute; top:50%; left:0; height:30px; width:100%; margin-top:40px; z-index:9999; text-align:center; font-size:16px; color:#fff;  }
+body::before  { content: ""; position:absolute; z-index:9999; height:200px; width:100px; left:50%; top:30%; margin:-130px 0 0 -50px; color:#fff;-webkit-transform: rotate(-90deg);transform: rotate(-90deg); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB2CAYAAAAZUrcsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDAwMjcwNkVEQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDAwMjcwNkREQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0NzhCMTlBREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ0NzhCMTlCREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+J30rNQAACRRJREFUeNrsXQlsFVUU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"); background-repeat:no-repeat; background-position:center center; background-size:100px auto;}
+
+</style>
+</head>
+<body>
+<div class='wrap'>
+	<div class="wrap_inner">
+        <header>
+            <h1 class="hidden">圣诞节快乐</h1>
+            <p class="hidden">从圣诞树上选择一个圣诞礼物吧！</p>
+            <div class="h_gift_box">
+                <!-- 添加grey为灰态 -->
+                <a id="gift1" href="javascript:;" onclick="PTTSendClick('btn','g1','礼物')" class="h_g1 grey" title="礼物">礼物</a>
+                <a id="gift2" href="javascript:;" onclick="PTTSendClick('btn','g2','礼物')" class="h_g1 h_g2" title="礼物">礼物</a>
+                <a id="gift3" href="javascript:;" onclick="PTTSendClick('btn','g3','礼物')" class="h_g1 h_g3" title="礼物">礼物</a>
+                <a id="gift4" href="javascript:;" onclick="PTTSendClick('btn','g4','礼物')" class="h_g1 h_g4" title="礼物">礼物</a>
+                <a id="gift5" href="javascript:;" onclick="PTTSendClick('btn','g5','礼物')" class="h_g1 h_g5" title="礼物">礼物</a>
+                <a id="gift6" href="javascript:;" onclick="PTTSendClick('btn','g6','礼物')" class="h_g1 h_g6" title="礼物">礼物</a>
+                <a id="gift7" href="javascript:;" onclick="PTTSendClick('btn','g7','礼物')" class="h_g1 h_g7" title="礼物">礼物</a>
+            </div>
+            <div class="h_dm">
+                <div class="dm">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">我还是个孩子啊</p>
+                </div>
+                <div class="dm dm2">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">尹小末o0</p>
+                </div>
+                <div class="dm dm3">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">L、x</p>
+                </div>
+                <div class="dm dm4">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">L、x</p>
+                </div>
+                <div class="dm dm5">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">L、x</p>
+                </div>
+                <div class="dm dm6">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">L、x</p>
+                </div>
+                <div class="dm dm7">
+                    <div class="dm_img_box">
+                        <img src="ossweb-img/dm_img.jpg" alt="">
+                    </div>
+                    <p class="dm_para">L、x</p>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <h2 class="c_t1">看看大家的礼物</h2>
+            <div class="c_g_wp">
+                <ul class="c_g_list">
+                    <li>
+                        <div class="c_img_box">
+                            <img src="ossweb-img/hd_img.jpg" alt="">
+                        </div>
+                        <div class="c_para_box">
+                            <p class="c_para">名字很长7个字获得：  寿司*2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c_img_box">
+                            <img src="ossweb-img/hd_img.jpg" alt="">
+                        </div>
+                        <div class="c_para_box">
+                            <p class="c_para">名字很长7个字获得：  寿司*2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c_img_box">
+                            <img src="ossweb-img/hd_img.jpg" alt="">
+                        </div>
+                        <div class="c_para_box">
+                            <p class="c_para">名字很长7个字获得：  寿司*2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c_img_box">
+                            <img src="ossweb-img/hd_img.jpg" alt="">
+                        </div>
+                        <div class="c_para_box">
+                            <p class="c_para">名字很长7个字获得：  寿司*2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c_img_box">
+                            <img src="ossweb-img/hd_img.jpg" alt="">
+                        </div>
+                        <div class="c_para_box">
+                            <p class="c_para">名字很长7个字获得：  寿司*2</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="c_t1 c_t2">活动规则</h2>
+            <div class="c_g_wp">
+                <ul class="c_rule_list">
+                    <li>1、每个玩家每天可以分享一次自己的礼物，与其他玩家共享</li>
+                    <li>2、每个玩家每天的分享共包含7个礼物，自己也可以领取一份</li>
+                    <li>3、每个玩家活动期间每天可以领取7次礼物（包含自己分享的礼物）</li>
+                    <li>4、每个玩家活动期间总共可以领取49次礼物（包含自己分享的礼物）</li>
+                </ul>
+            </div>
+            
+        </div>
+	</div>
+    <div class="bg_box">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+    </div>
+    <canvas id="canvas" class="canvas"></canvas>
+</div>
+<span class="copy_span"></span>
+<div class="dia" id="dia01" style="display: none;">
+    <a href="javascript:closeDialog();" class="dia_close" title="关闭">关闭</a>
+    <p class="dia_para">手慢啦，礼物已经被别人拿走啦！</p>
+</div>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script> 
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script src="ossweb-img/particles.js"></script>
+<script type="text/javascript">
+function TGDialogS(e){
+    // 利用milo库引入dialog组件
+    need("biz.dialog",function(Dialog){
+        Dialog.show({
+            id:e,
+            bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+            opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    });
+}
+function closeDialog(){
+    // 利用milo库引入dialog组件
+    need("biz.dialog",function(Dialog){
+        Dialog.hide();
+    });
+} 
+var snow = new Particles()
+// TGDialogS('dia01')
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+siteType:"a20181209christmas", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+pageName:"首页", //必填项:页面中文名
+osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+
+</body>
+</html>

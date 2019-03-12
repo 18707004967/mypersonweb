@@ -53,7 +53,7 @@ header{ width: 7.50rem; height: 8.86rem; }
 .hd_login a{ color: #fff; }
 .hd_time{ margin: 0.12rem auto 0; }
 .after_login{ width: 7.0rem; }
-.content{ width: 7.50rem; overflow: hidden; position: relative; }
+.content{ width: 7.50rem; overflow: hidden; position: relative; padding: 0 0 0.50rem 0; }
 .c_t1{ width: 6.03rem ; height: 0.50rem; background-position: 0 -1.68rem; margin: 0 auto; text-indent: -9999px; }
 .c_para{ width: 6.80rem; font-size: 0.20rem ; color: #ffffff; line-height: 0.28rem; text-align: center; margin: 0.16rem auto 0; }
 .c_tb_box{ width: 7.32rem; height: 4.28rem; background: url(images/c_tabin_bg.png) no-repeat 0 -1.73rem; background-size: 7.32rem 6.01rem; margin: 0.18rem auto 0;}
@@ -76,6 +76,7 @@ header{ width: 7.50rem; height: 8.86rem; }
 .c_lq_btn span{ display: block; width: 100%; height: 100%; font-size: 0.30rem; font-weight: bold; line-height: 0.70rem; text-align: center; background-image: -webkit-linear-gradient(bottom,#fff,#fff174);-webkit-background-clip: text; color: transparent;}
 .c_t2{ margin: 0.74rem auto 0; background-position: 0 -2.23rem; }
 .c_tb_box2 .c_in_list{ width: 5.38rem; }
+.c_tb_box2 .c_in_list2{ width: 6.64rem; }
 .c_t3{ margin: 0.90rem auto 0; background-position: 0 -2.78rem;}
 .c_para2{ color: #0e3b81; }
 .c_tb_box3{ height: 6.01rem; background: url(images/c_tabin_bg.png) no-repeat 0 0; background-size: 7.32rem 6.01rem; overflow: hidden; }
@@ -89,7 +90,9 @@ header{ width: 7.50rem; height: 8.86rem; }
 .c_cz_gift_box .c_icon_box{ -webkit-transform: scale(0.9); transform: scale(0.9); }
 .c_t4{ background-position: 0 -3.32rem; margin: 0.72rem auto 0; }
 .c_get_chance{ width: 3.34rem; height: 0.44rem; font-size: 0.22rem; color: #fff2c3; line-height: 0.44rem; text-align: center; background: -webkit-gradient(linear ,left top, left bottom ,from(#df4a57),to(#a4363f)); background: linear-gradient(to bottom ,#df4a57,#a4363f); border-radius: 0.06rem; margin: 0.16rem auto 0; }
-.ink_lot1{ width: 6.04rem; height: 5.46rem; position: relative; margin: 0.25rem auto 0; background: url(images/lot_img.png) no-repeat; background-size: 6.04rem 5.46rem;}
+.lot_wrap{ width: 6.04rem; height: 5.46rem; position: relative; margin: 0.25rem auto 0;}
+.ink_lot1{ width: 6.04rem; height: 5.46rem; position: relative;}
+.ink_lot1 img{ display: block; width: 100%; height: 100%; }
 .c_t5{ width: 6.16rem; height: 0.52rem; background-position: 0 -3.85rem; text-indent: -9999px; margin: 1.38rem auto 0; }
 .c_swipe_show{ width: 6.70rem; height: 3.51rem; background: url(images/lb_bg.png) no-repeat; background-size: 6.70rem 3.51rem; margin: 0.33rem auto 0; padding: 0.01rem 0 0 0; position: relative;}
 .c_swipe{ width: 6.37rem; height: 3.05rem; overflow: hidden; margin: 0.20rem auto 0; border: #8799db solid 1px; background: #3666ab; }
@@ -115,7 +118,7 @@ body::before  { content: ""; position:absolute; z-index:9999; height:200px; widt
 </head>
 <body>
 <div class='wrap'>
-	<div class="wrap_inner">
+    <div class="wrap_inner">
         <header>
             <h1 class="hidden">跨服家族赛荣耀开启</h1>
             <div class="hd_btn_box">
@@ -388,7 +391,7 @@ body::before  { content: ""; position:absolute; z-index:9999; height:200px; widt
                     <a href="javascript:;" class="spr c_lq_btn" onclick="PTTSendClick('btn','lq12','立即领取')" title="立即领取"><span>立即领取</span></a>
                 </div>
                 <div class="c_tab_in" style="display: none;">
-                    <ul class="c_in_list">
+                    <ul class="c_in_list c_in_list2">
                         <li>
                             <div class="c_icon_box">
                                 <span class="spr c_icon1"></span>
@@ -406,6 +409,12 @@ body::before  { content: ""; position:absolute; z-index:9999; height:200px; widt
                                 <span class="spr c_icon1 c_icon3"></span>
                             </div>
                             <p class="c_icon_name">1级强化石<br>*50</p>
+                        </li>
+                        <li>
+                            <div class="c_icon_box">
+                                <span class="spr c_icon1 c_icon4"></span>
+                            </div>
+                            <p class="c_icon_name">灵力丹<br>*4</p>
                         </li>
                     </ul>
                     <a href="javascript:;" class="spr c_lq_btn" onclick="PTTSendClick('btn','lq13','立即领取')" title="立即领取"><span>立即领取</span></a>
@@ -475,7 +484,11 @@ body::before  { content: ""; position:absolute; z-index:9999; height:200px; widt
             <p class="c_para c_para2">活动期间，每日登录游戏即可获得一个抽奖机会。<br> 每日分享好友获得一次抽奖机会，每日刷新一次。</p>
             <p class="c_get_chance">立即今日分享  获一次抽奖机会</p>
             <div class="c_tb_box c_tb_box3">
-                <div class="ink_lot1" id="lotterycontent"></div>
+                <div class="lot_wrap">
+                    <div class="ink_lot1" id="lotterycontent">
+                        <img src="images/lot_img.png" alt="">
+                    </div>                    
+                </div>
             </div>
             <h2 class="spr c_t1 c_t5">跨服家族赛介绍</h2>
             <div class="c_swipe_show">
@@ -505,7 +518,7 @@ body::before  { content: ""; position:absolute; z-index:9999; height:200px; widt
 </div>
 <script src="https://ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
 <script src="https://ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script> 
-<script src="http://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
+<script src="https://game.gtimg.cn/images/js/delottery/lottery.js"></script>
 <script src="images/swiper.js"></script>
 <script>
 $('.tb1').on('click','li',function(){
@@ -527,29 +540,27 @@ function replacePx(str){
 }
 
 var str = '0_0,220_0,440_0,440_190,440_380,220_380,0_380,0_190';
-str = replacePx(str);
 
 
-     //点击开始抽奖 通知js  flash->js
-    function callJsToStart(){
-    //测试
-        callFlashToRoll(3);
-    }
-    //开发获得抽奖结果 通知flash开始播放效果 js->flash
-    function callFlashToRoll(id){
-        //通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
-        if(SWFOBJ)SWFOBJ.stopRoll(id);
-    }
-    //3、flash动画完成通知js  flash->js
-    function callJsToComplete(){
-        // document.getElementById('log').innerHTML = '恭喜你获得大奖哟！！';
-        alert('恭喜你获得大奖哟！！');
-    }
-    //初始化抽奖对象的SWFOBJ 
-    //转盘的中心点坐标为（0,0））
-var SWFOBJ = null;
+ //点击开始抽奖 通知js flash->js
+
+//开始抽奖lottery->js
+function callJsToStart() {
+    // lottery.disable();
+    calllotteryToRoll(4);
+}
+//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+function calllotteryToRoll(id) {
+    if (lottery) lottery.stopRoll(id);
+}
+//动画完成通知js lottery->js        
+function callJsToComplete() {
+    alert('恭喜你获得大奖哟！！');
+}
+fs = document.documentElement.clientWidth/750;
+var lottery = null;
 function intlot(){
-    SWFOBJ= new mo.Lottery({
+    lottery= new Lottery({
         'lighturl': 'http://ossweb-img.qq.com/images/js/delottery/sel.png',
         'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', 
         'width': 604*fs,//lottery 宽度
@@ -566,16 +577,16 @@ function intlot(){
         'onClickRollEvent': callJsToStart,
         'onCompleteRollEvent':callJsToComplete
     });
-}   
+}
 var evt = "onorientationchange" in window ? "orientationchange" : "resize";
 var lotStr = false;
 window.addEventListener(evt,resize,false);
 function resize(){
     setTimeout(function(){
-        fs = document.documentElement.clientWidth/750;
         if(document.documentElement.clientWidth < document.documentElement.clientHeight && lotStr == false) {
+            fs = document.documentElement.clientWidth/750;
+            str = replacePx(str);
             intlot();
-            console.log(11)
             lotStr = true;          
         }
     },500)

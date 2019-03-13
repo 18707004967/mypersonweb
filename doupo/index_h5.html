@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 		<meta name="Description" content="斗破苍穹腾讯官方活动" />
 		<meta name="Keywords" content="斗破苍穹;心悦;官方活动;" />
-		<meta http-equiv="Content-Security-Policy" content="img-src data: *.gatimg.cn *.gtimg.cn *.qq.com *.qlogo.cn *.sogoucdn.com *.qpic.cn;script-src *.qq.com *.idqqimg.com *.gtimg.cn 'unsafe-inline' 'unsafe-eval'">
+		<!-- <meta http-equiv="Content-Security-Policy" content="img-src data: *.gatimg.cn *.gtimg.cn *.qq.com *.qlogo.cn *.sogoucdn.com *.qpic.cn;script-src *.qq.com *.idqqimg.com *.gtimg.cn 'unsafe-inline' 'unsafe-eval'"> -->
 		<title>《斗破苍穹》心悦专属福利</title>
 		<link rel="stylesheet" href="./style.css" />
 		<script type="text/javascript" src="http://ossweb-img.qq.com/images/chanpin/tgclub/hijack.js"></script>
@@ -210,7 +210,7 @@
 			}
 			/*所有按钮雪碧图*/
 			.wm-spr {
-				background-image: url(https://game.gtimg.cn/images/tgclub/chanpin/public/vipmb/img/20190312dpcq/spr.png);
+				background-image: url(./spr.png);
 				background-repeat: no-repeat;
 			}
 			
@@ -898,7 +898,7 @@
 							<p>{{gameItem.dsl.play_title}}</p>
 						</div>
 						<p class="wm-explain" v-html="gameItem.dsl.play_rule"></p>
-						<div class="wm-function" v-if="is_app && (gameItem.dsl.condition.share.share_get|| gameItem.dsl.condition.pull_new.new_get ||gameItem.dsl.condition.comeback.back_get )">
+						<div class="wm-function">
 							<a class="wm-spr spr-btn6 disul fr" href="javascript:void(0);" @click="app_share(gameItem.dsl.condition)">
 							</a>
 						</div>
@@ -1199,20 +1199,20 @@
 				<p v-if="is_ios">声明：本抽奖活动与苹果公司（Apple Inc）无关</p>
 			</footer>
 		</div>
-		<script type="text/javascript" src="https://xinyue.qq.com/vipmb/js/vue.js"></script>
-        <script type="text/javascript" src="https://xinyue.qq.com/act/vipmb_new/gCodeSeverselect_v1.js"></script>
-		<script src="https://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
-		<script src="https://ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
-		<script src="https://ossweb-img.qq.com/images/js/motion.js"></script>
-		<script src="https://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
-		<script charset="gbk" src="https://gameact.qq.com/comm-htdocs/js/game_area/dp_server_select.js"></script>
+		<script type="text/javascript" src="//xinyue.qq.com/vipmb/js/vue.js"></script>
+        <script type="text/javascript" src="//xinyue.qq.com/act/vipmb_new/gCodeSeverselect_v1.js"></script>
+		<script src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+		<script src="http://ossweb-img.qq.com/images/js/motion.js"></script>
+		<script src="http://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
+		<script charset="gbk" src="//gameact.qq.com/comm-htdocs/js/game_area/dp_server_select.js"></script>
 		<script>
 			if(gCodeServerselect['dp'].type == 1){
-				document.write('<script src="https://xinyue.qq.com/act/vipmb_new/tgclub_h5_bind_class_v2.js"><\/script>');
+				document.write('<script src="//xinyue.qq.com/act/vipmb_new/tgclub_h5_bind_class_v2.js"><\/script>');
 			}else if(gCodeServerselect['dp'].type == 2 && gCodeServerselect['dp'].partition == 0){
-				document.write('<script src="https://xinyue.qq.com/act/vipmb_new/tgclub_pc_bind_class_v2.js"><\/script>');
+				document.write('<script src="//xinyue.qq.com/act/vipmb_new/tgclub_pc_bind_class_v2.js"><\/script>');
 			}else{
-				document.write('<script src="https://xinyue.qq.com/act/vipmb_new/tgclub_pc_spartition_bind_class_v2.js"><\/script>');
+				document.write('<script src="//xinyue.qq.com/act/vipmb_new/tgclub_pc_spartition_bind_class_v2.js"><\/script>');
 			}
 		</script>
 		<script>
@@ -1239,7 +1239,7 @@
 									"WxAppId": "wx5a3bbeac0d87c75a", //需要在微信申请openLink权限，
 									"AppName": "心悦俱乐部", //业务的中文名称
 									"scope": "snsapi_userinfo", //默认是 snsapi_base 静默授权，如果游戏无静默权限，就需要手动改成 snsapi_userinfo
-									"LogoUrl": "https://ossweb-img.qq.com/images/feiji/web201507/logo.png" //业务在授权时需要显示的正方形标准Logo，
+									"LogoUrl": "http://ossweb-img.qq.com/images/feiji/web201507/logo.png" //业务在授权时需要显示的正方形标准Logo，
 								},
 								userinfoSpan : 'userinfo'
 							});
@@ -1297,7 +1297,7 @@
 									"WxAppId": "wx5a3bbeac0d87c75a", //需要在微信申请openLink权限，
 									"AppName": "心悦俱乐部", //业务的中文名称
 									"scope": "snsapi_userinfo", //默认是 snsapi_base 静默授权，如果游戏无静默权限，就需要手动改成 snsapi_userinfo
-									"LogoUrl": "https://ossweb-img.qq.com/images/feiji/web201507/logo.png" //业务在授权时需要显示的正方形标准Logo，
+									"LogoUrl": "http://ossweb-img.qq.com/images/feiji/web201507/logo.png" //业务在授权时需要显示的正方形标准Logo，
 								},
 								userinfoSpan : 'userinfo'
 							});
@@ -1402,7 +1402,7 @@
 					options: {
 						'title': '《斗破苍穹》心悦专属福利',
 						'summary': '心悦专属福利等你来拿！',
-						'icon': 'https://ossweb-img.qq.com/images/tgclub/app/img/icon/doupo120X120.png',
+						'icon': 'http://ossweb-img.qq.com/images/tgclub/app/img/icon/doupo120X120.png',
 						'url': 'https://xinyue.qq.com/vipmb/20190312dpcq/index_h5.html'
 					},
 					//用户基础信息

@@ -76,7 +76,7 @@
 	  width: 6.16rem; 
 	  height: 0.52rem; 
 	  background-position: 0 -2.18rem; 
-	  margin: 1.0rem auto 0; 
+	  margin: 0.60rem auto 0; 
 }
 .wm-section .wm-mob:nth-child(6) .wm-title{
 	width: 5.87rem; 
@@ -87,8 +87,7 @@
 /*tap选框头部的效果*/
 .wm-section .wm-nav{	
     height: .61rem !important;
-    background: url(https://game.gtimg.cn/images/tgclub/chanpin/public/vipmb/img/20190312dpcq/c_tab_bg.jpg) no-repeat;
-    background-size: 7.30rem .61rem;
+    background: #5b6db7;
 }
 .wm-section .wm-nav li {
 	-webkit-box-flex: 1;
@@ -97,9 +96,7 @@
 	font-size: 0.22rem;
 	font-weight: normal;
 	position: relative;
-	color: #c8dcfc;
-	z-index: 30;
-	background: transparent;
+	color: #d9e8ff;
 }
 /*tap选框头部选中时的效果*/
 .wm-section .wm-nav li.current {
@@ -139,7 +136,7 @@
 }
 /*领取礼包置灰*/
 .wm-spr.np-spr-btn1.geted{
-	background-position: -0.2rem -3.25rem;
+	background-position: -3.52rem -5.24rem;
 }
 /*点击抽奖按钮*/
 .wm-spr.spr-btn3 {
@@ -317,7 +314,8 @@
 /*隐藏抽奖次数*/
 
 h4.wm-surplus{
-	display: none;
+	color: #0e3b81; text-align: center;
+	margin: 0.06rem auto;
 }
 
 .wm-section .wm-recharge{	
@@ -346,7 +344,7 @@ h4.wm-surplus{
 }
 /*充值豪礼置灰*/
 .wm-section .wm-recharge .rec-spr-btn2.geted{
-	background-position: -1.4rem -5.39rem;
+	background-position: -5.04rem -3.46rem;
 }
 /*充值数与礼包分割线*/
 /*.wm-spr.spr-interval {

@@ -97,8 +97,9 @@
 	font-size: 0.22rem;
 	font-weight: normal;
 	position: relative;
-	color: #d9e8ff;
+	color: #c8dcfc;
 	z-index: 30;
+	background: transparent;
 }
 /*tap选框头部选中时的效果*/
 .wm-section .wm-nav li.current {

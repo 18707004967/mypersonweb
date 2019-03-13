@@ -87,7 +87,6 @@
 /*tap选框头部的效果*/
 .wm-section .wm-nav{	
     height: .61rem !important;
-    background: #5b6db7;
 }
 .wm-section .wm-nav li {
 	-webkit-box-flex: 1;
@@ -97,6 +96,7 @@
 	font-weight: normal;
 	position: relative;
 	color: #d9e8ff;
+    background: #5b6db7;
 }
 /*tap选框头部选中时的效果*/
 .wm-section .wm-nav li.current {
@@ -123,6 +123,7 @@
 	font-size: .22rem;
 	line-height: .61rem;
 	white-space: nowrap;
+	z-index: 10;
 }
 
 /*领取礼包按钮*/

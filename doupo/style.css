@@ -102,6 +102,8 @@
 .wm-section .wm-nav li.current {
 	background: #dbe9ff;
 	color: #426ca2;
+	position: relative;
+	z-index: 30;
 }
 /*各个玩法的说明文字样式*/
 .wm-section .wm-explain {

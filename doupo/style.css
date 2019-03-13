@@ -98,6 +98,7 @@
 	font-weight: normal;
 	position: relative;
 	color: #d9e8ff;
+	z-index: 30;
 }
 /*tap选框头部选中时的效果*/
 .wm-section .wm-nav li.current {

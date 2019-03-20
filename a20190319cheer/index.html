@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="Description" content="王者荣耀官方赛事中心，提供王者荣耀直播、kpl直播、kpl赛程、kpl解说、kpl购票、战队信息等赛事信息" />
+<meta name="Keywords" content="kpl,kpl王者荣耀,王者荣耀kpl" />
+<title>我要上电视 助威战队送祝福</title>
+<script>
+    (function (win,doc){
+        if (!win.addEventListener) return;
+        var html=document.documentElement;
+        function setFont()
+        {
+            var cliWidth=html.clientWidth; 
+            html.style.fontSize=100*(cliWidth/640)+'px';
+        }
+        win.addEventListener('resize',setFont,false);
+        setFont();
+    })(window,document);
+</script>
+<style type="text/css">
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+body { -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100% !important; -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none; word-break: break-all; word-wrap: break-word; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+strong, i, em { font-weight: normal; font-style: normal; }
+input, select, form { vertical-align: middle; outline: none; }
+img { border: none; vertical-align: top; }
+a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] { outline: 0; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a { -webkit-touch-callout: none; text-decoration: none; color: #666666; outline: 0; }
+body, html { background: #ffd54b; }
+.hidden { width: 0; height: 0; line-height: 0; font-size: 0; visibility: hidden; text-indent: -9999px; display: block; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.spr{ background: url(images/spr.png) no-repeat; background-size: 4.80rem 7.35rem; }
+.wrap { width: 100%; min-height: 100vh; margin: 0 auto; overflow: hidden; background: url(images/bg_repeat.jpg) repeat-y; background-size: 6.40rem 0.16rem;  }
+.wrap .wrap_inner { width: 6.40rem; min-height: 100vh; position: relative; overflow: hidden;padding: 0 0 0.80rem 0; background: url(images/hd_bg.jpg) no-repeat; background-size: 6.40rem 4.32rem;  }
+.cheer_rule_btn{ display: block; width: 1.58rem; height: 0.58rem;background-position:0 -1.0rem; text-indent: -9999px; margin: 2.72rem auto 0; }
+.cheer_person_wp{ width: 6.31rem ;  height: 9.99rem; background: url(images/p1_bg.png) no-repeat; background-size: 6.31rem 9.99rem; margin: 0.99rem auto 0; position: relative; }
+.cheer_p1_top{ height: 3.40rem; width: 6.31rem;overflow: hidden; }
+.cheer_p1_bottom{ height: 6.08rem; width: 6.04rem; margin: 0.52rem 0 0 0.14rem; padding: 0.01rem 0 0 0 ; position: relative; }
+.num_gx{ width: 1.58rem; height: 1.48rem; background: url(images/gx_bg.png) no-repeat; background-size: 1.58rem 1.48rem; margin: 0.71rem 0 0 0.38rem; overflow: hidden; position: relative;}
+.num_gx_in{ display: block; width: 1.0rem; height: 0.62rem; line-height: 0.62rem; text-align: center; font-size: 0.48rem; color: #30120a; margin: 0.16rem 0 0 0.20rem; font-weight: bold; }
+.cheer_para{ width: 6.05rem; margin: 0.14rem 0 0 0.16rem ; font-size: 0.30rem; color: #30120a; line-height: 0.30rem; text-indent: 0.34rem; font-weight: bold; }
+.cheer_demo_btn{ display: inline-block; width: 0.84rem; height: 0.34rem; text-indent: -9999px;background-position:0 -0.58rem; vertical-align: top; margin: 0 0 0 0.06rem; }
+.cheer_tips{ width: 6.05rem; margin: 0.12rem 0 0 0.16rem; text-align: center; font-size: 0.24rem; line-height: 0.36rem; color: #30120a; font-weight: bold; }
+.cheer_gt{ display: inline-block; width: 0.36rem; height: 0.34rem; background-position:0 0; vertical-align: top; margin: 0 0.08rem 0 0 ;}
+.cheer_prg{ width: 3.24rem; height: 0.08rem; border: #440423 solid 0.03rem; border-radius: 0.07rem; position: absolute; top: 1.28rem; left: 2.32rem; background: #d5d5d5;}
+.line{ display: block; width: 50%; height: 0.08rem; border: #440423 solid 0.03rem; border-radius: 0.07rem; position: absolute; left: -0.03rem; top: -0.03rem; background: url(images/prg_bg.jpg) repeat-x; background-size: 0.17rem 0.08rem; }
+.g1{ display: block; width: 0.44rem; height: 0.88rem;background-position:-1.25rem 0; position: absolute; left: -0.09rem; top: -0.29rem;}
+.g2{ display: block; width: 0.51rem; height: 0.90rem;background-position:-3.04rem 0; position: absolute; left: 50%; top: -0.31rem; margin: 0 0 0 -0.26rem;}
+.g3{ display: block; width: 0.55rem; height: 0.94rem;background-position:-4.25rem 0; position: absolute; right:-0.30rem; top: -0.38rem; margin: 0 0 0 -0.26rem;}
+.g1.grey{background-position:-1.85rem 0;}
+.g2.grey{background-position:-2.43rem 0;}
+.g3.grey{background-position:-3.64rem 0;}
+.cheer_p1_bttips{ width: 4.68rem; height: 0.58rem; background: #efdfcd; border-radius: 0.08rem; font-size: 0.22rem; line-height: 0.26rem; text-align: center;  padding: 0.06rem 0 0 0; margin: 0.22rem auto 0;}
+.cheer_p1_bttips span{ display: block; color: #ff4f5a; }
+.cheer_love_box{ width: 4.73rem; height: 4.55rem; background: url(images/love_bq.png) no-repeat; background-size:4.73rem 4.55rem; margin: 0.18rem 0 0 0.65rem; overflow: hidden; position: relative;}
+.cheer_line1{ width: 4.32rem; height: 0.46rem; margin: 1.20rem auto 0; }
+.cheer_line1 span{ display: inline-block; height: 0.46rem; font-size: 0.24rem; color: #373737; line-height: 0.46rem;  vertical-align: top; white-space: nowrap;}
+.cheer_line2{ margin: 0.02rem auto 0; }
+.cheer_line3{ width: 3.56rem; margin: 0.02rem auto 0; }
+.cheer_line4{ width: 2.54rem; margin: 0.02rem auto 0; }
+.cheer_line5{ width: 1.86rem; margin: 0.02rem auto 0; }
+.love_input{ display: block; width: 4.36rem; height: 0.48rem; background: transparent; font-size: 0.24rem; color: #373737; line-height: 0.48rem; position: absolute; left: 0.12rem; top: 1.20rem;}
+.cheer_post{ display: block; width: 2.18rem; height: 0.58rem;background-position:-1.73rem -1.0rem; position: absolute; left: 50%; bottom: -0.28rem; margin: 0 0 0 -1.09rem; text-indent: -9999px;}
+.cheer_change_box{ width: 6.0rem; margin: 0.74rem auto 0; border: #440423 solid 0.03rem ; border-radius:0.12rem;  position: relative; padding: 0.72rem 0 0 0; background: #fff2e4;}
+.cheer_tab_list{ width: 6.06rem; height: 0.72rem; display: flex; position: absolute; left: -0.03rem; top: -0.03rem; }
+.cheer_tab_list li{ width: 3.04rem; height: 0.72rem;background-position:0 -4.26rem; text-indent: -9999px; }
+.cheer_tab_list li:nth-child(2){background-position:0 -5.04rem;}
+.cheer_tab_list li.cur{background-position:0 -6.63rem;}
+.cheer_tab_list li:nth-child(2).cur{ background-position:0 -6.63rem;}
+.group_list{ width: 6.0rem; padding: 0.04rem 0 0 0; }
+.group_list li{ width: 6.0rem; height: 1.19rem; border-bottom: #cacaca solid 0.01rem; display: flex;}
+.group_list li:last-child{ border: none; }
+.g_num{ display: block; width: 0.50rem; height: 0.69rem; text-align: center; line-height: 0.69rem; font-size: 0.30rem; color: #30120a; font-weight: bold; margin: 0.21rem 0 0 0.20rem; }
+.g_num_one{ text-indent: -9999px; background: url(images/num_one.png) no-repeat; background-size: 0.50rem 0.69rem; }
+.g_num_two{ text-indent: -9999px; background: url(images/num_two.png) no-repeat; background-size: 0.50rem 0.69rem; }
+.g_num_three{ text-indent: -9999px; background: url(images/num_three.png) no-repeat; background-size: 0.50rem 0.69rem; }
+.g_zd_icon{ width: 0.93rem; height: 0.93rem; overflow: hidden; margin: 0.10rem 0 0 0.16rem; }
+.g_zd_icon img{ display: block; width: 100%; height: 100%; }
+.g_zd_name{ width: 2.10rem; height: 1.19rem; display: flex; align-items: center;}
+.g_zd_name span{ display: block; width: 100%; text-indent: 0.06rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.30rem; font-weight: bold; color: #30120;}
+.g_rq_num{ width: 1.90rem; font-size: 0.30rem; font-weight: bold; color: #ea5c55; line-height: 0.34rem; padding: 0.42rem 0 0 0; white-space: nowrap;}
+.g_fans_name span{ font-size: 0.24rem; color: #30120a; text-indent: 0; padding: 0 0 0 0.10rem; }
+.g_fans_name strong{ font-weight: bold;}
+.g_fans_name i{ color: #ff753a; font-size: 0.22rem; font-weight: normal; }
+.g_zd_tit{ width: 3.03rem ; height: 0.92rem;background-position:0 -3.24rem; text-indent: -9999px; margin: 0.52rem auto 0; }
+.g_zd_rew{ width: 5.36rem; height: 2.41rem; display: flex; justify-content: space-between; margin: 0.16rem auto 0;  }
+.g_zd_rew li{ width: 2.37rem; height: 2.41rem ; background: url(images/rw_wrap.png) no-repeat; background-size: 2.37rem 2.41rem; }
+.g_zd_rew li img{ display: block; width: 100%; height: 100%;}
+.g_fans_tit{background-position:0 -2.27rem;}
+#afooter { width: 100%; line-height: 0.34rem; text-align: center; color: #fff; padding: 0.15rem 0; font-size: 0.18rem; background: #000; }
+.dia{ width: 6.0rem; background: #fff2e4; height: 5.36rem; border: #440423 solid 0.03rem; border-radius: 0.08rem; }
+.dia_close{ display: block; width: 0.52rem; height: 0.52rem;background-position:-0.41rem 0; text-indent: -9999px; position: absolute; top: -0.31rem; right: -0.03rem; }
+.rule_title{ display: block; width: 2.76rem; height: 0.58rem;background-position:0 -1.64rem; text-indent: -9999px; position: absolute; left: 50%; top: -0.31rem; margin: 0 0 0 -1.38rem;  }
+.rule_list{ width: 5.60rem; height: 4.50rem; overflow: hidden; overflow-y:auto; margin: 0.54rem auto 0; }
+/*定制滚动条*/
+.rule_list::-webkit-scrollbar {width: 0.04rem; height: 0.04rem; }
+.rule_list::-webkit-scrollbar-button {width: 0; height: 0; }
+.rule_list::-webkit-scrollbar-corner {display: block; }
+.rule_list::-webkit-scrollbar-thumb {background-clip: padding-box; background-color: #30120a; border-radius: 4px; }
+.rule_list li{ width: 5.06rem; margin: 0 0 0.20rem 0.40rem; font-size: 0.24rem; color: #30120a; font-weight: bold; text-indent: -0.40rem; }
+.rule_xh{ display: inline-block; width: 0.26rem; height: 0.26rem; line-height: 0.26rem; text-align: center; font-size: 0.24rem; color: #30120a; text-indent: 0; margin: 0 0.08rem 0 0; background: #fed362; border: #440423 solid 0.02rem; border-radius: 50%; }
+.dia02{ height: 9.66rem; }
+.step_one{ display: block; font-size: 0.30rem; color: #30120a; line-height: 0.34rem; font-weight: bold; text-align: center; margin: 0.20rem auto 0; }
+.st1_img{ display: block; width: 4.73rem; height: 4.55rem; margin: 0.10rem auto 0; }
+.dia_para{ font-size: 0.22rem; color: #363434; margin: 0.06rem auto 0; text-align: center; line-height: 0.28rem; }
+.st2_img{ display: block; width: 5.21rem; height: 2.94rem; margin: 0.15rem auto 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="wrap_inner">
+    	<h1 class="hidden">我要上电视 助威战队送祝福</h1>
+    	<a href="javascript:TGDialogS('dia01');" onclick="PTTSendClick('btn','rulebtn','详情规则')" class="spr cheer_rule_btn" title="详情规则">详情规则</a>
+    	<div class="cheer_person_wp">
+            <div class="cheer_p1_top">
+                <div class="num_gx">
+                    <span class="num_gx_in">0</span>
+                </div>
+                <p class="cheer_para">完成150贡献值，祝福上墙直播流<a href="javascript:;" class="spr cheer_demo_btn" title="示例">示例</a></p>
+                <p class="cheer_tips"><span class="spr cheer_gt"></span>每场限定人数5位（1/5）</p>
+                <div class="cheer_prg">
+                    <span class="line"></span>
+                    <span class="spr g1"></span>
+                    <span class="spr g2"></span>
+                    <span class="spr g3 grey"></span>
+                </div>           
+            </div>
+            <div class="cheer_p1_bottom">
+                <p class="cheer_p1_bttips">可DIY你对选手/战队的祝福，在直播流中出现<br><span>（请注意言辞，官方将审核）</span></p>
+                <div class="cheer_love_box">
+                    <div class="cheer_pra_box" style="visibility: hidden;">
+                        <div class="cheer_line1">
+                            <span></span>
+                        </div>
+                        <div class="cheer_line1 cheer_line2">
+                            <span></span>
+                        </div>
+                        <div class="cheer_line1 cheer_line3">
+                            <span></span>
+                        </div>
+                        <div class="cheer_line1 cheer_line4">
+                            <span></span>
+                        </div>
+                        <div class="cheer_line1 cheer_line5">
+                            <span></span>
+                        </div>
+                    </div>
+                    <input type="text" class="love_input" id="input" placeholder="在此输入祝福语">
+                </div>
+                <a href="javascript:;" onclick="PTTSendClick('btn','szf','送出祝福')" class="spr cheer_post" title="送出祝福">送出祝福</a>
+            </div>
+    	</div>
+        <div class="cheer_change_box">
+           <ul class="cheer_tab_list">
+               <li class="spr cur"></li>
+               <li class="spr"></li>
+           </ul>
+           <ul class="group_list">
+               <li>
+                   <span class="g_num g_num_one">1</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num g_num_two">2</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num g_num_three">3</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">4</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">5</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">6</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">7</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">8</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">9</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">10</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">11</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">12</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">13</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">14</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+               <li>
+                   <span class="g_num">15</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name"><span>战队A战队A战队</span></p>
+                   <p class="g_rq_num">1100000人气</p>
+               </li>
+           </ul>
+           <ul class="group_list" style="display: none;">
+               <li>
+                   <span class="g_num g_num_one">1</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num g_num_two">2</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num g_num_three">3</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">4</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">5</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">6</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">7</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">8</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">9</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">10</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">11</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">12</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">13</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">14</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">15</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">16</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">17</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">18</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">19</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+               <li>
+                   <span class="g_num">20</span>
+                   <div class="g_zd_icon">
+                       <img src="images/zd_icon.png" alt="">
+                   </div>
+                   <p class="g_zd_name g_fans_name"><span><strong>名字名字名字</strong><br><i>支持QGhappy</i></span></p>
+                   <p class="g_rq_num">11100贡献</p>
+               </li>
+           </ul>
+        </div>
+        <h2 class="spr g_zd_tit">战队前3奖励</h2>
+        <ul class="g_zd_rew">
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+        <h2 class="spr g_zd_tit g_fans_tit">粉丝前5奖励</h2>
+        <ul class="g_zd_rew">
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+    </div>
+</div>
+<div class="dia" id="dia01" style="display: none;">
+    <a href="javascript:closeDialog();" onclick="PTTSendClick('btn','close01','关闭')" class="spr dia_close" title="关闭">关闭</a>
+    <strong class="spr rule_title">活动规则</strong>
+    <ul class="rule_list">
+        <li><span class="rule_xh">1</span>完成150贡献值，祝福上墙直播流，完成150贡献值，祝福上墙直播流。</li>
+        <li><span class="rule_xh">2</span>完成150贡献值，祝福上墙直播流，完成150贡献值，祝福上墙直播流。</li>
+        <li><span class="rule_xh">3</span>完成150贡献值，祝福上墙直播流，完成150贡献值，祝福上墙直播流。</li>
+        <li><span class="rule_xh">4</span>完成150贡献值，祝福上墙直播流，完成150贡献值，祝福上墙直播流。</li>
+        <li><span class="rule_xh">5</span>完成150贡献值，祝福上墙直播流，完成150贡献值，祝福上墙直播流。</li>
+    </ul>
+</div>
+<div class="dia dia02" id="dia02" style="display: none;">
+    <a href="javascript:closeDialog();" onclick="PTTSendClick('btn','close02','关闭')" class="spr dia_close" title="关闭">关闭</a>
+    <strong class="step_one">step1</strong>
+    <img src="images/dia_bq.png" class="st1_img" alt="">
+    <strong class="step_one">step2（直播流横幅呈现）</strong>
+    <p class="dia_para">送出祝福语，助力战队旗开得胜</p>
+    <img src="images/st2_img.jpg" class="st2_img" alt="">
+</div>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script>
+//弹窗
+function TGDialogS(e){
+	need("biz.dialog",function(Dialog){
+		Dialog.show({
+			id:e,
+			bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+			opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	});
+}
+function closeDialog(){
+	need("biz.dialog",function(Dialog){
+		Dialog.hide();
+	});
+}
+var value = '';
+$('.cheer_line1').on('click',function(ev){
+    ev.stopPropagation();
+    $('#input').show().siblings().css('visibility','hidden');
+    $('#input').focus();
+})
+$('#input').on('input',function(ev){
+    $('.cheer_line1').each(function(){
+        $(this).find('span').html('');
+    })
+    value = ev.target.value;
+})
+$('#input').on('blur',function(ev){
+    var arr = value.split('');
+    var n = 0;
+    var num = arr.length>=60? 60:arr.length;
+    var str = '';
+    for (var i = 0; i < num; i++) {
+        if(i==num-1&&num>=60){
+           arr[i]='...'
+        }
+        str+=arr[i];
+        $('.cheer_line1').eq(n).find('span').html(str);
+        var wd = $('.cheer_line1').eq(n).width();
+        var wdn = $('.cheer_line1').eq(n).find('span').width();
+        if(wdn>=wd-10){
+            n++;
+            str = '';
+        }
+    }
+    $('#input').hide().siblings().css('visibility','visible');
+})
+$('.cheer_tab_list').on('click','li',function(){
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var index = $(this).index();
+    $('.cheer_change_box').find('.group_list').eq(index).show().siblings('.group_list').hide();
+})
+</script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+    siteType:"a20190319cheer", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+    pageName:"首页", //必填项:页面中文名
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+    stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

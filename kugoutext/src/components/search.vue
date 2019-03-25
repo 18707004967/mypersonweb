@@ -99,7 +99,7 @@ export default{
 </script>
 <style scoped>
 #search{ padding: 2.0rem 0 0 0; }
-.search_top{ width: 100%; background: rgba(238,238,238,0.6); height: 0.80rem; position: fixed; left: 0; top: 0.80rem; z-index: 600;}
+.search_top{ width: 100%; background: rgba(238,238,238,0.6); height: 0.80rem; position: fixed; left: 0; top: 0.80rem; z-index: 300;}
 .search_back{ display: block; width: 0.80rem; height: 0.80rem; line-height: 0.80rem; text-align: center; font-size: 0.42rem; position: absolute; left: 0; top: 0; }
 .search_title{ width: 100%; height: 0.80rem; font-size: 0.42rem; color: #333; text-align: center; line-height: 0.80rem; }
 .search_ipt_box{ width: 7.0rem; height: 0.56rem; margin: 0 auto; display: flex; justify-content: space-between;}

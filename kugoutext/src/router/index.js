@@ -50,6 +50,11 @@ export default new Router({
       component: rankMusicDetail
     },
     {
+      path: '/singerDetail',
+      name: 'singerDetail',
+      component: singerDetail
+    },
+    {
       path: '/singerListInner',
       name: 'singerListInner',
       component: singerListInner

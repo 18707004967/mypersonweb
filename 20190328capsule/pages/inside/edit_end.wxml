@@ -1,0 +1,19 @@
+<!--pages/inside/edit_end.wxml-->
+<view class="content">
+	<view class="edit_top">
+		<view class="edit_write">
+			<icon class="edit_write_icon"></icon>
+			<input type="text" maxlength="6" class="edit_ipt" placeholder="你的潮流标签" />
+		</view>
+	</view>
+	<view class="edit_bottom" style="{{'background:'+ (id==0?'#fe0000':(id==1?'#ffdb01':'#2caae4'))}}">
+		<view class="edit_change_box">
+			<image src="{{dataList.drawsList.bg[chooseList[4]]}}" class="edit_bg"></image>
+			<image src="{{dataList.drawsList.body[chooseList[1]]}}" class="edit_jg edit_body"></image>
+			<image src="{{dataList.drawsList.head[chooseList[0]]}}" class="edit_jg edit_head"></image>
+			<image src="{{dataList.drawsList.leg[chooseList[2]]}}" class="edit_jg edit_leg"></image>
+			<image src="{{dataList.drawsList.shoe[chooseList[3]]}}" class="edit_jg edit_shoe"></image>
+		</view>		
+	</view>
+	<image src="../img/bz.png" class="edit_bz"></image>
+</view>

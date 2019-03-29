@@ -1,0 +1,25 @@
+<!--pages/inside/edit.wxml-->
+<view class="content" style="{{'background:'+ (id==0?'#fe0000':(id==1?'#ffdb01':'#2caae4'))}}">
+	<button class="edit_btn" bindtap="changePage">保存</button>
+	<view class="'edit_change_box'+{{dataList.tabChoose==null? '': ' show'}}">
+		<image src="{{dataList.drawsList.bg[dataList.chooseList[4]]}}" class="edit_bg"></image>
+		<image src="{{dataList.drawsList.body[dataList.chooseList[1]]}}" class="edit_jg edit_body"></image>
+		<image src="{{dataList.drawsList.head[dataList.chooseList[0]]}}" class="edit_jg edit_head"></image>
+		<image src="{{dataList.drawsList.leg[dataList.chooseList[2]]}}" class="edit_jg edit_leg"></image>
+		<image src="{{dataList.drawsList.shoe[dataList.chooseList[3]]}}" class="edit_jg edit_shoe"></image>
+	</view>
+	<view class="{{'edit_tb_box'+ (dataList.tabChoose==null? '':' tab_show')}}">
+		<view class="edit_tb_list" wx:if="{{dataList.tabChoose!==null}}">
+			<view class="edit_tb_tit">
+				<text>{{dataList.tabDrawsList[dataList.tabChoose].engName}}</text>
+				<text># {{dataList.tabDrawsList[dataList.tabChoose].chiName}}</text>
+			</view>
+			<view class="edit_scroll_wrap">
+				<button class="tab_list_btn" wx:for="{{dataList.tabDrawsList[dataList.tabChoose].list}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-index="{{index}}" bindtap="changeClothes"><image src="{{item}}"></image></button>
+			</view>
+		</view>
+		<view class="edit_tb_box_in">
+	    	<button class="tab_head_button" wx:for="{{dataList.tabList}}" wx:for-item="item" wx:for-index="index" wx:key="index" bindtap="tabChange" data-index="{{index}}"><image src="{{dataList.tabChoose==index? item[2] : (dataList.tabChoose==null? item[0]:item[1]) }}"></image></button>
+	    </view>
+	</view>
+</view>

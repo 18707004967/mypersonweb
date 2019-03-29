@@ -1,0 +1,50 @@
+const datalist = {  
+    drawsList:{
+      head:['../img/head1.png','../img/head2.png','../img/head3.png','../img/head4.png','../img/head5.png','../img/head6.png','../img/head7.png','../img/head8.png','../img/head9.png','../img/head10.png','../img/head11.png'],
+      body:['../img/body1.png','../img/body2.png','../img/body3.png','../img/body4.png','../img/body5.png','../img/body6.png','../img/body7.png','../img/body8.png','../img/body9.png','../img/body10.png','../img/body11.png'],
+      leg:['../img/leg1.png','../img/leg2.png','../img/leg3.png','../img/leg4.png','../img/leg5.png','../img/leg6.png','../img/leg7.png','../img/leg8.png','../img/leg9.png','../img/leg10.png','../img/leg11.png'],
+      shoe:['../img/shoe1.png','../img/shoe2.png','../img/shoe3.png','../img/shoe4.png','../img/shoe5.png','../img/shoe6.png','../img/shoe7.png','../img/shoe8.png','../img/shoe9.png'],
+      bg:['../img/bg1.png','../img/bg2.png','../img/bg3.png'],
+    },
+    chooseList:[0,0,0,0,0],
+    tabList:[
+      ['../img/tab_head_p.png','../img/tab_head_nochoose.png','../img/tab_head_choose.png'],
+      ['../img/tab_body_p.png','../img/tab_body_nochoose.png','../img/tab_body_choose.png'],
+      ['../img/tab_leg_p.png','../img/tab_leg_nochoose.png','../img/tab_leg_choose.png'],
+      ['../img/tab_shoe_p.png','../img/tab_shoe_nochoose.png','../img/tab_shoe_choose.png'],
+      ['../img/tab_bg_p.png','../img/tab_bg_nochoose.png','../img/tab_bg_choose.png']
+    ],
+    tabChoose:null,
+    tabDrawsList:[
+      {
+        list:['../img/tb_head1.png','../img/tb_head2.png','../img/tb_head3.png','../img/tb_head4.png','../img/tb_head5.png','../img/tb_head6.png','../img/tb_head7.png','../img/tb_head8.png','../img/tb_head9.png','../img/tb_head10.png','../img/tb_head11.png'],
+        engName:'JACKET',
+        chiName:'上衣'
+      },
+      {
+        list:['../img/body1_small.png','../img/body2_small.png','../img/body3_small.png','../img/body4_small.png','../img/body5_small.png','../img/body6_small.png','../img/body7_small.png','../img/body8_small.png','../img/body9_small.png','../img/body10_small.png','../img/body11_small.png'],
+        engName:'JACKET',
+        chiName:'上衣'
+      },
+      {
+        list:['../img/tb_leg1.png','../img/tb_leg2.png','../img/tb_leg3.png','../img/tb_leg4.png','../img/tb_leg5.png','../img/tb_leg6.png','../img/tb_leg7.png','../img/tb_leg8.png','../img/tb_leg9.png','../img/tb_leg10.png','../img/tb_leg11.png'],
+        engName:'JACKET',
+        chiName:'上衣'
+      },
+      {
+        list:['../img/tb_shoe1.png','../img/tb_shoe2.png','../img/tb_shoe3.png','../img/tb_shoe4.png','../img/tb_shoe5.png','../img/tb_shoe6.png','../img/tb_shoe7.png','../img/tb_shoe8.png','../img/tb_shoe9.png'],
+        engName:'JACKET',
+        chiName:'上衣'
+      },
+      {
+        list:['../img/tb_bg1.png','../img/tb_bg2.png','../img/tb_bg3.png'],
+        engName:'JACKET',
+        chiName:'上衣'
+      }
+    ],
+    tabDrawsChoose:0
+}
+
+module.exports = {
+  datalist: datalist
+}

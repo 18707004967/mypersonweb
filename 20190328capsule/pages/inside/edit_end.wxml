@@ -3,7 +3,7 @@
 	<view class="edit_top">
 		<view class="edit_write">
 			<icon class="edit_write_icon"></icon>
-			<input type="text" maxlength="6" class="edit_ipt" placeholder="你的潮流标签" />
+			<input type="text" maxlength="10" class="edit_ipt" bindinput="getValue" placeholder="你的潮流标签" />
 		</view>
 	</view>
 	<view class="edit_bottom" style="{{'background:'+ (id==0?'#fe0000':(id==1?'#ffdb01':'#2caae4'))}}">
@@ -13,7 +13,26 @@
 			<image src="{{dataList.drawsList.head[chooseList[0]]}}" class="edit_jg edit_head"></image>
 			<image src="{{dataList.drawsList.leg[chooseList[2]]}}" class="edit_jg edit_leg"></image>
 			<image src="{{dataList.drawsList.shoe[chooseList[3]]}}" class="edit_jg edit_shoe"></image>
-		</view>		
+		</view>	
+		<view class="edit_btn_box">
+			<view class="edit_btn1">
+				<button class="edit_back" bindtap="historyBack"></button>
+				<text class="edit_btn_text">继续编辑</text>
+			</view>
+			<view class="edit_btn1 edit_btn2">
+				<button class="edit_back"></button>
+				<text class="edit_btn_text">购买</text>
+			</view>
+			<view class="edit_btn1 edit_btn3">
+				<button class="edit_back"></button>
+				<text class="edit_btn_text">分享</text>
+			</view>
+			<view class="edit_btn1 edit_btn4">
+				<button class="edit_back" bindtap="imageSave"></button>
+				<text class="edit_btn_text">长按保存</text>
+			</view>
+			
+		</view>	
 	</view>
 	<image src="../img/bz.png" class="edit_bz"></image>
 </view>

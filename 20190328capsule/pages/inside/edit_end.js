@@ -5,6 +5,7 @@ Page({
     id:0,
     dataList:util.datalist,
     chooseList:[],
+    iptValue:''
   },
 
   /**
@@ -16,6 +17,55 @@ Page({
     const id = wx.getStorageSync('id')
     this.setData({id:id})
   },
+  historyBack(){
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+  getValue(ev){
+    this.setData({
+      iptValue:ev.detail.value
+    });
+  },
+  imageSave(){
+    var value = this.data.iptValue;
+    value = value.split('');
+    this.setStorage();
+    if(value.length>0){     
+      try {
+
+      } catch (e) {
+        console.log(e)
+      }  
+      wx.navigateTo({
+        url:'./edit_create_img'
+      })
+    }else{
+      wx.showModal({
+      title: '提示',
+      content: '请输入您的潮流标签~',
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+    }
+  },
+  setStorage(){
+    var list = this.data.dataList.drawsList;
+    var chooseList = this.data.chooseList;
+    console.log(list);
+    console.log(chooseList);
+    wx.setStorageSync('fillData',{
+      text:this.data.iptValue,
+      topIcon:'../img/bz.png',
+      personData:[list.bg[chooseList[4]],list.body[chooseList[1]],list.leg[chooseList[2]],list.shoe[chooseList[3]],list.head[chooseList[0]]]
+    }) 
+  },
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

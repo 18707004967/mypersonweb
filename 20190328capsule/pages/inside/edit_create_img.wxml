@@ -1,0 +1,6 @@
+<!--pages/inside/edit_create_img.wxml-->
+<view class="content">
+	<canvas canvas-id="canvas" style="width:100vw; height: 100vh;"></canvas>
+	<image src="{{fillImg}}" bindlongpress="longTap" style="width:100vw; height: 100vh; position: absolute; left: 0; top: 0; z-index: 20" alt=""></image>
+</view>
+

@@ -1,15 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/inside/start",
     "pages/inside/edit",
-    "pages/inside/edit_end"
+    "pages/inside/edit_end",
+    "pages/inside/edit_create_img"
   ],
-   "window": {
+  "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "胶囊小程序",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -13,7 +13,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getSetting({
+      success(res) {
+          if (!res.authSetting['scope.writePhotosAlbum']) {
+              wx.authorize({
+                  scope: 'scope.writePhotosAlbum',
+                  success() {
+                      console.log('授权成功')
+                  }
+              })
+          }
+      }
+  })
   },
   startChange(){
     try {

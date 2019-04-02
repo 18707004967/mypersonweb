@@ -53,7 +53,7 @@ Page({
       console.log(e)
     }
     wx.navigateTo({
-      url: '../inside/edit_end?id='+this.data.id
+      url: '../inside/edit_end'
     })
   }
 })

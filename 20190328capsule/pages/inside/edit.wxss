@@ -36,16 +36,19 @@
 	top: 0;
 }
 .edit_body{
-	z-index: 5;
+	z-index: 8;
 }
 .edit_head{
 	z-index: 10;
 }
 .edit_leg{
-	z-index: 15;
+	z-index: 5;
 }
 .edit_shoe{
 	z-index: 20;
+}
+.edit_eyes{
+	z-index: 25;
 }
 .edit_tb_box{
 	width: 650rpx;
@@ -134,4 +137,96 @@
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+.showAni{
+	width: 100vw;
+	height: 850rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 30;
+}
+.showAni.show .top{
+	animation: top linear 0.6s 1 both;
+}
+.showAni.show .bot{
+	animation: bot linear 0.6s 1 both;
+}
+.showAni.show .eye{
+	animation: eyes linear 0.6s 1 both;
+}
+.showAni.show .leg{
+	animation: leg linear 0.6s 1 both;
+}
+@keyframes top{
+	0%{
+		transform: translate(0,-1000rpx)
+	}
+	70%{
+		transform: translate(0,0)
+	}
+	78%{
+		transform: translate(0,80rpx)
+	}
+	84%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(0,0)
+	}
+}
+@keyframes bot{
+	0%{
+		transform: translate(0,1000rpx)
+	}
+	70%{
+		transform: translate(0,0)
+	}
+	78%{
+		transform: translate(0,80rpx)
+	}
+	84%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(0,0)
+	}
+}
+@keyframes leg{
+	0%{
+		transform: translate(0,1000rpx)
+	}
+	70%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(0,0)
+	}
+}
+@keyframes eyes{
+	0%{
+		transform: translate(0,-1000rpx)
+	}
+	70%{
+		transform: translate(0,0)
+	}
+	78%{
+		transform: translate(0,80rpx)
+	}
+	84%{
+		opacity: 1;
+		transform: translate(0,0)
+	}
+	94%{
+		opacity: 1;
+		transform: translate(0,0)
+	}
+	97%{
+		opacity: 0;
+		transform: translate(0,0)
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0,0)
+	}
 }

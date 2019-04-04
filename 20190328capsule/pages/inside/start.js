@@ -1,12 +1,18 @@
 // pages/inside/start.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id:2,
-    jnList:['../img/start_jn02.png','../img/start_jn01.png','../img/start_jn03.png']
+    id:1,
+    jnList:[
+      ['../img/start_jn01_top.png','../img/start_jn01_bottom.png'],
+      ['../img/start_jn02_top.png','../img/start_jn02_bottom.png',],
+      ['../img/start_jn03_top.png','../img/start_jn03_bottom.png']
+    ],
+    show:false,
   },
 
   /**
@@ -27,13 +33,21 @@ Page({
   })
   },
   startChange(){
-    try {
-      wx.setStorageSync('id',this.data.id)  
-    } catch (e) {
-      console.log(e)
-    }
-    wx.navigateTo({
-      url:'./edit'
+    this.setData({
+      show:true,
     })
+    var self = this;
+    setTimeout(function(){
+      try {
+        wx.setStorageSync('id',2); 
+        wx.setStorageSync('show',true); 
+      } catch (e) {
+        console.log(e)
+      }
+      wx.redirectTo({
+        url:'./edit'
+      })
+    },300)
+    
   }
 })

@@ -1,5 +1,8 @@
 <!--pages/inside/start.wxml-->
-<view class="content" style="{{'background:'+ (id==0?'#fe0000':(id==1?'#ffdb01':'#2caae4'))}}">
-	<image src="{{jnList[id]}}" class="start_jn_img"></image>
+<view class="content" style="{{'background:'+ (id==0?'#ffdb01':(id==1?'#fe0000':'#2caae4'))}}">
+	<view class="{{'start_jn_img' + (show==true? ' ani':'')}}">
+		<image src="{{jnList[id][0]}}"></image>
+		<image src="{{jnList[id][1]}}"></image>
+	</view>
 	<button class="start_btn" bindtap="startChange"></button>
 </view>

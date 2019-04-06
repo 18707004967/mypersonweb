@@ -94,7 +94,8 @@ Page({
     console.log(arr)
     this.setData({closeList:arr})
   },
-  tabChange(ev){
+  tabChange(ev) {
+    this.aniEnd();
     let index = ev.currentTarget.dataset.index;
     let list;
     if(this.data.dataList.tabChoose==index){
@@ -151,16 +152,13 @@ Page({
     })
   },
   aniEnd(){
-    var self = this;
-    setTimeout(function(){
-      try {
-        wx.setStorageSync('show',false); 
-      } catch (e) {
-        console.log(e)
-      }
-      self.setData({
+    try {
+      wx.setStorageSync('show',false); 
+    } catch (e) {
+      console.log(e)
+    }
+    this.setData({
         show:false,
-      })
-    },200)   
+      })  
   }
 })

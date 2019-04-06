@@ -10,7 +10,7 @@
 			<image src="{{dataList.baseUrl+dataList.closeData.shoes[dataList.chooseList[3]]}}" class="edit_jg edit_shoe"></image>			
 		</view>
 		<view wx-if="{{show==true}}" class="{{'showAni'+(show==true?' show':'')}}">			
-			<image src="../img/edit_top.png" bindanimationend="aniEnd" class="edit_jg edit_body top"></image>
+			<image src="../img/edit_top.png" class="edit_jg edit_body top"></image>
 			<image src="../img/edit_bottom.png" class="edit_jg edit_body bot"></image>
 			<image src="../img/edit_eyes.png" class="edit_jg edit_eyes eye"></image>
 			<image src="../img/edit_leg.png" class="edit_jg edit_leg leg"></image>

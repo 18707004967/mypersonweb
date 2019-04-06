@@ -7,7 +7,7 @@ Page({
     chooseList:[],
     iptValue:'',
     changeNum:0,
-    drawImg:['','','','','']
+    drawImg:[-1,-1,-1,-1,-1]
   },
 
   /**
@@ -46,33 +46,40 @@ Page({
     var self = this;
     var ctx = this.data.cans;
     var sw = this.data.windowWidth;
-    console.log(sw)
     var sh = this.data.windowHeight;    
     var clsoeArr = this.data.clsoeArr;
-    console.log(clsoeArr)
-    wx.getImageInfo({
-      src: 'https:'+this.data.dataList.baseUrl+clsoeArr[num][key],
-      success: function (res) {
-        var arr = self.data.drawImg;
-        if(key=='bg'){
-          arr[0] = res.path;
-        }else if(key=='leg'){
-          arr[1] = res.path;
-        }else if(key=='body'){
-          arr[2] = res.path;
-        }else if(key=='head'){
-          arr[3] = res.path;
-        }else if(key=='shoes'){
-          arr[4] = res.path;
+    if (!!clsoeArr[num][key]){
+      wx.getImageInfo({
+        src: 'https:'+this.data.dataList.baseUrl+clsoeArr[num][key],
+        success: function (res) {
+          console.log(res)
+          var arr = self.data.drawImg;
+          if(key=='bg'){
+            arr[0] = res.path;
+          }else if(key=='leg'){
+            arr[1] = res.path;
+          }else if(key=='body'){
+            arr[2] = res.path;
+          }else if(key=='head'){
+            arr[3] = res.path;
+          }else if(key=='shoes'){
+            arr[4] = res.path;
+          }
+          self.setData({
+            drawImg:arr
+          })
+        },
+        fail(error){
+          console.log(error)
         }
-        self.setData({
-          drawImg:arr
-        })
-      },
-      fail(error){
-        console.log(error)
-      }
-    }) 
+      }) 
+    }else{
+      var arr = self.data.drawImg;
+      arr[num] = '';
+      self.setData({
+        drawImg: arr
+      })
+    }
   },
   imageSave(){
     var value = this.data.iptValue;
@@ -85,25 +92,35 @@ Page({
     var clsoeArr = this.data.clsoeArr;
     for(var i = 0; i<this.data.chooseList.length; i++){
       for(var key in clsoeArr[i]){
-        this.getImageInfo(i,key)
+        this.getImageInfo(i,key)        
       }
     }
     var self = this;
     wx.showLoading({
-      title: '加载中',
+      title: '生成中',
       success(){
-        setTimeout(function () {
-          wx.hideLoading()
-          try {
-            wx.setStorageSync('drawImg',self.data.drawImg)  
-          } catch (e) {
-            console.log(e)
-          }
-          wx.navigateTo({
-            url:'./edit_create_img'
-          })
-        },1000)
+        
       }
-    })        
+    })
+    var time = setInterval(function () {
+      var cNum = 0;
+      self.data.drawImg.forEach(function (value, index) {
+        if (value == -1) {
+          cNum++;
+        }
+      })
+      if (cNum == 0) {
+        clearInterval(time)
+        wx.hideLoading()
+        try {
+          wx.setStorageSync('drawImg', self.data.drawImg)
+        } catch (e) {
+          console.log(e)
+        }
+        wx.navigateTo({
+          url: './edit_create_img'
+        })
+      }
+    },1000/60)        
   },
 })

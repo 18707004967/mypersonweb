@@ -23,7 +23,8 @@ Page({
     this.setData({dataList:app.globalData})
     const value = wx.getStorageSync('chooseList');
     const value2 = wx.getStorageSync('iptValue');    
-    const drawImgValue = wx.getStorageSync('drawImg');    
+    const drawImgValue = wx.getStorageSync('drawImg'); 
+    console.log(drawImgValue)   
     this.setData({
       chooseList:value,
       iptValue:value2,
@@ -40,51 +41,11 @@ Page({
     var sh = this.data.windowHeight;
     ctx.width = sw;
     ctx.height = sh;
-    var self = this;
-    var imgd = this.data.dataList.closeData;
-    var cho = this.data.chooseList;
-    this.setData({clsoeArr:[{bg:imgd.bg[cho[4]]},{leg:imgd.leg[cho[2]]},{body:imgd.body[cho[1]]},{head:imgd.head[cho[0]]},{shoes:imgd.shoes[cho[3]]}]})
-    var clsoeArr = this.data.clsoeArr;
-    var arr = [];                     
+    var self = this;                     
     self.drawImage();
     ctx.draw(true,setTimeout(function(){
       self.export()
-    },1000)); 
-  },
-  getImageInfo(num,key){
-    var self = this;
-    var ctx = this.data.cans;
-    var sw = this.data.windowWidth;
-    console.log(sw)
-    var sh = this.data.windowHeight;    
-    var clsoeArr = this.data.clsoeArr;
-    wx.getImageInfo({
-      src: 'https:'+this.data.dataList.baseUrl+clsoeArr[num][key],
-      success: function (res) {
-        var arr = self.data.drawImg;
-        if(key=='bg'){
-          arr[0] = res.path;
-        }else if(key=='leg'){
-          arr[1] = res.path;
-        }else if(key=='body'){
-          arr[2] = res.path;
-        }else if(key=='head'){
-          arr[3] = res.path;
-        }else if(key=='shoes'){
-          arr[4] = res.path;
-        }
-        self.setData({
-          drawImg:arr,
-        })
-        for(var i = 0; i < arr.length; i++){
-            console.log(arr[i]) 
-            ctx.drawImage(arr[i],0,100,sw,450)                             
-        }
-      },
-      fail(error){
-        console.log(error)
-      }
-    }) 
+    },500)); 
   },
   getSystem(){
     const that = this;
@@ -121,12 +82,13 @@ Page({
     ctx.fillStyle = "#000";
     ctx.textAlign = 'left';
     ctx.fillText(this.data.iptValue,30,75)
-    ctx.drawImage(this.data.topIcon,29,20,130,33)
-    ctx.drawImage(this.data.topIcon2,365,20,16,106)
+    ctx.drawImage(this.data.topIcon,29,20,sw*0.34,sw*0.088)
+    ctx.drawImage(this.data.topIcon2,365,20,sw*0.043,sw*0.283)
     var drawImgValue = this.data.drawImgValue; 
     console.log(drawImgValue)
     for(var i = 0; i < drawImgValue.length; i++){
-      ctx.drawImage(drawImgValue[i],0,100,sw,450)                             
+      console.log(drawImgValue[i])
+      ctx.drawImage(drawImgValue[i], 0, 100, sw, sw*1.13)                             
     }
      
   },

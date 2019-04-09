@@ -1,2 +1,0 @@
-# capsule-microapp
-capsule microapp

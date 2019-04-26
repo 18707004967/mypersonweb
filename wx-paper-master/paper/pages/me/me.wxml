@@ -1,0 +1,16 @@
+<!--pages/me/me.wxml-->
+<view class='wrapper'>
+	<view wx:if="{{list.length<=0}}" class="none">您还没有文章，前去制作吧~</view>
+	<view wx:else class="items">
+		<view wx:for="{{list}}" wx:key="{{index}}" class="item">
+			<view class="time">发表于 {{item.createTime}}</view>
+			<view class="des" data-id='{{item.id}}' bindtap='preview'>{{item.summary}}</view>
+			<view class="readed" wx:if="{{item.status}}">已读</view>
+			<view class="ctrls" data-index='{{index}}' bindtap='ctrls'>
+				<view data-role='editor' wx:if="{{!item.status}}"><view class="icon-editor"></view>编辑</view>
+				<view data-role='del'><view class="icon-del"></view>删除</view>
+				<view data-role='eye' wx:if="{{!item.status}}" data-num='{{item.num}}'><view class="icon-eye"></view>查看暗号</view>
+			</view>
+		</view>
+	</view>
+</view>

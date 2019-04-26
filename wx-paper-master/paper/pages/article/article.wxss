@@ -1,0 +1,30 @@
+/* pages/create/create.wxss */
+.wrapper{
+	padding-top: 20rpx;
+}
+.create-ctrls-normal text{
+	font-size: 22rpx;
+	color: #d3dbe0;
+}
+.container{
+	position: relative;
+}
+.container > view{
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+  margin: 20rpx 0;
+}
+.container image,
+.container video{
+	display: block;
+	width: 690rpx;
+}
+.container-txt{
+	box-sizing: border-box;
+	font-size: 28rpx;
+	line-height: 50rpx;
+	color: #000;
+	padding: 0 10rpx;
+  text-indent: 2em;
+}

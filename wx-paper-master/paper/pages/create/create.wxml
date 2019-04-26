@@ -1,0 +1,49 @@
+<!--pages/create/create.wxml-->
+<view class="wrapper">
+  <view class="create-items">
+    <view wx:for="{{cardlist}}" wx:key="{{index}}" data-index="{{index}}" class="create-ctrls {{'create-ctrls-'+item.status}} {{'type-'+item.type}}">
+      <view class="create-ctrls-normal">
+        <view class="inner">
+          <view class="icon-add" bindtap='showOptions' data-index="{{index}}"></view>
+          <text>点击添加内容</text>
+        </view>
+      </view>
+      <view wx:if="{{index==0}}" class="create-ctrls-live">
+        <view class="inner">
+          <view class="icon-add" catchtap='addCard' data-index="{{index}}" data-pos="top"></view>
+        </view>
+      </view>
+      <view class="create-ctrls-options">
+        <view class="inner" bindtap='queryType' data-index="{{index}}" data-type="-1">
+          <view class="icon icon-pic" data-type="1"></view>
+          <view class="icon icon-text" data-type="0"></view>
+          <view class="icon icon-video" data-type="2"></view>
+        </view>
+      </view>
+      <view class="container">
+        <view wx:if="{{item.type==1}}" class="container-pic">
+          <image src='{{item.content}}' mode='widthFix'></image>
+        </view>
+        <view wx:elif="{{item.type==2}}" class="container-video">
+          <video src="{{item.content}}" controls objectFit="fill"></video>
+        </view>
+        <view wx:else class="container-txt">
+          <textarea maxlength="-1" bindinput='typing' data-index='{{index}}' focus='{{focus==index}}' value='{{item.content}}' />
+        </view>
+        <view class="mask">
+          <view class="mask-icons" data-index="{{index}}" bindtap='change'>
+            <view class="icon-editor" data-role="focus"></view>
+            <view class="icon-reset" data-role="reset"></view>
+            <view class="icon-del" data-role="del"></view>
+          </view>
+        </view>
+      </view>
+      <view class="create-ctrls-live">
+        <view class="inner">
+          <view class="icon-add" catchtap='addCard' data-index="{{index}}" data-pos="bottom"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-create-success" bindtap='created'>制作完成</view>
+</view>

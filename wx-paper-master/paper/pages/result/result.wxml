@@ -1,0 +1,6 @@
+<!--pages/result/result.wxml-->
+<view class="wrapper">
+	<view class="num">{{num}}</view>
+	<view class="btn-copy" bindtap='copy'>复制暗号</view>
+  <view class="btn-home" bindtap='toHome'>返回首页</view>
+</view>

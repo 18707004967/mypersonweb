@@ -1,0 +1,18 @@
+<!--pages/article/article.wxml-->
+<view class="wrapper">
+  <view class="create-items">
+    <view wx:for="{{cardlist}}" wx:key="{{index}}" data-index="{{index}}" class="create-ctrls">
+      <view class="container">
+        <view wx:if="{{item.type==1}}" class="container-pic">
+          <image src='{{item.content}}' mode='widthFix'></image>
+        </view>
+        <view wx:elif="{{item.type==2}}" class="container-video">
+          <video src="{{item.content}}" controls objectFit="fill"></video>
+        </view>
+        <view wx:else class="container-txt">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

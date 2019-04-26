@@ -1,0 +1,172 @@
+/* pages/create/create.wxss */
+.wrapper{
+	padding-top: 40rpx;
+}
+.btn-create-success{
+	width: 690rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	margin: 20rpx auto;
+	background-color: #cfbe85;
+	font-size: 30rpx;
+	color: #fff;
+	text-align: center;
+}
+.create-ctrls{
+	position: relative;
+	width: 690rpx;
+	margin: 10rpx auto;
+	box-sizing: border-box;
+}
+.inner{
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	height: 100%;
+}
+.create-ctrls-normal,
+.create-ctrls-options{
+	border: 1px dashed #b5c3ca;
+	height: 240rpx;
+	border-radius: 20rpx;
+}
+.create-ctrls-normal .inner{
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.create-ctrls-normal .icon-add{
+	width: 46rpx;
+	height: 46rpx;
+	margin: 20rpx auto;
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/addbtn.png) 50% 50% no-repeat;
+	background-size: 100% 100%;
+}
+.create-ctrls-normal text{
+	font-size: 22rpx;
+	color: #d3dbe0;
+}
+.create-ctrls-options .inner{
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.create-ctrls-options .icon{
+	width: 90rpx;
+	height: 138rpx;
+}
+.icon-pic{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/pic.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.icon-text{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/text.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.icon-video{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/video.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.create-ctrls-live{
+	position: relative;
+	margin: 20rpx auto;
+}
+.create-ctrls-live .inner{
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.create-ctrls-live .icon-add{
+	display: block;
+	margin: 0 auto;
+	width: 50rpx;
+	height: 50rpx;
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/add-block.png) 50% 50% no-repeat;
+	background-size: 100% 100%;
+}
+.container{
+	display: none;
+	position: relative;
+}
+.container > view{
+	position: relative;
+	display: none;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px dashed #b5c3ca;
+}
+.container image,
+.container video{
+	display: block;
+	width: 690rpx;
+}
+.container textarea{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 28rpx;
+	line-height: 50rpx;
+	color: #000;
+	padding: 0 10rpx 80rpx;
+}
+.container .mask{
+	display: block;
+	border: none;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*box-shadow: inset 0 0 30rpx #000;*/
+	height: 80rpx;
+	background: linear-gradient(to top, rgba(0,0,0,0.4) , rgba(0,0,0,0));
+}
+.mask-icons{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+.mask-icons > view{
+	width: 60rpx;
+	height: 60rpx;
+	margin-right: 20rpx;
+}
+.icon-del{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/delete.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+.icon-reset{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/qiehuan.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+.icon-editor{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/bianji.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+.create-ctrls-0 .create-ctrls-options,
+.create-ctrls-0 .create-ctrls-live,
+.create-ctrls-1 .create-ctrls-normal,
+.create-ctrls-1 .create-ctrls-live,
+.create-ctrls-2 .create-ctrls-normal,
+.create-ctrls-2 .create-ctrls-options{
+	display: none;
+}
+.create-ctrls-2 .container{
+	display: block;
+}
+.type-0 .icon-reset,
+.type-1 .icon-editor,
+.type-2 .icon-editor{
+	display: none;
+}
+.type-0 .container-txt,
+.type-1 .container-pic,
+.type-2 .container-video{
+	display: block;
+}

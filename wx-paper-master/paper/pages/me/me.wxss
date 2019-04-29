@@ -1,0 +1,93 @@
+/* pages/me/me.wxss */
+.wrapper{
+	background: #f2f2f2;
+}
+.none{
+	text-align: center;
+	padding: 20rpx 0;
+	font-size: 24rpx;
+	color: #000;
+}
+.items{
+	padding-top: 20rpx;
+}
+.item{
+	position: relative;
+	padding: 20rpx 30rpx 0;
+	background-color: #fff;
+	margin-bottom: 20rpx;
+}
+.time{
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 22rpx;
+	color: #c7c7c7;
+}
+.des{
+	font-size: 26rpx;
+	line-height: 1.4em;
+	padding: 15rpx 0;
+}
+.ctrls{
+	position: relative;
+	margin-left: -30rpx;
+	margin-right: -30rpx;
+	height: 40rpx;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f9f9;
+	padding: 15rpx 0;
+}
+.ctrls > view{
+	position: relative;
+	height: 100%;
+	flex: 1;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 25rpx;
+	color: #cccccc;
+}
+.ctrls > view + view::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	border-left: 1px solid #ececec;
+}
+.icon-editor,
+.icon-eye,
+.icon-del{
+	width: 30rpx;
+	height: 30rpx;
+	margin: 0 15rpx;
+}
+.icon-editor{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/bianji-grey.png) 50% 50% no-repeat;
+	background-size: cover;
+}
+.icon-del{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/delete_grey.png) 50% 50% no-repeat;
+	background-size: cover;
+}
+.icon-eye{
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/eye-grey.png) 50% 50% no-repeat;
+	background-size: cover;
+}
+.readed{
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	bottom: 50rpx;
+	width: 140rpx;
+	height: 165rpx;
+	font-size: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/yidu.png) 50% 50% no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/create/create",
+    "pages/result/result",
+    "pages/article/article",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "凝点纸业",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,23 @@
+/* pages/result/result.wxss */
+.wrapper{
+	padding-top: 750rpx;
+	background: #666563 url(https://niceduang.gitee.io/pages/wx-paper/assets/imgs/bg2.png) 50% 0 no-repeat;
+	background-size: 100%;
+	text-align: center;
+}
+.num{
+	font-size: 30rpx;
+	color: #d3c795;
+  margin-bottom: 50rpx;
+}
+.btn-copy,
+.btn-home{
+	width: 70%;
+	margin: 0 auto 40rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	border: 1px solid #d3c795;
+	border-radius: 30rpx;
+	font-size: 24rpx;
+	color: #d3c795;
+}

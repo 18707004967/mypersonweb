@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="wrapper">
+  <view class='page-index-bar'>
+    <text>凝点纸业</text>
+    <view class='icon-me' bindtap='toMe'><open-data type="userAvatarUrl"></open-data></view>
+  </view>
+  <view class="page-index-label">
+  	<input placeholder="请输入暗号" placeholder-style="color:#b0b0b0;" bindinput='initVal' value='{{val}}' />
+  	<view class="icon-search" bindtap='search'>search</view>
+  </view>
+  <view class="fixed-btn">
+  	<view class="btn-create" bindtap='create'></view>
+  </view>
+</view>

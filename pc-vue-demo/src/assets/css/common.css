@@ -1,0 +1,16 @@
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; }
+body { font: 12px/1.5 tahoma,"\65b9\6b63\5170\4ead\9ed1",sans-serif; background: #ccc; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em, b { font-style: normal; }
+a { text-decoration: none; outline: none; border: none; }
+a:active { border: none; outline: none; }
+a:hover { text-decoration: none; }
+img { border: 0; }
+button, input, select, textarea { font-size: 100%; outline: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, ul, ol { padding: 0; list-style-type: none; }
+.clearfix:after { content: "\0020"; height: 0; display: block; clear: both; }
+.wrap{ width: 100%; min-width: 1200px; min-height: 100vh;position:relative; overflow: hidden;}
+.wrap_inner{position: relative;z-index: 10; min-height: 100vh;}
+#afooter{ width: 100%; min-width: 1200px; text-align: center; background:#000; color: #fff; font-size: 14px; padding: 15px 0; line-height: 22px;}
+#afooter a{ color: #fff;}

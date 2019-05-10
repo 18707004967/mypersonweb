@@ -1,0 +1,674 @@
+@function rem($px) {
+    @if $px == 0 {
+        @return 0;
+    }
+    @if $px <=2 and $px > 0 {
+        @return 1px;
+    }
+    @else {
+        @return $px / ($px * 0 + 1) / 40 * 1rem;
+    }
+}
+$img:'../images';
+.clearfix:after{clear:both;content:".";height:0;display:block;visibility:hidden;}
+.clearfix{*zoom:1;}
+.going{
+	&_wrap{
+		width: rem(750);
+		height: auto;
+		min-height: 100vh;
+		background: url(#{$img}/index_top_bg.png) no-repeat top center #f2f4f7;
+		background-size: rem(750) rem(423);
+		padding: 0 0 rem(40) 0;
+	}
+	&_info{
+		width: 100%;
+		height: rem(160);
+		overflow: hidden;
+		display: flex;
+		position: relative;
+	}
+	&_hd_box{
+		width: rem(88);
+		height: rem(88);
+		overflow: hidden;
+		border-radius: 50%;
+		border: #ffffff solid rem(3);
+		margin: rem(35) 0 0 rem(20);
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_num_box{
+		width: rem(326);
+		height: rem(92);
+		margin: rem(35) 0 0 rem(8);
+	}
+	&_num_para{
+		font-size: rem(26);
+		line-height: rem(32);
+		color: #ffffff;
+	}
+	&_num_mx{
+		display: inline-block;
+		padding: rem(4) rem(12);
+		font-size: rem(18);
+		color: #ffffff;
+		line-height: rem(24);
+		border-radius: rem(20);
+		border:#fff solid rem(1);
+	}
+	&_num{
+		display: block;
+		font-size: rem(66);
+		color: #ffdf66;
+		line-height: rem(66);
+	    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 239, 144, 1)), to(rgba(255, 224, 105, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	&_dk_box{
+		display: block;
+		width: rem(88);
+		padding: rem(48) 0 0 0 ;
+		background: url(#{$img}/going_dk_icon.png) no-repeat top center;
+		background-size: rem(48) rem(44);
+		font-size: rem(18);
+		color: #ffffff;
+		line-height: rem(34);
+		text-align: center;
+		margin: rem(54) 0 0 0;
+		position: relative;
+	}
+	&_jp_box{
+		background: url(#{$img}/going_jp.png) no-repeat top center;
+		background-size: rem(47) rem(43);
+		&.has_jp{
+			span{
+				display: block;
+				width: rem(12);
+				height: rem(12);
+				background: url(#{$img}/going_jp_icon.png) no-repeat;
+				background-size: rem(12) rem(12);
+				position: absolute;
+				left: rem(58);
+				top: rem(36);
+			}
+		}
+	}
+	&_rule_btn{
+		display: block;
+		height: rem(22);
+		padding: rem(2) rem(20);
+		font-size: rem(18);
+		color: #ffffff;
+		line-height: rem(22);
+		border-radius: rem(12) 0 0 rem(12);
+		border: #fff solid rem(1);
+		border-right: none;
+		position: absolute;
+		right: 0;
+		top: rem(38);
+	}
+	&_invite_box,&_task_box,&_common_box{
+		width: rem(712);
+		height: rem(335);
+		border-radius: rem(16);
+		background: #ffffff;
+		margin: 0 auto;
+		box-shadow: #dfe1e4 0 rem(2) rem(10);
+		overflow: hidden;
+		position: relative;
+	}
+	&_invite_tit{
+		display: block;
+		height: rem(34);
+		padding: 0 0 0 rem(36);
+		font-size: rem(30);
+		line-height: rem(34);
+		color: #333333;
+		font-weight: bold;
+		margin: rem(20) auto 0;
+		position: relative;
+		&:after{
+			content:'';
+			width: rem(5);
+			height: rem(26);
+			background: linear-gradient(to bottom,#ffe997,#ffd244);
+			border-radius: rem(3);
+			position: absolute;
+			left: rem(20);
+			top: rem(2);
+		}
+	}
+	&_qd_box{
+		width: rem(662);
+		height: rem(154);
+		margin: rem(12) auto 0;
+		position: relative;
+		padding: rem(1) 0 0 0;
+	}
+	&_qd_parg{
+		width: rem(580);
+		height: rem(8);
+		background: #f8f9fc;
+		border-radius: rem(4);
+		margin: rem(55) auto 0;
+		position: relative;
+	}
+	&_qd_in{
+		display: block;
+		width: 40%;
+		height: 100%;
+		background: linear-gradient( to right,#fff6cc,#ffd87b);
+		border-radius: rem(4);
+	}
+	&_qd_part1{
+		width: rem(126);
+		height: rem(40);
+		position: absolute;
+		left: rem(-35);
+		top: rem(-55);
+		padding: rem(95) 0 0 0;
+		&.repare{
+			.going_name{
+				width: 100%;
+				text-align: center;
+				margin: 0 ;
+			}
+			.going_gds_box{
+				background: url(#{$img}/going_gds_q2.png) no-repeat;
+				background-size: rem(78) rem(78);
+			}
+		}
+	}
+	&_qd_part2{
+		left: rem(95);
+	}
+	&_qd_part3{
+		left: rem(230);
+	}
+	&_qd_part4{
+		left: rem(360);
+	}
+	&_qd_part5{
+		left: rem(490);
+	}
+	&_coin_box{
+		width: rem(61);
+		height: rem(61);
+		border-radius: 50%;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		top: rem(31);
+		transform: translate(-50%,0);
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_person_name{
+		height: rem(36);
+		width: 100%;
+	}
+	&_person_hd{
+		width: rem(32);
+		height: rem(32);
+		border-radius: 50%;
+		overflow: hidden;
+		float: left;
+		border:#eff1f4 solid rem(2);
+		margin: 0 0 0 rem(10);
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_name{
+		width: rem(68);
+		float: left;
+		height: rem(36);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: rem(22);
+		line-height: rem(38);
+		color: #b4b4b4;
+		margin: 0 0 0 rem(4);
+		&2{			
+			width: 100%;
+			text-align: center;
+			margin: 0 ;
+		}
+	}
+	&_gds_box{
+		width: rem(72);
+		height: rem(72);
+		padding: rem(3);
+		border-radius: 50%;
+		background: url(#{$img}/going_gds_q.png) no-repeat;
+		background-size: rem(78) rem(78);
+		top:rem(18);
+	}
+	&_start_time{
+		/*width: rem(134);*/
+		font-size: rem(18);
+		color: #ff572e;
+		text-align: center;
+		position: absolute;
+		left: rem(-10);
+		top: rem(-10);
+		line-height: rem(24);
+		white-space: nowrap;
+		background-image: -webkit-gradient(linear, 0 0,right 0 , from(rgba(255, 203, 48, 1)), to(rgba(255, 108, 46, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	&_winners{
+		display: block;
+		width: rem(108);
+		height: rem(26);
+		background: linear-gradient(to right,#ffca36,#ff7a34);
+		position: absolute;
+		right: rem(20);
+		top: rem(19);
+		overflow: hidden;
+		border-radius: rem(12);
+		font-size: rem(18);
+		text-align: center;
+		line-height: rem(22);
+		span{
+			display: block;
+			width: rem(104);
+			height: rem(22);
+			margin: rem(2) auto 0;
+			background: #fff;
+			border-radius: rem(11);
+			i{
+				background-image: -webkit-gradient(linear, 0 0,right 0 , from(rgba(255, 203, 48, 1)), to(rgba(255, 108, 46, 1)));
+			    -webkit-background-clip: text;
+			    -webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	&_inivte_btn{
+		display: block;
+		width: rem(500);
+		height: rem(70);
+		border-radius: rem(35);
+		text-align: center; 
+		line-height: rem(70);
+		font-size: rem(30);
+		color: #ffffff;
+		background: linear-gradient( to right,#ffbe30,#ff572e);
+		margin: 0 auto;
+	}
+	&_care{
+		font-size: rem(22);
+		line-height: rem(26);
+		text-align: center;
+		color: #b4b4b4;
+		margin: rem(8) auto 0;
+		span{
+			display: inline-block;
+			width: rem(16);
+			height: rem(16);
+			background: url(#{$img}/going_care.png) no-repeat;
+			background-size: rem(16) rem(16);
+			vertical-align: top;
+			margin: rem(4) rem(4) 0 0;
+			&.check{
+				background: url(#{$img}/going_care_check.png) no-repeat;
+				background-size: rem(16) rem(16);
+			}
+		}
+	}
+	&_task_box{
+		height: auto;
+		padding: 0 0 rem(18) 0;
+		margin: rem(20) auto 0;
+	}
+	&_task_list{
+		width: rem(670);
+		height: rem(104);
+		margin: rem(18) auto 0;
+		overflow: hidden;
+		li{
+			width: rem(323);
+			height: rem(98);
+			border: #d4d4d4 solid rem(1);
+			border-radius: rem(8);
+			display: flex;
+			position: relative;
+			margin: 0 rem(16) rem(10) 0;
+			float: left;
+			&:nth-child(2n){
+				margin: 0 0 rem(10) 0 ;
+			}
+		}
+	}
+	&_shop_logo{
+		width: rem(70);
+		height: rem(70);
+		overflow: hidden;
+		margin: rem(14) 0 0 rem(13); 
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_task_detail{
+		width: rem(220);
+		height: rem(98);
+		margin: 0 0 0 rem(12);
+	}
+	&_task_name{
+		font-size: rem(26);
+		color: #333333;
+		line-height: rem(32);
+		padding: rem(14) 0 0 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&_task_rew{
+		width: rem(136);
+		height: rem(30);
+		line-height: rem(30);
+		font-size: rem(22);
+		color: #b4b4b4;
+		padding: rem(10) 0 0 0;
+	}
+	&_task_coin{
+		display: inline-block;
+		width: rem(30);
+		height: rem(30);
+		background: url(#{$img}/going_task_coin.png) no-repeat;
+		background-size: rem(30) rem(30);
+		vertical-align: top;
+	}
+	&_task_sum{
+		font-size: rem(26);
+		color: #ff9c48;
+		font-weight: bold;
+		padding: 0 0 0 rem(4);
+	}
+	&_task_btn{
+		display: block;
+		width: rem(80);
+		height: rem(36);
+		text-align: center;
+		line-height: rem(38);
+		font-size: rem(24);
+		color: #ffffff;
+		font-weight: bold;
+		background: linear-gradient(to right,#ffb330,#ff6133);
+		border-radius: rem(18);
+		position: absolute;
+		top: rem(44);
+		right: rem(12);
+	}
+	&_more{
+		display: block;
+		height: rem(20);
+		font-size: rem(22);
+		color: #b4b4b4;
+		line-height:rem(20);
+		text-align: center;
+		margin: rem(20) auto 0; 
+		span{
+			display: inline-block;
+			width: rem(20);
+			height: rem(20);
+			background: url(#{$img}/going_more.png) no-repeat;
+			background-size: rem(20) rem(20);
+			vertical-align: top;
+			margin: 0 0 0 rem(6);
+		}
+	}
+	&_common_box{
+		height: rem(130);
+		overflow: hidden;
+		padding: 0;
+		margin: rem(20) auto 0;
+	}
+	&_common_img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	&_gift_list{
+		width: rem(670);
+		height: rem(154);
+		margin: rem(14) auto 0;
+		overflow: hidden;
+		li{
+			width: rem(318);
+			height: rem(150);
+			margin: 0 rem(16) rem(10) 0;
+			float: left;
+			&:nth-child(2n){
+				margin: 0 0 rem(10) 0;
+			}
+		}
+	}
+	&_gift_img{
+		width: rem(148);
+		height: rem(148);
+		border:#d4d4d4 solid 1px;
+		border-radius: rem(6);
+		overflow: hidden;
+		float: left;
+		img{
+			display: block;
+			width: 90%;
+			height: 90%;
+			margin: 5% auto 0;
+		}
+	}
+	&_gift_box{
+		width: rem(160);
+		height: rem(150);
+		float: left;
+		margin: 0 0 0 rem(5);
+	}
+	&_gift_name{
+		font-size: rem(26);
+		color: #333333;
+		line-height: rem(30);
+	}
+	&_gift_delay{
+		font-size: rem(22);
+		color: #b4b4b4;
+		line-height: rem(26);
+		padding: rem(4) 0 0 0 ;
+	}
+	&_gift_parg{
+		width: rem(100);
+		height: rem(6);
+		border-radius: rem(3);
+		margin: rem(10) 0 0 0;
+		background: #f8f9fc;
+		overflow: hidden;
+		span{
+			display: block; 
+			width: 60%; 
+			height: rem(6); 
+			border-radius: rem(3);
+			background: linear-gradient(to right,#fff6d1,#ffda84);
+		}
+	}
+	&_gift_get{
+		font-size: rem(18);
+		color: #b4b4b4;
+		line-height: rem(24);
+		margin: rem(18) 0 0 0;
+	}
+	&_dh_btn{
+		display: block;
+		width: 100%;
+		height: rem(36);
+		font-size: rem(22);
+		color: #ffffff;
+		line-height: rem(36);
+		text-align: center;
+		white-space: nowrap;
+		border-radius: rem(18);
+		background: linear-gradient(to right ,#ffb730,#ff582e)
+	}
+	&_sell_tit{
+		display: block;
+		text-align: center;
+		font-size: rem(30);
+		font-weight: bold;
+		color: #333333;
+		line-height: rem(36);
+		margin: rem(16) auto 0;
+		span{
+			display: inline-block;
+			width: rem(16);
+			height: rem(24);
+			background: url(#{$img}/going_sell_ticon.png) no-repeat top center;
+			background-size: rem(16) rem(24);
+			padding: 0 rem(10);
+			vertical-align: top;
+			margin: rem(6) 0 0 0;
+		}
+	}
+	&_sell_list{
+		width: rem(712);
+		margin: rem(20) auto 0;
+		li{
+			width: rem(231);
+			height: rem(300);
+			float: left;
+			border-radius: rem(8);
+			background: #ffffff;
+			margin: 0 rem(9) rem(10) 0;
+			&:nth-child(3n){
+				margin: 0 0 rem(10) 0;
+			}
+		}
+	}
+	&_gds_img{
+		width: 100%;
+		height: rem(180);
+		overflow: hidden;
+		margin: rem(10) auto rem(10);
+		img{
+			display: block;
+			height: 100%;
+			width: auto;
+			max-width: 100%;
+			margin: 0 auto ;
+		}
+	}
+	&_gds_name{
+		width: rem(208);
+		margin: rem(10) auto 0;
+		font-size: rem(22);
+		color: #333333;
+		line-height: rem(26);
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+	&_gds_prise{
+		font-size: rem(24);
+		width: rem(210);
+		margin: 0 auto;
+		background-image: -webkit-gradient(linear, left top, right bottom , from(rgba(255, 157, 103, 1)), to(rgba(255, 8, 7, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    strong{
+	    	font-size: rem(32);
+	    	font-weight: bold;
+	    }
+	}
+	&_loading{
+		display: block;
+		width: rem(12);
+		height: rem(56);
+		background: url(#{$img}/going_loading.png) no-repeat;
+		background-size: rem(12) rem(56);
+		margin: rem(14) auto 0;
+		padding: 0 0 rem(40) 0; 
+		display: none;
+	}
+	&_rew_wrap{
+		width: rem(750);
+		background: #eff1f4;
+		min-height: 100vh;
+	}
+	&_rew_tab{
+		width: rem(750);
+		height: rem(95);
+		border-top:#e5e5e5 solid 1px;
+		background: #ffffff;
+		display: flex;
+		li{
+			width: 50%;
+			height: rem(95);
+			text-align: center;
+			line-height: rem(95);
+			font-size: rem(38);
+			color: #333333;
+			overflow: hidden;
+			position: relative;
+			&.cur{
+				background-image: -webkit-gradient(linear, left top, right bottom , from(#ffcd30), to(#ff5d2e));
+			    -webkit-background-clip: text;
+			    -webkit-text-fill-color: transparent;
+			    &:after{
+			    	content:"";
+			    	width: rem(270);
+			    	height: rem(12);
+			    	background: linear-gradient(to right,#ffcc33,#ff682e);
+			    	position: absolute;
+			    	left: 50%;
+			    	bottom: rem(-6);
+			    	transform: translate(-50%,0);
+			    	border-radius: rem(6);
+			    }
+			}
+		}
+	}
+	&_cot{
+		width: 100%;
+		padding: rem(40) 0 0 0;
+	}
+	&_lot_list{
+		width: rem(690);
+		margin: 0 auto;
+		li{
+			width: rem(690);
+			height: rem(151);
+			background: url(#{$img}/going_q2.png) no-repeat;
+			background-size: rem(690) rem(151);
+			display: flex;
+			&.q2{
+				background: url(#{$img}/going_q1.png) no-repeat;
+				background-size: rem(690) rem(151);
+			}
+		}
+	}
+	&_lot_num{
+		display: block;
+		width: rem(170);
+		height: rem(151);
+		line-height: rem(150);
+		text-align: center;
+		font-size: rem(50);
+		color: #ffffff;
+		span{
+			font-size: rem(22);
+		}
+	}
+}

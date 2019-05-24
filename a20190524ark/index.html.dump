@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="robots" content="all"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Tencent-TGideas"/>
+<meta name="Copyright" content="Tencent"/>
+<meta name="Description" content="跑跑卡丁车，跑跑卡丁车2.0，跑跑卡丁车，不只是漂移，全民漂移" />
+<meta name="Keywords" content="跑跑卡丁车，跑跑卡丁车2.0，跑跑卡丁车，不只是漂移，全民漂移,道具赛,竞速赛,跑跑卡丁车,世纪天成" />
+<title>组团瓜分现金红包 - 跑跑卡丁车官方网站 - 腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2019-05-06 -->
+<script>
+(function (win,doc){
+    if (!win.addEventListener) return;
+    var html=document.documentElement;
+    function setFont()
+    {
+        var cliWidth=html.clientWidth;
+        html.style.fontSize=100*(cliWidth/750)+'px';
+    }
+    win.addEventListener('resize',setFont,false);
+    setFont();
+})(window,document);
+</script>
+<style>
+{ /*index*/ /*竖屏提示*/ /*afooter*/ }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; outline: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+body { background: #000; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100% !important; -webkit-touch-callout: none; -webkit-user-select: text; -webkit-touch-callout: none; word-break: break-all; word-wrap: break-word; line-height: 1; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+input, select, form, img { vertical-align: middle; outline: none; }
+a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] { outline: 0; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a { -webkit-touch-callout: none; text-decoration: none; color: #333; outline: 0; }
+.hidden { width: 0; height: 0; line-height: 0; font-size: 0; visibility: hidden; text-indent: -9999px; display: block; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+@font-face { { font-family: 'zz'; src: url("images/zz.eot?#font-spider") format("embedded-opentype"), url("images/zz.woff") format("woff"), url("images/zz.ttf") format("truetype"), url("images/zz.svg") format("svg"); font-weight: normal; font-style: normal; } }
+.spr { background: url(images/spr.png) no-repeat; background-size: 5.03rem 4.81rem; }
+.wrap { width: 7.5rem; overflow: hidden; position: relative; margin: 0 auto; padding: 0 0 0 0; background: url(images/bg_repeat.png) repeat -0.45rem 2.34rem #eef4ff; background-size: 1.69rem 10.09rem; }
+.wrap_inner { width: 7.50rem; min-height: 90vh; position: relative; z-index: 20; overflow: hidden; background: url(images/bg.jpg) no-repeat; background-size: 7.50rem 12.42rem; padding: 0 0 1.20rem 0; }
+.w_tbox { width: 5.56rem; height: 1.13rem; background: url(images/w_t.png) no-repeat; background-size: 5.56rem 1.13rem; margin: 1.42rem 0 0 0; -webkit-animation: w_tbox 0.8s cubic-bezier(0.68, -0.55, 0.27, 2) 1 both; animation: w_tbox 0.8s cubic-bezier(0.68, -0.55, 0.27, 2) 1 both; overflow: hidden; }
+@-webkit-keyframes w_tbox { 0% { -webkit-transform: translate(-3rem, 0); transform: translate(-3rem, 0); opacity: 0; }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; } }
+@keyframes w_tbox { 0% { -webkit-transform: translate(-3rem, 0); transform: translate(-3rem, 0); opacity: 0; }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; } }
+.w_t { display: block; font-size: 0.54rem; color: #ffffff; line-height: 0.54rem; font-family: 'zz'; font-weight: normal; margin: 0.14rem 0 0 0; font-style: italic; -webkit-animation: w_tbox 0.8s 0.4s cubic-bezier(0.68, -0.55, 0.27, 2) 1 both; animation: w_tbox 0.8s 0.4s cubic-bezier(0.68, -0.55, 0.27, 2) 1 both; }
+.w_t_icon { display: inline-block; width: 0.41rem; height: 0.41rem; background: url(images/w_t_icon.png) no-repeat; background-size: 0.41rem 0.41rem; vertical-align: top; margin: 0.04rem 0.04rem 0 0.31rem; }
+.w_yq { font-size: 0.28rem; color: #ffe539; line-height: 0.32rem; margin: 0.02rem 0 0 0.74rem; font-style: italic; -webkit-animation: w_tbox 0.8s 0.6s cubic-bezier(0.68, -0.55, 0.27, 2.5) 1 both; animation: w_tbox 0.8s 0.6s cubic-bezier(0.68, -0.55, 0.27, 2.5) 1 both; }
+.w_member_num { font-size: 0.24rem; color: #8f9699; line-height: 0.30rem; text-indent: 0.14rem; margin: 0.36rem 0 0 0; }
+.w_member_list { width: 7.24rem; margin: 0.18rem auto 0; perspective: 1000; -webkit-perspective: 1000; }
+.w_member_list li { width: 6.91rem; height: 1.48rem; background: #ffffff; border-radius: 0.10rem; overflow: hidden; margin: 0 0 0.18rem 0; -webkit-box-shadow: rgba(186, 202, 234, 0.5) 0 4px 6px; box-shadow: rgba(186, 202, 234, 0.5) 0 4px 6px; padding: 0 0 0 0.33rem; }
+.w_member_in { width: 6.91rem; height: 1.48rem; }
+.w_mem_hd { width: 1.12rem; height: 1.12rem; margin: 0.18rem 0 0 0; float: left; position: relative; }
+.w_mem_hd img { display: block; width: 1.04rem; height: 1.04rem; font-size: 0; border: #dddddd solid 0.04rem; border-radius: 50%; }
+.w_mem_hd.fz span { display: block; width: 0.61rem; height: 0.61rem; background: url(images/w_mem_fz.png) no-repeat; background-size: 0.61rem 0.61rem; position: absolute; left: -0.20rem; top: -0.12rem; }
+.w_mem_info { width: 3.84rem; height: 1.48rem; margin: 0 0 0 0.14rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; float: left; }
+.w_mem_name { display: block; font-size: 0.30rem; line-height: 0.34rem; font-weight: normal; color: #1b1b1b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.w_mem_dw { font-size: 0.24rem; color: #8f9699; line-height: 0.32rem; margin: 0.06rem 0 0 0; }
+.w_mem_dwicon { display: inline-block; width: 0.24rem; height: 0.30rem; background: url() no-repeat; background-size: 0.24rem 0.30rem; vertical-align: top; margin: 0 0.10rem 0 0; }
+.w_mem_status { display: block; width: 1.27rem; height: 0.56rem; font-size: 0.24rem; line-height: 0.56rem; font-weight: normal; color: #ffffff; background: url(images/w_zd_status1.png) no-repeat; background-size: 1.77rem 0.56rem; padding: 0 0 0 0.50rem; text-align: center; margin: 0.32rem 0 0 0; float: right; white-space: nowrap; }
+.w_mem_status span { color: #fff600; }
+.w_member_list li.wait .w_mem_status { background: url(images/w_zd_status2.png) no-repeat; background-size: 1.77rem 0.56rem; color: #ffffff; }
+.w_join_btn { display: block; width: 7.23rem; height: 0.78rem; background: url(images/w_join_btn.png) no-repeat; background-size: 100% 100%; text-indent: -9999px; overflow: hidden; position: absolute; bottom: 0.4rem; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.w_join_wd { display: block; width: 1.59rem; height: 0.33rem; background: url(images/w_join_wd.png) no-repeat; background-size: 1.59rem 0.33rem; margin: 0.23rem auto 0; }
+.w_js_icon { display: block; width: 2.07rem; height: 2.07rem; background: url(images/w_js_icon.png) no-repeat; background-size: 100% 100%; margin: 2.54rem auto 0; }
+.w_creat_wd { display: block; width: 2.01rem; height: 0.33rem; background: url(images/w_creat_wd.png) no-repeat; background-size: 2.01rem 0.33rem; margin: 0.23rem auto 0; }
+.w_js_para { font-size: 0.28rem; color: #adb7d4; text-align: center; margin: 0.10rem auto 0; }
+.dia { width: 5.90rem; height: 5.33rem; background: url(images/d_bg1.png) no-repeat; background-size: 5.90rem 5.33rem; }
+.dia_t { display: block; height: 1.04rem; font-size: 0.36rem; color: #ffffff; font-weight: bold; line-height: 1.10rem; text-indent: 2.64rem; }
+.d_status { width: 100%; height: 1.42rem; position: relative; }
+.d_status:after { content: ""; width: 5.36rem; height: 0; border-bottom: #9abcd7 dashed 1px; position: absolute; left: 0.26rem; bottom: 0; }
+.d_pers_img { width: 0.92rem; height: 0.92rem; padding: 0.03rem; border: #c6e0fe solid 1px; background: #dfeeff; overflow: hidden; margin: 0.17rem 0 0 0.25rem; float: left; }
+.d_pers_img img { display: block; width: 100%; height: 100%; }
+.d_pers_info { width: 2.56rem; margin: 0.32rem 0 0 0.14rem; float: left; overflow: hidden; }
+.d_pers_info strong { display: block; font-size: 0.28rem; color: #5f7d96; font-weight: normal; line-height: 0.34rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.d_pers_info span { display: block; font-size: 0.22rem; color: #c5945a; line-height: 0.26rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.d_repare_box { width: 1.0rem; height: 1.0rem; background: url(images/w_repare_join.png) no-repeat; background-size: 1.0rem 1.0rem; overflow: hidden; margin: 0.24rem auto 0; }
+.d_repare_box img { display: block; width: 1.0rem; height: 1.0rem; }
+.d_repare_para { font-size: 0.24rem; color: #5f7d96; line-height: 0.32rem; text-align: center; margin: 0.06rem auto 0; }
+.d_para { width: 5.66rem; margin: 0.20rem auto 0; font-size: 0.24rem; color: #de6946; line-height: 0.30rem; text-align: center; }
+.d_tips_icon { display: inline-block; width: 0.22rem; height: 0.22rem; background: url(images/d_tips_icon.png) no-repeat; background-size: 0.22rem 0.22rem; margin: 0.04rem 0.06rem 0 0; vertical-align: top; }
+.d_btn_box { width: 5.90rem; height: 0.84rem; background: url(images/d_btn_box.png) no-repeat; background-size: 5.90rem 0.84rem; position: absolute; left: 0; bottom: -0.60rem; }
+.d_btn { display: block; width: 50%; height: 0.84rem; text-indent: -9999px; float: left; }
+.d_stu2 { width: 100%; height: 3.0rem; margin: 0 auto; overflow: hidden; }
+.w_js_icon2 { width: 1.48rem; height: 1.48rem; margin: 0.63rem auto 0; }
+.w_js_para2 { font-size: 0.24rem; }
+.d_btn_box2 { background: url(images/d_btn_box2.png) no-repeat; background-size: 5.90rem 0.84rem; }
+.d_btn_box2 .d_btn { width: 100%; }
+.Shine_landscape { display: none; }
+@media screen and (orientation: landscape) { .Shine_landscape { display: block; width: 100%; height: 100%; background: #32373b; position: fixed; left: 0; top: 0; z-index: 99999; text-align: center; }
+  .Shine_landscape_box { position: relative; margin-left: auto; margin-right: auto; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
+  .Shine_landscape span { font-size: 22px; display: block; color: #ffd40a; text-align: center; width: 100%; padding-top: 10px; line-height: 2; }
+  .Shine_landscape img { -webkit-animation: Shine_landscapeAni 1.5s ease infinite alternate; width: auto !important; animation: Shine_landscapeAni 1.5s ease infinite alternate; width: 128px; height: 194px; }
+  @-webkit-keyframes Shine_landscapeAni { 0% { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+    30% { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+    70% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+  @keyframes Shine_landscapeAni { 0% { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+    30% { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+    70% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } } }
+#afooter { width: 100%; font-size: 0.20rem; color: #c2b3a2; text-align: center; background: #000; padding: 0.18rem 0 0.18rem 0; line-height: 0.30rem; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="wrap_inner">
+        <div class="w_tbox">
+            <strong class="w_t"><span class="w_t_icon"></span>组队竞速排位</strong>
+            <p class="w_yq">段位要求:青铜III-钻石I</p>
+        </div>
+        <div class="w_status">
+            <p class="w_member_num">组队成员 (2/4）</p>
+            <ul class="w_member_list">
+                <li>
+                    <div class="w_member_in">
+                        <div class="w_mem_hd fz">
+                            <img src="images/w_mem_hdimg.jpg" alt="头像">
+                            <span></span>
+                        </div>
+                        <div class="w_mem_info">
+                            <strong class="w_mem_name">雪地漂移的小帅</strong>
+                            <p class="w_mem_dw"><img src="images/w_dw_icon.png" class="w_mem_dwicon" alt="黄金段位III" />黄金段位III</p>
+                        </div>
+                        <strong class="w_mem_status" ontouchstart="TGDialogS('d1')">正在<span>组队中</span></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="w_member_in">
+                        <div class="w_mem_hd">
+                            <img src="images/w_mem_hdimg.jpg" alt="头像">
+                            <span></span>
+                        </div>
+                        <div class="w_mem_info">
+                            <strong class="w_mem_name">雪地漂移的小帅</strong>
+                            <p class="w_mem_dw"><img src="images/w_dw_icon.png" class="w_mem_dwicon" alt="黄金段位III" />黄金段位III</p>
+                        </div>
+                        <strong class="w_mem_status" ontouchstart="TGDialogS('d2')">正在<span>组队中</span></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="w_member_in">
+                        <div class="w_mem_hd">
+                            <img src="images/w_mem_hdimg.jpg" alt="头像">
+                            <span></span>
+                        </div>
+                        <div class="w_mem_info">
+                            <strong class="w_mem_name">雪地漂移的小帅</strong>
+                            <p class="w_mem_dw"><img src="images/w_dw_icon.png" class="w_mem_dwicon" alt="黄金段位III" />黄金段位III</p>
+                        </div>
+                        <strong class="w_mem_status">正在<span>组队中</span></strong>
+                    </div>
+                </li>
+                <li class="wait">
+                    <div class="w_member_in">
+                        <div class="w_mem_hd">
+                            <img src="images/w_mem_hdimg2.png" alt="头像">
+                            <span></span>
+                        </div>
+                        <div class="w_mem_info">
+                        </div>
+                        <strong class="w_mem_status">等待加入</span></strong>
+                    </div>
+                </li>
+            </ul>
+            <a href="javascript:;" class="w_join_btn" title="立即加入"><span class="w_join_wd">立即加入</span></a>
+        </div>
+        <div class="w_status" style="display: none;">
+            <span class="w_js_icon"></span>
+            <p class="w_js_para">该队伍已解散~</p>
+            <a href="javascript:;" class="w_join_btn" title="立即加入"><span class="w_creat_wd">立即加入</span></a>
+        </div>
+	</div>
+</div>
+<div class="dia" id="d1" style="display: none;">
+    <strong class="dia_t">4人-组队竞速排位</strong>
+    <div class="d_status">
+        <div class="d_pers_img">
+            <img src="images/d_img1.jpg" alt="头像">
+        </div>
+        <p class="d_pers_info"><strong>快乐的小皮蛋</strong><span>青铜段位III</span></p>
+        <strong class="w_mem_status">组队中</strong>
+    </div>
+    <div class="d_repare_box">
+        <img src="images/w_repare_join.png" alt="待加入">
+    </div>
+    <p class="d_repare_para">待加入</p>
+    <p class="d_para"><span class="d_tips_icon"></span>组队要求:青铜段位III具有良好的车技可以适应各种</p>
+    <div class="d_btn_box">
+        <a href="javascript:closeDialog();" class="d_btn" title="了解详情">了解详情</a>
+        <a href="javascript:closeDialog();" class="d_btn" title="立即加入">立即加入</a>
+    </div>
+</div>
+<div class="dia" id="d2" style="display: none;">
+    <strong class="dia_t">4人-组队竞速排位</strong>
+    <div class="d_stu2">       
+        <span class="w_js_icon w_js_icon2"></span>
+        <p class="w_js_para w_js_para2">该队伍已解散~</p>
+    </div>
+    <p class="d_para"><span class="d_tips_icon"></span>组队要求:青铜段位III具有良好的车技可以适应各种</p>
+    <div class="d_btn_box d_btn_box2">
+        <a href="javascript:closeDialog();" class="d_btn" title="创建新队伍">创建新队伍</a>
+    </div>
+</div>
+<!-- 竖屏提示 S -->
+<div class="Shine_landscape" id="Shine_landscape"><div class="Shine_landscape_box"><img src="images/iphone.png" id="Shine_landscape_pic" width="128" height="194" alt="手机/平板" /><span>为了更好的体验，请将手机/平板竖过来</span></div></div>
+<!-- 竖屏提示 E -->
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script>
+function TGDialogS(e){
+    // 利用milo库引入dialog组件
+    need("biz.dialog",function(Dialog){
+        Dialog.show({
+            id:e,
+            bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+            opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    });
+}
+function closeDialog(){
+    // 利用milo库引入dialog组件
+    need("biz.dialog",function(Dialog){
+        Dialog.hide();
+    });
+}
+
+</script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script type="text/javascript">
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+    siteType:"a20190524ark", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+    pageName:"首页", //必填项:页面中文名
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+    stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script> 
+</body>
+</html>

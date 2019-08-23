@@ -1,0 +1,145 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer,div{margin:0;padding:0;}
+body,button,input,select,textarea{font-family: tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none; outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} 
+a:hover{text-decoration:none;}
+img{border:0;display:block;width: 100%;} 
+i,em{font-style:normal;}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0;list-style: none;}
+div{outline: none;}
+.hidden{display: none; font-size: 0; text-indent: -999em;}
+.clearfix:after,.tab .tab-panel li:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix,.tab .tab-panel li{*zoom:1;}
+body {position: relative;width: 100%; background: #000;}
+/*nav*/
+.common-header{position:relative;height:1.28rem;}
+.cover-content{width :100%;height:1.28rem;top:0;left:0;z-index:100;background:#050609;}
+.cover-fixed{position:fixed;}
+.web-logo{width:4.7rem;height:1.28rem;color:#fff;display:block;overflow:hidden;background: url(//game.gtimg.cn/images/gp/public/logo_200.png) no-repeat .25rem .18rem;-moz-background-size: .95rem .95rem;background-size: .95rem .95rem;}
+.cover-content .p-common {padding:.2rem 0 0 1.3rem;}
+.p-common dt{}
+.p-common dt span{display: block;font-size:.3rem;color:#ffc239;}
+.p-common dd{margin:.06rem 0;font-size:.22rem;color:#ffffff;line-height:.3rem;}
+.btn-down {position: absolute;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;width: 1.6rem;height:.54rem;top:.38rem;right:.8rem;color: #fff;text-indent:-9999em;overflow:hidden;background:url(//game.gtimg.cn/images/gp/public/nav_m_btn.png) no-repeat 0 0;-moz-background-size:1.6rem .54rem;background-size:1.6rem .54rem;}
+
+.btn_nav_slide {position:absolute;right:.2rem;top:.42rem;width:.45rem;height:.4rem;}
+.draw,.draw:before,.draw:after{width:.45rem;height:2px;background:#fff;position:absolute;left:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.draw{top:.18rem;right:0;}
+.draw:before{content:"";top:-7px;}
+.draw:after{content:"";top:7px;}
+.G_close .draw{background:transparent;}
+.G_close .draw:before{top:0;-webkit-transform:rotate(45deg);background:#BC3129;}
+.G_close .draw:after{top:0;-webkit-transform:rotate(-45deg);background:#BC3129;}
+.common_nav{width:0;height:0;position:fixed;right:0;top:1.2rem;z-index:9999;opacity:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.common_nav ul{width:100%;text-align:center;}
+.common_nav li{width:1.35rem;height:.85rem;margin:0 auto;line-height:.85rem;position:relative;border-bottom:1px solid rgba(56,55,46,0.7);}
+.common_nav a{color:#fff;display:block;height:100%;font-size:.26rem;}
+.G_open{width:1.86rem;height:auto;top:1.28rem;opacity:1;background:rgba(0,0,0,0.7);-webkit-transform:scale3d(1,1,1);}
+
+
+/*footer*/
+#afooter{bottom:.3rem;width:100%;z-index:100;font-size:.18rem;color: #646464;padding:.15rem 0;line-height: .34rem;margin-top:0rem;text-align: center; background: #000;}
+#afooter a{color:#646464;}
+#loginStatusSyncFrame_ams_ame{ display: none;}
+
+
+.footer_logo{position:absolute;bottom:0;left:0;right:0;height:2.9rem;z-index:10;}
+.f_logo{position:relative;display:block;width:4.29rem;height:.65rem;margin:.5rem auto .4rem;z-index:100;background:url(//game.gtimg.cn/images/gp/public/footer_logo_m.png) no-repeat;-moz-background-size:4.29rem .65rem;background-size:4.29rem .65rem;}
+.f_logo a{display:block;width:2.31rem;height:.65rem;text-indent:-999rem;overflow:hidden;}
+.footbg{position:absolute;top:0;left:0;right:0;background:#000;opacity:.5;height:2.9rem;z-index:50;}
+.gicpnews-status--2{font-size:.18rem;}
+
+.wrap{ width: 100%;height: 7.50rem; overflow: hidden; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/bg.jpg) no-repeat; -moz-background-size: 100% auto; background-size: 100% auto; position: relative; }
+.c_cont{ width: 100%; }
+.top_box{ position: absolute; top: 0.34rem; right: 0; padding: 0 0.34rem 0 0 ; }
+.t_r_btn{ display: block; float: right; line-height: 0.26rem; font-size: 0.24rem; color: #505063; vertical-align: top; }
+.t_r_icon{ display: inline-block; vertical-align: top; width: 0.25rem; height: 0.26rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/t_r_icon.png) no-repeat; -moz-background-size: 0.25rem 0.26rem; background-size: 0.25rem 0.26rem; margin: 0 0.10rem 0 0; }
+.t_line{ display: block; float: right; width: 0; height:0.30rem; border-right: #7a7b8c solid 1px; margin: 0 0.22rem;  }
+.login{ font-size: 0.24rem; color: #505063; float: right;}
+.login a{ text-decoration: underline; color: #505063; }
+.c_go_visit{ display: block; width: 1.67rem; height: 0.53rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c_go_visit.png) no-repeat; -moz-background-size: 1.67rem auto ; background-size: 1.67rem auto ; text-indent: -9999px; position: absolute; right:0.40rem; top: 0.87rem; z-index: 30;}
+.c_act_para{ font-size: 0.20rem; color: #505063; line-height: 0.26rem; text-align: center; padding: 1.62rem 0 0 0; }
+.side_nav{ width: 1.10rem; position: absolute; left: 0.12rem ; top: 1.52rem; z-index: 60; }
+.side_nav li{ width: 1.10rem; height: 1.10rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/nav_spr.png) no-repeat; -moz-background-size: 2.26rem auto ; background-size: 2.26rem auto ; margin: 0 0 0.04rem 0; text-indent: -9999px; }
+.side_nav li:nth-child(1){ background-position: 0 0; }
+.side_nav li:nth-child(2){ background-position: 0 -1.14rem; }
+.side_nav li:nth-child(3){ background-position: 0 -2.28rem; }
+.side_nav li.cur:nth-child(1){ background-position: -1.18rem 0; }
+.side_nav li.cur:nth-child(2){ background-position: -1.18rem -1.14rem; }
+.side_nav li.cur:nth-child(3){ background-position: -1.18rem -2.28rem; }
+.c_cont_in{ width: 100%; height: 9.0rem; padding: 0.01rem 0 0 0; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
+.c_cont_in:nth-child(2){ -webkit-transform: scale(0.8) translate(0,-7%); -moz-transform: scale(0.8) translate(0,-7%); -ms-transform: scale(0.8) translate(0,-7%); transform: scale(0.8) translate(0,-7%);}
+.c_c1_tit{ display: block; width: 5.46rem; height: 0.32rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c_t1.png) no-repeat; -moz-background-size: 5.46rem auto ; background-size: 5.46rem auto ; text-indent: -9999px; margin: 0.40rem auto 0;}
+.c1_cont{ width: 8.40rem; height: 3.70rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c1_box.png) no-repeat; -moz-background-size: 8.40rem 3.70rem; background-size: 8.40rem 3.70rem; margin: 0.26rem auto 0; overflow: hidden; }
+.c1_time{ width: 3.50rem; height: 0.44rem; background: #c2b594; margin: 0.28rem auto 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; }
+.c1_time strong{ width: 1.87rem; height: 0.44rem; font-size: 0.24rem; font-weight: bold; color: #2d2a22; line-height: 0.44rem; text-align: center; }
+.c1_time span{ width: 1.61rem; height: 0.40rem; margin: 0.02rem 0 0 0 ; font-size: 0.24rem; font-weight: bold; color: #c2b594; line-height: 0.40rem; text-align: center; background: #4c4c4c; }
+.c1_list{ width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.c1_list li{ width: 2.60rem; height: 0.17rem; margin: 0 0.20rem; }
+.c1_img_box{ width: 2.60rem; height: 1.48rem; overflow: hidden; margin: 0.17rem auto 0; position: relative;}
+.c1_img_box img{ display: block; width: 100%; height:100%; }
+.c1_img_box p{ width: 100%; text-align: center; font-size: 0.20rem; position: absolute; left:0; bottom: 0.02rem; color: #c2b594; line-height: 0.24rem;}
+.c1_btn1{ display: block; width: 2.60rem; height: 0.69rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c1_btn1.jpg) no-repeat; -moz-background-size: 2.60rem auto; background-size: 2.60rem auto; text-indent: -9999px; margin: 0.20rem auto 0; }
+.c1_btn2{ background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c1_btn2.jpg) no-repeat; -moz-background-size: 2.60rem auto; background-size: 2.60rem auto; }
+.c1_btn1.grey{ background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c1_btn1_grey.png) no-repeat; -moz-background-size: 2.60rem auto; background-size: 2.60rem auto;}
+.c1_btn2.grey{ background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c1_btn2_grey.png) no-repeat; -moz-background-size: 2.60rem auto; background-size: 2.60rem auto;}
+.c2_invit_btn{ display: block; width: 2.60rem; height: 0.69rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c2_invit_btn.png) no-repeat; -moz-background-size: 2.60rem 0.69rem; background-size: 2.60rem 0.69rem; text-indent: -9999px; margin: 0.48rem auto 0;}
+.c2_list{ width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 0.32rem auto 0; }
+.c2_list li{ width: 2.53rem; height: 3.0rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c2_box.png) no-repeat; -moz-background-size: 2.53rem 3.0rem; background-size: 2.53rem 3.0rem; margin: 0 0.07rem ; position: relative; }
+.c2_invit_para{ font-size: 0.22rem; color: #505063; line-height: 0.30rem; text-align: center; margin: 0.10rem auto 0; }
+.c2_t{ display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; width: 2.34rem; padding: 0.26rem 0 0 0; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 auto; }
+.c2_t strong{ display: block; width: 100%; font-size: 0.26rem; color: #afadad; font-weight: bold; -webkit-box-flex: 4; -moz-box-flex: 4; -ms-flex: 4; flex: 4; font-weight: bold; white-space: nowrap; text-align: center;}
+.c2_t span{ display: block; width: 100%; height: 0; border-top: #7b7979 solid 1px; -webkit-box-flex:2; -moz-box-flex:2; -ms-flex:2; flex:2; margin:0.17rem 0 0 0;}
+.c2_img_box{ width: 2.52rem; height: 1.07rem; margin: 0 auto; }
+.c2_img_box img{ display: block; font-size: 0; width: 100% ; height: 95%; }
+.c2_para{ font-size: 0.22rem; color: #a19780; text-align: center; margin: 0.06rem auto 0; line-height: 0.28rem; white-space: nowrap; }
+.c2_para2{ margin: -0.16rem auto 0; }
+.c2_btn_box{ width: 2.33rem; height: 0.80rem; position: absolute; left: 0.12rem ; bottom: 0.10rem; border-top: #5b5957 solid 1px; overflow:hidden;  }
+.c2_rew_btn{ display: block; width: 1.31rem; height: 0.41rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c2_rew_btn.png) no-repeat; -moz-background-size: 1.31rem 0.41rem; background-size: 1.31rem 0.41rem; text-indent: -9999px; margin: 0.19rem auto 0; }
+.c2_rew_btn.grey{ background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c2_rew_btn_grey.png) no-repeat; -moz-background-size: 1.31rem 0.41rem; background-size: 1.31rem 0.41rem;}
+.c3_box{ width: 8.20rem; height: 4.14rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c3_box.png) no-repeat; -moz-background-size: 8.20rem auto; background-size: 8.20rem auto; margin: 0.60rem auto 0; }
+.c3_para{ display: block; font-size: 0.24rem; color: #c2b594; line-height: 0.30rem; text-align: center; padding: 0.40rem 0 0 0; font-weight: bold; }
+.c3_list{ width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 0.30rem auto 0; }
+.c3_list li{ width: 2.60rem; height: 1.78rem; position: relative; margin: 0 0.20rem ; }
+.c3_list li img{ display: block; width: 100%; height: 100%; }
+.c3_btn{ display: block; width: 2.60rem; height: 0.69rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/c3_btn.jpg) no-repeat; -moz-background-size: 2.60rem auto; background-size: 2.60rem auto; margin: 0.18rem auto 0; text-indent: -9999px; }
+.dia{ width: 8.0rem; height: 4.94rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/d_r_bg.png) no-repeat; -moz-background-size: 8.0rem auto; background-size: 8.0rem auto; }
+.dia_close{ display: block; width: 0.51rem; height: 0.49rem;background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/d_close_btn.png) no-repeat; -moz-background-size: 0.51rem 0.49rem; background-size: 0.51rem 0.49rem; position: absolute;; right:-0.67rem;top: 0.13rem; text-indent: -9999px;  }
+.dia_tit{ display: block; width: 100%; padding: 0.80rem 0 0 0; text-indent: -9999px; font-size: 0;}
+.dia_rule_para{ width: 6.70rem; height: 3.80rem; margin: 0.16rem auto 0; overflow:hidden; font-size: 0.24rem; color: #413f3e; line-height: 0.44rem; overflow-y: auto;  }
+.dia2{ width: 6.0rem; height: 3.34rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/d_bg.png) no-repeat; -moz-background-size: 6.0rem 3.34rem; background-size: 6.0rem 3.34rem; }
+.dia_para{ font-size: 0.28rem; width: 80%; margin: 0.28rem auto 0; color: #413f3e; line-height: 0.36rem; text-align: center; min-height: 0.90rem; }
+.dia_btn_box{ width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 0.34rem auto 0;}
+.dia_btn{ display: block; width: 1.67rem; height: 0.53rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/dia_btn.png) no-repeat; -moz-background-size: 1.67rem 0.53rem; background-size: 1.67rem 0.53rem; text-align: center; line-height: 0.52rem; font-weight: bold; font-size: 0.24rem;color: #812700; margin: 0 0.20rem; }
+.share{ width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 9999; background: rgba(0,0,0,0.7); }
+.share img{ display: block; width: 2.46rem; height: 1.20rem; position: absolute; right: 0.30rem; top: 0.30rem; }
+.c_cont{ overflow: hidden; }
+
+
+/* 竖屏样式 */
+@media screen and (orientation: portrait) {
+    body {position: relative;width: 100%; height: 100vh; overflow: hidden; background: #000;}
+    .wrap{ height: 13.34rem; background: none;}
+    .top_box{ position: fixed; padding: 0 2.08rem 0 0; top: 1.54rem;}
+    .c_go_visit{ right: 0.20rem; top: 0.15rem; }
+    .t_line{ margin: 0.04rem 0.22rem 0; }
+    .t_r_btn{ padding: 0.04rem 0 0 0; }
+    .c_cont_in{ width: 100%; height: 100vh; background:url(//game.gtimg.cn/images/gp/cp/a20190813finals/m_bg.jpg) no-repeat; background-size: 100% 100%; }
+    .c_act_para{ width: 100%; padding: 0 0 0 0;  font-size: 0.20rem;z-index: 30;}
+    .side_nav{ position: fixed; left: 0.20rem; top: 1.50rem; }
+    .c1_cont{ width: 6.80rem; height: 3.70rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/m_c1_box.png) no-repeat; -moz-background-size: 6.80rem 3.70rem; background-size: 6.80rem 3.70rem; }
+    .c2_list{ width: 5.60rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin:0.18rem auto 0; transform: scale(0.8) translate(0,-0.80rem);}
+    .c2_list li{ margin: 0 0.07rem 0.10rem; }
+    .c3_box{ width: 7.0rem; height: 5.64rem; background: url(//game.gtimg.cn/images/gp/cp/a20190813finals/m_c3_box.png) no-repeat; -moz-background-size: 7.0rem auto; background-size: 7.0rem auto; }
+    .c3_btn{ margin: 0.48rem auto 0; }
+    .c3_para{ width: 70%; font-size: 0.30rem; line-height: 0.38rem; margin: 0.38rem auto 0; }
+    .c3_list{ margin: 0.46rem auto 0; }
+    .d1{ -webkit-transform: scale(0.8); -moz-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8) }
+    .c_cont_in:nth-child(2){transform: none;  background-position: 0 -0.50rem;}
+    .pd_box{height: 5.0rem;}
+    .c_cont_in:nth-child(2) .pd_box{height: 4.30rem;}
+    .c2_invit_btn{margin: 0.08rem auto 0}
+}

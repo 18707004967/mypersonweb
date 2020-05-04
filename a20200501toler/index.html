@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk">
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<title></title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2020-05-01  -->
+<script>
+  //mode  移动端的适配方式 按需 传参  目前只有两种 px和rem
+  (function(win, doc, mode) {
+    var std = 640;
+    if(/(iPhone|iPad|iPod|iOS|Android|Windows Phone|BlackBerry|SymbianOS)/i.test(navigator.userAgent)) {
+      var h = document.getElementsByTagName("head")[0];
+      h.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-capable" content="yes">');
+      h.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-status-bar-style" content="black">');
+      h.insertAdjacentHTML('beforeEnd', '<meta name="format-detection" content="telephone=no">');
+      h.insertAdjacentHTML('beforeEnd', '<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />');
+      if(mode == 'px') {
+        if (!win.addEventListener) return;
+          var html=document.documentElement;
+          function setFont()
+          {
+              function adaptVP(a){function c(){var c,d;return b.uWidth=a.uWidth?a.uWidth:640,b.dWidth=a.dWidth?a.dWidth:window.screen.width||window.screen.availWidth,b.ratio=window.devicePixelRatio?window.devicePixelRatio:1,b.userAgent=navigator.userAgent,b.bConsole=a.bConsole?a.bConsole:!1,a.mode?(b.mode=a.mode,void 0):(c=b.userAgent.match(/Android/i),c&&(b.mode="android-2.2",d=b.userAgent.match(/Android\s(\d+.\d+)/i),d&&(d=parseFloat(d[1])),2.2==d||2.3==d?b.mode="android-2.2":4.4>d?b.mode="android-dpi":d>=4.4&&(b.mode=b.dWidth>b.uWidth?"android-dpi":"android-scale")),void 0)}function d(){var e,f,g,h,c="",d=!1;switch(b.mode){case"apple":f=(window.screen.availWidth*b.ratio/b.uWidth)/b.ratio;c="width="+b.uWidth+",initial-scale="+f+",minimum-scale="+f+",maximum-scale="+f+",user-scalable=no";break;case"android-2.2":a.dWidth||(b.dWidth=2==b.ratio?720:1.5==b.ratio?480:1==b.ratio?375:.75==b.ratio?240:480),e=window.screen.width||window.screen.availWidth,375==e?b.dWidth=b.ratio*e:640>e&&(b.dWidth=e),b.mode="android-dpi",d=!0;case"android-dpi":f=160*b.uWidth/b.dWidth*b.ratio,c="target-densitydpi="+f+", width="+b.uWidth+", user-scalable=no",d&&(b.mode="android-2.2");break;case"android-scale":c="width="+b.uWidth+", user-scalable=no"}g=document.querySelector("meta[name='viewport']")||document.createElement("meta"),g.name="viewport",g.content=c,h=document.getElementsByTagName("head"),h.length>0&&h[0].appendChild(g)}function e(){var a="";for(key in b)a+=key+": "+b[key]+"; ";alert(a)}if(a){var b={uWidth:0,dWidth:0,ratio:1,mode:"apple",userAgent:null,bConsole:!1};c(),d(),b.bConsole&&e()}};adaptVP({uWidth:640});
+          }
+          win.addEventListener('resize',setFont,false)
+          setFont();
+      }
+      else if(mode == 'rem') {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if(!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / std) + 'px';
+          };
+        if(!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      }
+    }
+  })(window, document, 'px');
+</script>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="wrap" id="app">
+    <div class="wrap_in swiper-wrapper">
+        <div class="p1 swiper-slide">
+            <div class="p1_js">
+                <p>你好：名字名字名字</p>
+                <a href="javascript:;" title="点击绑定">点击绑定&gt;&gt;</a>
+            </div>
+            <div class="p1_st_box">
+                <a href="javascript:;" class="p1_kq" title="开启忍道测试">开启忍道测试</a>
+                <a href="javascript:;" class="p1_sc" title="生成木叶学生卡">生成木叶学生卡</a>
+            </div>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p2 swiper-slide">
+            <h2 class="p_t1">第一题</h2>
+            <dl class="p_ans_list">
+                <dt><span class="as_xh">1</span>你与挚友曾经共同成长，约定好一起升学，突然，他决定离开家乡，转学去一所很远的重点学校，你会：</dt>
+                <dd><span>A</span>,约上朋友偷偷跟随，趁机拦截</dd>
+                <dd><span>B</span>,约他在校园热门景点-终结谷斩断羁绊</dd>
+            </dl>
+            <div class="p_check_box">
+                <a href="javascript:;" class="ck_btn1" title="A">A</a>
+                <a href="javascript:;" class="ck_btn2" title="B">B</a>
+            </div>
+            <p class="p_next">下一题</p>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p3 swiper-slide">
+            <h2 class="p_t1 p_t2">第二题</h2>
+            <dl class="p_ans_list">
+                <dt><span class="as_xh">2</span>你刚刚加入篮球部，就发现篮球部因为隔壁王牌球队“晓”的打压下一蹶不振，你会：</dt>
+                <dd><span>A</span>,与隔壁球队和谈</dd>
+                <dd><span>B</span>,代表学院再次邀战</dd>
+            </dl>
+            <div class="p_check_box">
+                <a href="javascript:;" class="ck_btn1" title="A">A</a>
+                <a href="javascript:;" class="ck_btn2" title="B">B</a>
+            </div>
+            <p class="p_next">下一题</p>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p4 swiper-slide">
+            <h2 class="p_t1 p_t3">第三题</h2>
+            <dl class="p_ans_list">
+                <dt><span class="as_xh">3</span>你与暗恋对象因漫长的假期分隔数月，再见竟听说他要放弃学业，和新认识的朋友组团做练习生出道，你会：</dt>
+                <dd><span>A</span>,潜入他签约的“大蛇丸”经纪公司打探情况</dd>
+                <dd><span>B</span>,拜拜就拜拜，换个发型换个心情</dd>
+            </dl>
+            <div class="p_check_box">
+                <a href="javascript:;" class="ck_btn1" title="A">A</a>
+                <a href="javascript:;" class="ck_btn2" title="B">B</a>
+            </div>
+            <p class="p_next">下一题</p>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p5 swiper-slide">
+            <h2 class="p_t1 p_t4">第五题</h2>
+            <dl class="p_ans_list">
+                <dt><span class="as_xh">4</span>你的班主任平时总爱开你玩笑，但某天突然提出要对你的学习情况给你特训，你会：</dt>
+                <dd><span>A</span>,我这块金子终于发光了！火影之名由我来背负！</dd>
+                <dd><span>B</span>,请客一乐拉面的话，就勉强同意</dd>
+            </dl>
+            <div class="p_check_box">
+                <a href="javascript:;" class="ck_btn1" title="A">A</a>
+                <a href="javascript:;" class="ck_btn2" title="B">B</a>
+            </div>
+            <p class="p_next">下一题</p>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p6 swiper-slide">
+            <h2 class="p_t1 p_t5">第六题</h2>
+            <dl class="p_ans_list">
+                <dt><span class="as_xh">5</span>就是这样一所学校，每天不限量拉面供应，体育考试三大项是背手跑、爬树、手里剑、每周还有不同等级的外出考察任务，接到入学通知的你会：</dt>
+                <dd><p><span>A</span>,现在就去迎着夕阳奔跑</p><p><span>B</span>,先刷两套中忍考试模拟题</p></dd>
+            </dl>
+            <div class="p_check_box">
+                <a href="javascript:;" class="ck_btn1" title="A">A</a>
+                <a href="javascript:;" class="ck_btn2" title="B">B</a>
+            </div>
+            <p class="p_next">下一题</p>
+            <span class="p1_tips"></span>
+        </div>
+        <div class="p1 p7 swiper-slide">
+            <p class="p7_para">我们总以为，校园是高高的象牙塔<br>没有太多的忧虑<br>实际上，我们早已<br>在不知不觉中成长着<br>在他人与自我的争执中，学会理解<br>在与师长的交流中，提升自己<br>接受成长过程中的小心悸<br>从一次次别离中，坚定自己<br>……<br>我们与过去的自己和解<br>校园是我们每个人的象牙塔<br>也是我们学习与世界互动的训练场<br>珍惜它，它辛苦与乐趣兼具<br>它磨练与进取共存</p>
+            <a href="javascript:;" class="jr_btn" title="进入木叶学园">进入木叶学园</a>
+        </div>
+        <div class="p1 p8 swiper-slide">
+            <h2 class="p_t1 p_t6">选择你的入学新形象</h2>
+            <ul class="pers_list">
+                <li v-for="(item,idx) in persList" v-if="(idx>=12*page&&idx<12*(page+1))" @click="chooseHdImg(idx)">
+                    <img :src="item.hdImg">
+                    <p v-html="item.name"></p>
+                </li>
+            </ul>
+            <div class="page_box">
+                <span class="last_page" @click="lastPage()"></span>
+                <span class="next_page" @click="nextPage()"></span>
+            </div>
+            <a href="javascript:;" class="sc_btn" @click="showJsCard()" title="生成学生卡">生成学生卡</a>
+        </div>
+        <div class="p1 p9 swiper-slide">
+            <div class="dom_ig">
+                <div class="dom_ig_in" id="toimg">
+                    <p class="stu_num">学生号：<span>865432145687</span></p>
+                    <div class="xj_img_box">
+                        <img :src="persList[chooseImg].xjImg">
+                    </div>
+                    <p class="xj_name">名字名字名字名字</p>
+                    <p class="rest_para"><span class="rd">为爱而生，就是我的忍道</span><span class="rest_tips"></span></p>
+                </div>
+            </div>
+            <div class="st_box">
+                <strong class="hidden">开学礼包</strong>
+                <ul class="st_list">
+                    <li>
+                        <img src="ossweb-img/lj_icon1.png" class="st_img">
+                        <p class="st_name">铜币×68888</p>
+                    </li>
+                    <li>
+                        <img src="ossweb-img/lj_icon2.png" class="st_img">
+                        <p class="st_name">声望×500</p>
+                    </li>
+                    <li>
+                        <img src="ossweb-img/lj_icon3.png" class="st_img">
+                        <p class="st_name">忍玉×200</p>
+                    </li>
+                    <li>
+                        <img src="ossweb-img/lj_icon4.png" class="st_img">
+                        <p class="st_name">随机A忍体验卡<br>（1天）×1</p>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="lj_btn" title="点击领奖">点击领奖</a>
+            </div>
+            <a href="javascript:;" class="qw_btn" title="前往操场集合">前往操场集合</a>
+            <a href="javascript:;" class="save_btn" title="保存学生卡">保存学生卡</a>
+        </div>
+    </div>
+</div>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script> 
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script src="//game.gtimg.cn/images/js/dom2img/1.0.min.js"></script>
+<script src="js/vue.js" charset="utf-8"></script>
+<script src="js/index.js" charset="utf-8"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<!--通用统计代码-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20200501toler", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>

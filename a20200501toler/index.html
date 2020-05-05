@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta charset="gbk">
+<meta charset="utf-8">
 <meta name="applicable-device" content="mobile">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 <meta name="format-detection" content="telephone=no" />
@@ -12,9 +12,9 @@
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
 <title></title>
-<!-- ҳ����ƣ�cp | ҳ��������cp | ������2020-05-01  -->
+<!-- 页面设计：cp | 页面制作：cp | 创建：2020-05-01  -->
 <script>
-  //mode  �ƶ��˵����䷽ʽ ���� ����  Ŀǰֻ������ px��rem
+  //mode  移动端的适配方式 按需 传参  目前只有两种 px和rem
   (function(win, doc, mode) {
     var std = 640;
     if(/(iPhone|iPad|iPod|iOS|Android|Windows Phone|BlackBerry|SymbianOS)/i.test(navigator.userAgent)) {
@@ -56,90 +56,90 @@
     <div class="wrap_in swiper-wrapper">
         <div class="p1 swiper-slide swiper-no-swiping">
             <div class="p1_js">
-                <p>��ã�������������</p>
-                <a href="javascript:;" title="�����">�����&gt;&gt;</a>
+                <p>你好：名字名字名字</p>
+                <a href="javascript:;" title="点击绑定">点击绑定&gt;&gt;</a>
             </div>
             <div class="p1_st_box">
-                <a href="javascript:;" @click="startAnswer()" class="p1_kq" title="�����̵�����">�����̵�����</a>
-                <a href="javascript:TGDialogS('d6');" class="p1_sc" title="����ľҶѧ����">����ľҶѧ����</a>
+                <a href="javascript:;" @click="startAnswer()" class="p1_kq" title="开启忍道测试">开启忍道测试</a>
+                <a href="javascript:TGDialogS('d6');" class="p1_sc" title="生成木叶学生卡">生成木叶学生卡</a>
             </div>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p2 swiper-slide">
-            <h2 class="p_t1">��һ��</h2>
+            <h2 class="p_t1">第一题</h2>
             <dl class="p_ans_list">
-                <dt><span class="as_xh">1</span>����ֿ��������ͬ�ɳ���Լ����һ����ѧ��ͻȻ���������뿪���磬תѧȥһ����Զ���ص�ѧУ����᣺</dt>
-                <dd><span>A</span>,Լ������͵͵���棬�û�����</dd>
-                <dd><span>B</span>,Լ����У԰���ž���-�ս��ն���</dd>
+                <dt><span class="as_xh">1</span>你与挚友曾经共同成长，约定好一起升学，突然，他决定离开家乡，转学去一所很远的重点学校，你会：</dt>
+                <dd><span>A</span>,约上朋友偷偷跟随，趁机拦截</dd>
+                <dd><span>B</span>,约他在校园热门景点-终结谷斩断羁绊</dd>
             </dl>
             <div class="p_check_box">
                 <a href="javascript:;" @click="chooseAnswer(0)" :class="('ck_btn1'+(ansList[nowSwperPage-1]==0 ? ' cur':''))" title="A">A</a>
                 <a href="javascript:;" @click="chooseAnswer(1)" :class="('ck_btn2'+(ansList[nowSwperPage-1]==1 ? ' cur':''))" title="B">B</a>
             </div>
-            <p class="p_next">��һ��</p>
+            <p class="p_next">下一题</p>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p3 swiper-slide">
-            <h2 class="p_t1 p_t2">�ڶ���</h2>
+            <h2 class="p_t1 p_t2">第二题</h2>
             <dl class="p_ans_list">
-                <dt><span class="as_xh">2</span>��ոռ������򲿣��ͷ���������Ϊ����������ӡ������Ĵ�ѹ��һ�겻����᣺</dt>
-                <dd><span>A</span>,�������Ӻ�̸</dd>
-                <dd><span>B</span>,����ѧԺ�ٴ���ս</dd>
+                <dt><span class="as_xh">2</span>你刚刚加入篮球部，就发现篮球部因为隔壁王牌球队“晓”的打压下一蹶不振，你会：</dt>
+                <dd><span>A</span>,与隔壁球队和谈</dd>
+                <dd><span>B</span>,代表学院再次邀战</dd>
             </dl>
             <div class="p_check_box">
                 <a href="javascript:;" @click="chooseAnswer(0)" :class="('ck_btn1'+(ansList[nowSwperPage-1]==0 ? ' cur':''))" title="A">A</a>
                 <a href="javascript:;" @click="chooseAnswer(1)" :class="('ck_btn2'+(ansList[nowSwperPage-1]==1 ? ' cur':''))" title="B">B</a>
             </div>
-            <p class="p_next">��һ��</p>
+            <p class="p_next">下一题</p>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p4 swiper-slide">
-            <h2 class="p_t1 p_t3">������</h2>
+            <h2 class="p_t1 p_t3">第三题</h2>
             <dl class="p_ans_list">
-                <dt><span class="as_xh">3</span>���밵�������������ļ��ڷָ����£��ټ�����˵��Ҫ����ѧҵ��������ʶ��������������ϰ����������᣺</dt>
-                <dd><span>A</span>,Ǳ����ǩԼ�ġ������衱���͹�˾��̽���</dd>
-                <dd><span>B</span>,�ݰݾͰݰݣ��������ͻ�������</dd>
+                <dt><span class="as_xh">3</span>你与暗恋对象因漫长的假期分隔数月，再见竟听说他要放弃学业，和新认识的朋友组团做练习生出道，你会：</dt>
+                <dd><span>A</span>,潜入他签约的“大蛇丸”经纪公司打探情况</dd>
+                <dd><span>B</span>,拜拜就拜拜，换个发型换个心情</dd>
             </dl>
             <div class="p_check_box">
                 <a href="javascript:;" @click="chooseAnswer(0)" :class="('ck_btn1'+(ansList[nowSwperPage-1]==0 ? ' cur':''))" title="A">A</a>
                 <a href="javascript:;" @click="chooseAnswer(1)" :class="('ck_btn2'+(ansList[nowSwperPage-1]==1 ? ' cur':''))" title="B">B</a>
             </div>
-            <p class="p_next">��һ��</p>
+            <p class="p_next">下一题</p>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p5 swiper-slide">
-            <h2 class="p_t1 p_t4">������</h2>
+            <h2 class="p_t1 p_t4">第五题</h2>
             <dl class="p_ans_list">
-                <dt><span class="as_xh">4</span>��İ�����ƽʱ�ܰ�������Ц����ĳ��ͻȻ���Ҫ�����ѧϰ���������ѵ����᣺</dt>
-                <dd><span>A</span>,�����������ڷ����ˣ���Ӱ֮��������������</dd>
-                <dd><span>B</span>,���һ������Ļ�������ǿͬ��</dd>
+                <dt><span class="as_xh">4</span>你的班主任平时总爱开你玩笑，但某天突然提出要对你的学习情况给你特训，你会：</dt>
+                <dd><span>A</span>,我这块金子终于发光了！火影之名由我来背负！</dd>
+                <dd><span>B</span>,请客一乐拉面的话，就勉强同意</dd>
             </dl>
             <div class="p_check_box">
                 <a href="javascript:;" @click="chooseAnswer(0)" :class="('ck_btn1'+(ansList[nowSwperPage-1]==0 ? ' cur':''))" title="A">A</a>
                 <a href="javascript:;" @click="chooseAnswer(1)" :class="('ck_btn2'+(ansList[nowSwperPage-1]==1 ? ' cur':''))" title="B">B</a>
             </div>
-            <p class="p_next">��һ��</p>
+            <p class="p_next">下一题</p>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p6 swiper-slide">
-            <h2 class="p_t1 p_t5">������</h2>
+            <h2 class="p_t1 p_t5">第六题</h2>
             <dl class="p_ans_list">
-                <dt><span class="as_xh">5</span>��������һ��ѧУ��ÿ�첻�������湩Ӧ�����������������Ǳ����ܡ����������｣��ÿ�ܻ��в�ͬ�ȼ�������������񣬽ӵ���ѧ֪ͨ����᣺</dt>
-                <dd><p><span>A</span>,���ھ�ȥӭ��Ϧ������</p><p><span>B</span>,��ˢ�������̿���ģ����</p></dd>
+                <dt><span class="as_xh">5</span>就是这样一所学校，每天不限量拉面供应，体育考试三大项是背手跑、爬树、手里剑、每周还有不同等级的外出考察任务，接到入学通知的你会：</dt>
+                <dd><p><span>A</span>,现在就去迎着夕阳奔跑</p><p><span>B</span>,先刷两套中忍考试模拟题</p></dd>
             </dl>
             <div class="p_check_box">
                 <a href="javascript:;" @click="chooseAnswer(0)" :class="('ck_btn1'+(ansList[nowSwperPage-1]==0 ? ' cur':''))" title="A">A</a>
                 <a href="javascript:;" @click="chooseAnswer(1)" :class="('ck_btn2'+(ansList[nowSwperPage-1]==1 ? ' cur':''))" title="B">B</a>
             </div>
-            <p class="p_next">��һ��</p>
+            <p class="p_next">下一题</p>
             <span class="p1_tips"></span>
         </div>
         <div class="p1 p7 swiper-slide swiper-no-swiping">
-            <p class="p7_para">��������Ϊ��У԰�Ǹ߸ߵ�������<br>û��̫�������<br>ʵ���ϣ���������<br>�ڲ�֪�����гɳ���<br>�����������ҵ���ִ�У�ѧ������<br>����ʦ���Ľ����У������Լ�<br>���ܳɳ������е�С�ļ�<br>��һ�δα����У��ᶨ�Լ�<br>����<br>�������ȥ���Լ��ͽ�<br>У԰������ÿ���˵�������<br>Ҳ������ѧϰ�����绥����ѵ����<br>��ϧ��������������Ȥ���<br>��ĥ�����ȡ����</p>
-            <a href="javascript:;" @click="designCard()" class="jr_btn" title="����ľҶѧ԰">����ľҶѧ԰</a>
+            <p class="p7_para">我们总以为，校园是高高的象牙塔<br>没有太多的忧虑<br>实际上，我们早已<br>在不知不觉中成长着<br>在他人与自我的争执中，学会理解<br>在与师长的交流中，提升自己<br>接受成长过程中的小心悸<br>从一次次别离中，坚定自己<br>……<br>我们与过去的自己和解<br>校园是我们每个人的象牙塔<br>也是我们学习与世界互动的训练场<br>珍惜它，它辛苦与乐趣兼具<br>它磨练与进取共存</p>
+            <a href="javascript:;" @click="designCard()" class="jr_btn" title="进入木叶学园">进入木叶学园</a>
         </div>
         <div class="p1 p8 swiper-slide swiper-no-swiping">
-            <h2 class="p_t1 p_t6">ѡ�������ѧ������</h2>
+            <h2 class="p_t1 p_t6">选择你的入学新形象</h2>
             <ul class="pers_list">
                 <li v-for="(item,idx) in persList" v-if="(idx>=12*page&&idx<12*(page+1))" @click="chooseHdImg(idx)" :class="(idx==chooseImg?'cur':'')">
                     <div class="pers_img_box"><img :src="item.hdImg"></div>
@@ -150,115 +150,115 @@
                 <span class="last_page" @click="lastPage()"></span>
                 <span class="next_page" @click="nextPage()"></span>
             </div>
-            <a href="javascript:;" class="sc_btn" @click="showJsCard()" title="����ѧ����">����ѧ����</a>
+            <a href="javascript:;" class="sc_btn" @click="showJsCard()" title="生成学生卡">生成学生卡</a>
         </div>
         <div class="p1 p9 swiper-slide swiper-no-swiping">
             <div class="dom_ig">
                 <div class="dom_ig_in" id="toimg">
-                    <p class="stu_num">ѧ���ţ�<span>865432145687</span></p>
+                    <p class="stu_num">学生号：<span>865432145687</span></p>
                     <div class="xj_img_box">
                         <img v-if="chooseImg!==null" :src="persList[chooseImg].xjImg">
                     </div>
                     <p class="xj_name">{{userName}}</p>
-                    <p class="rest_para"><span class="rd">{{mottoList[pList[1]]}}�������ҵ��̵�</span><span :class="'rest_tips'+' r'+pList[0]"></span></p>
+                    <p class="rest_para"><span class="rd">{{mottoList[pList[1]]}}，就是我的忍道</span><span :class="'rest_tips'+' r'+pList[0]"></span></p>
                 </div>
             </div>
             <div class="st_box">
-                <strong class="hidden">��ѧ���</strong>
+                <strong class="hidden">开学礼包</strong>
                 <ul class="st_list">
                     <li>
                         <img src="ossweb-img/lj_icon1.png" class="st_img">
-                        <p class="st_name">ͭ�ҡ�68888</p>
+                        <p class="st_name">铜币×68888</p>
                     </li>
                     <li>
                         <img src="ossweb-img/lj_icon2.png" class="st_img">
-                        <p class="st_name">������500</p>
+                        <p class="st_name">声望×500</p>
                     </li>
                     <li>
                         <img src="ossweb-img/lj_icon3.png" class="st_img">
-                        <p class="st_name">�����200</p>
+                        <p class="st_name">忍玉×200</p>
                     </li>
                     <li>
                         <img src="ossweb-img/lj_icon4.png" class="st_img">
-                        <p class="st_name">���A�����鿨<br>��1�죩��1</p>
+                        <p class="st_name">随机A忍体验卡<br>（1天）×1</p>
                     </li>
                 </ul>
-                <a href="javascript:;" class="lj_btn" title="����콱">����콱</a>
+                <a href="javascript:;" class="lj_btn" title="点击领奖">点击领奖</a>
             </div>
-            <a href="javascript:;" class="qw_btn" title="ǰ���ٳ�����">ǰ���ٳ�����</a>
-            <a href="javascript:TGDialogS('d5');" class="save_btn" title="����ѧ����">����ѧ����</a>
+            <a href="javascript:;" class="qw_btn" title="前往操场集合">前往操场集合</a>
+            <a href="javascript:TGDialogS('d5');" class="save_btn" title="保存学生卡">保存学生卡</a>
         </div>
     </div>
 </div>
-<!-- ��¼ -->
+<!-- 登录 -->
 <div class="dia" id="d1" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <strong class="d_t d_t5">��¼</strong>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <strong class="d_t d_t5">登录</strong>
     <div class="d_lg_box">
         <a href="javascript:;" title="qq">qq</a>
-        <a href="javascript:;" title="΢��">΢��</a>
+        <a href="javascript:;" title="微信">微信</a>
     </div>
 </div>
-<!-- ר��У԰���� -->
+<!-- 专属校园形象 -->
 <div class="dia" id="d2" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <strong class="d_t d_t2">ר��У԰����</strong>
-    <div class="d_p1"><p>�Ƿ�ȷ��ѡ��</p></div>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <strong class="d_t d_t2">专属校园形象</strong>
+    <div class="d_p1"><p>是否确认选择</p></div>
     <div class="d_btn_box">
-        <a href="javascript:;" title="��">��</a>
-        <a href="javascript:;" title="��һ��">��һ��</a>
+        <a href="javascript:;" title="是">是</a>
+        <a href="javascript:;" title="换一个">换一个</a>
     </div>
 </div>
-<!-- ��ܰ��ʾ -->
+<!-- 温馨提示 -->
 <div class="dia" id="d3" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <strong class="d_t d_t3">��ܰ��ʾ</strong>
-    <div class="d_p1 d_p2"><p>�����һ�ε�¼��������ID��<br><span>��Q 207�� XXXX</span><br>�Ƿ�ȷ�ϰ󶨣��󶨺󲻿ɸ��ģ�</p></div>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <strong class="d_t d_t3">温馨提示</strong>
+    <div class="d_p1 d_p2"><p>您最近一次登录的区服和ID是<br><span>手Q 207区 XXXX</span><br>是否确认绑定（绑定后不可更改）</p></div>
     <div class="d_btn_box">
-        <a href="javascript:;" title="ȷ�ϰ�">ȷ�ϰ�</a>
-        <a href="javascript:;" title="��������">��������</a>
+        <a href="javascript:;" title="确认绑定">确认绑定</a>
+        <a href="javascript:;" title="更改区服">更改区服</a>
     </div>
 </div>
-<!-- ������ -->
+<!-- 绑定区服 -->
 <div class="dia dia2" id="d4" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <strong class="d_t d_t4">������</strong>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <strong class="d_t d_t4">绑定区服</strong>
     <ul class="d_qf_list">
         <li>
-            <span class="qf_name">ϵͳ</span>
+            <span class="qf_name">系统</span>
             <div class="selcet_box">
                 <select class="qf_select">
-                    <option>ϵͳ</option>
-                    <option>ϵͳ</option>
-                    <option>ϵͳ</option>
-                    <option>ϵͳ</option>
-                    <option>ϵͳ</option>
+                    <option>系统</option>
+                    <option>系统</option>
+                    <option>系统</option>
+                    <option>系统</option>
+                    <option>系统</option>
                 </select>
                 <span class="selec_tips"></span>
             </div>
         </li>
         <li>
-            <span class="qf_name">ƽ̨</span>
+            <span class="qf_name">平台</span>
             <div class="selcet_box">
                 <select class="qf_select">
-                    <option>ƽ̨</option>
-                    <option>ƽ̨</option>
-                    <option>ƽ̨</option>
-                    <option>ƽ̨</option>
-                    <option>ƽ̨</option>
+                    <option>平台</option>
+                    <option>平台</option>
+                    <option>平台</option>
+                    <option>平台</option>
+                    <option>平台</option>
                 </select>
                 <span class="selec_tips"></span>
             </div>
         </li>
         <li>
-            <span class="qf_name">����</span>
+            <span class="qf_name">区服</span>
             <div class="selcet_box">
                 <select class="qf_select">
-                    <option>����</option>
-                    <option>����</option>
-                    <option>����</option>
-                    <option>����</option>
-                    <option>����</option>
+                    <option>区服</option>
+                    <option>区服</option>
+                    <option>区服</option>
+                    <option>区服</option>
+                    <option>区服</option>
                 </select>
                 <span class="selec_tips"></span>
             </div>
@@ -278,33 +278,33 @@
         </li>
     </ul>
     <div class="d_btn_box">
-        <a href="javascript:;" title="ȷ�ϰ�">ȷ�ϰ�</a>
+        <a href="javascript:;" title="确认绑定">确认绑定</a>
     </div>
 </div>
-<!-- ����ɹ��� -->
+<!-- 保存成功！ -->
 <div class="dia" id="d5" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <div class="d_p1 d_p3"><p>ѧ��������ɹ���<br>��ȥ��̳ɹ������̵���</p></div>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <div class="d_p1 d_p3"><p>学生卡保存成功！<br>快去论坛晒出你的忍道！</p></div>
     <div class="d_btn_box">
-        <a href="javascript:;" title="ǰ����̳">ǰ����̳</a>
+        <a href="javascript:;" title="前往论坛">前往论坛</a>
     </div>
 </div>
-<!-- ����ɹ��� -->
+<!-- 保存成功！ -->
 <div class="dia" id="d5" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <div class="d_p1 d_p3"><p>ѧ��������ɹ���<br>��ȥ��̳ɹ������̵���</p></div>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <div class="d_p1 d_p3"><p>学生卡保存成功！<br>快去论坛晒出你的忍道！</p></div>
     <div class="d_btn_box">
-        <a href="javascript:;" title="ǰ����̳">ǰ����̳</a>
+        <a href="javascript:;" title="前往论坛">前往论坛</a>
     </div>
 </div>
-<!-- ǰ���ƿ� -->
+<!-- 前往制卡 -->
 <div class="dia" id="d6" style="display: none;">
-    <a href="javascript:closeDialog();" class="d_close" title="�ر�">�ر�</a>
-    <strong class="d_t">ǰ���ƿ�</strong>
-    <div class="d_p1"><p>�Ƿ�ȷ�������̵����ԣ�</p></div>
+    <a href="javascript:closeDialog();" class="d_close" title="关闭">关闭</a>
+    <strong class="d_t">前往制卡</strong>
+    <div class="d_p1"><p>是否确定跳过忍道测试？</p></div>
     <div class="d_btn_box">
-        <a href="javascript:;" class="skip_change" title="ȷ��">ȷ��</a>
-        <a href="javascript:closeDialog();" title="����">����</a>
+        <a href="javascript:;" class="skip_change" title="确定">确定</a>
+        <a href="javascript:closeDialog();" title="返回">返回</a>
     </div>
 </div>
 <script src="//ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script> 
@@ -314,19 +314,19 @@
 <script src="js/vue.js" charset="utf-8"></script>
 <script src="js/index.js" charset="utf-8"></script>
 <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
-<!--ͨ��ͳ�ƴ���-->
+<!--通用统计代码-->
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
-//�˶δ��벻�ܷŵ�����JS�У�
-var setSite={ //������վ����
- siteType:"a20200501toler", //������:"os"�����ǹ�����������ǣ�����дactName����a20160701xxx
- pageType:"index", //������:��ҳ��Ķ�λ������ҳ�溬����д����main||list||detail||download||share||page1||pageN
- pageName:"��ҳ", //������:ҳ��������
- osact:0, //ѡ����:�Ƿ��ǹ���ר��(�ڹ�����Ӫ��ר��)boolean��Ĭ����0�������������ϼ������osact=1���������
- ingame:0, //ѡ����:�Ƿ�Ͷ������ϷAPP��boolean��Ĭ����0�������������ϼ������ingame=1���������
- stayTime:0 //ѡ����:�Ƿ���Ҫͳ��ͣ��ʱ��boolean��Ĭ����0
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20200501toler", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
 }
-if(typeof(pgvMain)=='function')pgvMain();//ǧ�������ǣ�
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
 </script>
 </body>
 </html>

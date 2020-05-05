@@ -16,6 +16,7 @@ function closeDialog(){
     });
 }
 
+
 function makeSharePic(params) {
     dom2img('#toimg', {
     ondone: function () {
@@ -23,11 +24,13 @@ function makeSharePic(params) {
     }
     })
 }
+var swip;
 
-new Vue({
+var vm = new Vue({
     el:"#app",
     data(){
         return {
+            userName:'旗木卡卡西',
             persList:[
                 {'name':'漩涡鸣人', 'hdImg':'ossweb-img/hd_icon1.png' , 'xjImg':'ossweb-img/xj_img1.png'  },
                 {'name':'漩涡鸣人<br> [疾风传]', 'hdImg':'ossweb-img/hd_icon2.png' , 'xjImg':'ossweb-img/xj_img2.png'  },
@@ -80,16 +83,39 @@ new Vue({
                 {'name':'药师兜', 'hdImg':'ossweb-img/hd_icon49.png', 'xjImg':'ossweb-img/xj_img49.png'  },
                 {'name':'波风水门<br> [秽土转生]', 'hdImg':'ossweb-img/hd_icon50.png', 'xjImg':'ossweb-img/xj_img50.png'  },
             ],
+            mottoList:['勇往直前，言出必行','燃烧吧青春','永不言败','为伙伴拼尽全力','坚持自我','特立独行','我要走自己的路','证明自我'],
+            nowSwperPage:0,
             page:0,
-            chooseImg:0,
+            chooseImg:null,
+            ansList:[null,null,null,null,null],
+            isOver:false,
+            pList:[null,null]
         }
     },
     mounted(){
-        var app = new Swiper('#app',{
+        var that = this;
+        swip = new Swiper('#app',{
           direction : 'vertical',
           followFinger: false,
           slidesPerView: 'auto',
-        })
+          on: {
+            slideChangeTransitionStart: function(){
+              that.nowSwperPage = this.activeIndex;
+            },
+            slidePrevTransitionStart: function(){
+              if(this.activeIndex==0){
+                swip.slideTo(1,0);
+              };
+            },
+            slideNextTransitionStart: function(){
+              if((this.activeIndex>=2&&this.activeIndex<6)&&that.ansList[this.activeIndex-2]==null){
+                swip.slideTo(this.activeIndex-1,0);
+                alert('请选择答案~');
+              }
+            },
+          },
+        });
+        this.pList = [Math.floor(Math.random()*5),Math.floor(Math.random()*(this.mottoList.length))];
     },
     methods:{
         lastPage(){
@@ -106,8 +132,27 @@ new Vue({
             this.chooseImg = idx;
         },
         showJsCard(){
-            makeSharePic();
+            if(this.chooseImg!==null){
+                makeSharePic();
+                swip.slideNext()
+            }else{
+                alert('请选择入学形象~')
+            }
+        },
+        startAnswer(){
+            swip.slideNext()
+        },
+        designCard(){
+            swip.slideNext()
+        },
+        chooseAnswer(idx){
+            // console.log(this.nowSwperPage)
+            vm.$set(vm.ansList,this.nowSwperPage-1,idx)
         }
     }
     
+})
+$('.skip_change').on('click',function(){
+    swip.slideTo(7,0);
+    closeDialog();
 })
